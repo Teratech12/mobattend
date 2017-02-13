@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.sky_phase.tab.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="New class"
+        android:icon="@drawable/ic_menu_manage"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Reminders"
+        android:icon="@drawable/ic_menu_camera"
+        android:orderInCategory="100"
+        android:title="Reminders"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/Statistics"
+        android:orderInCategory="100"
+        android:title="Statistics"
+        android:icon="@drawable/ic_menu_gallery"
+        app:showAsAction="never" />
+</menu>

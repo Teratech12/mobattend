@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/text2">
+
+        <TextView
+            android:text="imput manually"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:id="@+id/text1"
+            android:textSize="16dp" />
+
+        <TextView
+            android:text="import from excel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:layout_alignLeft="@+id/text1"
+            android:layout_alignStart="@+id/text1"
+            android:layout_marginTop="36dp"
+            android:id="@+id/text2"
+            android:textSize="16dp" />
+    </RelativeLayout>
+</LinearLayout>
