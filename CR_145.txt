@@ -1,0 +1,63 @@
+$Header: Cr154.docx,v 1.0 $
+
+Teratech Engineers              (c) Copyright 2017 JANUARY 
+
+CHANGE DOCUMENT: Cr154.docx
+
+ORIGINAL AUTHOR(S):  
+	PRINCE AWUAH BAFFOUR 
+	RICHARD OBENG OPUNI
+	APAU TWEREFOUR AKUA
+	JEPHTER DANSO KUMUYI
+	ANDREW ADADE
+	GREGORY AIDOO
+	EDWARD BANSON 
+	CHARLES ASAMOAH
+	SAMUEL GYAMFI ASIEDU
+	SAMUEL BRIFO
+	
+
+DESCRIPTION:	MOBILE ATTENDANCE APPLICATION
+
+CHANGE REQUEST(S):  154
+
+MODIFICATION HISTORY: No history yet
+
+
+CAVEATS:
+
+DESCRIPTION OF CHANGE IN:
+
+ - USER REQUIREMENTS
+
+Background: this application is develop for teachers and tutors of schools and colleges to facilitate the taken of attendance. The app also seek to provide statistics on students’ attendance at a click.
+
+Proposed Upgrade: 
+
+
+
+- SPECIFICATION:
+* Database is created to contain students’ information as well as attendance information
+* Teacher will import the students details into the database
+* Attendance will be marked at any class and the information stored
+* A copy of the attendance sheet will be sent to the email of the teacher
+* 
+
+- DESIGN:
+* The software is design using android studio framework ide. The front end and the backend are all Java.
+* The main view is have tab host with three fragments;
+o The class fragment contains a list view of the classes
+o The stats fragment contains a query field and a filter which will be used to query the DB
+o The Reminder fragment contains a list view of all the impending schedules of the tutor.
+* The app has an attendance activity which is linked to the classes and has a list view of the student details and used to mark attendance as well.
+
+- CODE:
+The software is written in Android Studio therefore the backend of the software is powered by JAVA and the fore-end is powered by Java;
+
+Description of Change
+
+
+- TEST PLAN 
+
+
+- REVIEW RESULTS:
