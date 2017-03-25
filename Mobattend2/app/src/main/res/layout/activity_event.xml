@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_event"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.sky_phase.mobattend.EventActivity">
+
+    <TextView
+        android:text="Event Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="62dp"
+        android:id="@+id/eventnametext"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="12dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/eventnamebox"
+        android:layout_alignBaseline="@+id/eventnametext"
+        android:layout_alignBottom="@+id/eventnametext"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp"
+        android:backgroundTint="#0958CF"
+        android:textColorHighlight="#0958CF"
+        android:textColorLink="#0958CF"
+        android:hint="Unique event Id" />
+
+    <TextView
+        android:text="Week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eventnamebox"
+        android:layout_alignRight="@+id/eventnametext"
+        android:layout_alignEnd="@+id/eventnametext"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="55dp"
+        android:id="@+id/weektext"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="12dp" />
+
+    <EditText
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:id="@+id/weekbox"
+        android:layout_alignBaseline="@+id/weektext"
+        android:layout_alignBottom="@+id/weektext"
+        android:layout_toRightOf="@+id/weektext"
+        android:backgroundTint="#0958CF"
+        android:textColorHighlight="#0958CF"
+        android:textColorLink="#0958CF"
+        android:hint="week"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="Day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/weektext"
+        android:layout_toRightOf="@+id/weekbox"
+        android:layout_toEndOf="@+id/weekbox"
+        android:layout_marginLeft="57dp"
+        android:layout_marginStart="57dp"
+        android:id="@+id/daytext" />
+
+    <Spinner
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spin"
+        android:layout_alignTop="@+id/daytext"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/daytext"
+        android:layout_alignBottom="@+id/weekbox" />
+
+</RelativeLayout>
