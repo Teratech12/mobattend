@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/todayhelp"
+            android:title="Help "/>
+    </group>
+
+
+
+    <item android:title="Add Class">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/todayimport"
+                android:title="Import from Excel" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/todaynewreminder"
+                android:title="Add Manually" />
+        </menu>
+    </item>
+
+    <item android:title="Statictics">
+        <menu>
+            <item
+                android:id="@+id/nav_shar"
+                android:icon="@drawable/todaysearch2"
+                android:title="Search a Particular day" />
+            <item
+                android:id="@+id/nav_sen"
+                android:icon="@drawable/todaysearch1"
+                android:title="Get a general view of a class" />
+        </menu>
+    </item>
+
+    <item android:title="Reminders">
+        <menu>
+            <item
+                android:id="@+id/nav_sha"
+                android:icon="@drawable/todayreminder"
+                android:title="Create a new Reminder" />
+            <item
+                android:id="@+id/nav_se"
+                android:icon="@drawable/todayreminder2"
+                android:title="Edit a reminder" />
+        </menu>
+    </item>
+
+</menu>

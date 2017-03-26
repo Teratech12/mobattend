@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:paddingBottom="16dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sky_phase.tab.MainActivity$PlaceholderFragment"
+    android:background="@android:color/background_light">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:text="Course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:id="@+id/textView2" />
+
+        <Spinner
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/spinner1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchButton"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_alignBottom="@+id/querydatepicker"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:footerDividersEnabled="false"
+        android:dividerHeight="0.40sp"
+
+        android:divider="#807F7F"
+        android:id="@+id/list"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingEnd="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp" />
+
+    <DatePicker
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/querydatepicker"
+        android:datePickerMode="spinner"
+        style="@android:style/Widget.DatePicker"
+        android:background="#F8F9FB"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/list"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
