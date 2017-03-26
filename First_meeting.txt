@@ -1,4 +1,4 @@
-MEETING
+MEETING SUMMARY
 
 PROJECT: Mobattend App
 Date: 25th Feb, 2017
@@ -15,11 +15,7 @@ A meeting was held at the Vodafone Cafe on Saturday Feb. 25th, 2017 to divide di
 
 Summary:
 
-* Jeph suggests taking the team's website development and gives an overview on Python Programming.
-
+* Jeph suggests taking the team's website development.
 * Rich volunteers to start the project since he knows Android programming already.
-
-* Team agrees on weekly contribution of GH 1.00 cedis to fund the team.
-
+* Team agrees on weekly contribution of GH 1.00 cedis.
 * PM gives a tutorial on git and gitbash.
-
