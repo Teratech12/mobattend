@@ -9,13 +9,14 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class ADDING_STUDENTS extends AppCompatActivity {
     EditText studentName, studentID, classNameStudent;
-    TextView anotherStudent, finish;
+    Button anotherStudent, finish;
     CREATE_CLASS myclass = new CREATE_CLASS();
     String classIdFK;
 
@@ -42,8 +43,8 @@ public class ADDING_STUDENTS extends AppCompatActivity {
 
         final String holdclass = myclass.className;
         classNameStudent.setText(setname);
-        anotherStudent = (TextView)findViewById(R.id.AddAnotherStudentText);
-        finish = (TextView)findViewById(R.id.FinishText);
+        anotherStudent = (Button) findViewById(R.id.AddAnotherStudentText);
+        finish = (Button) findViewById(R.id.FinishText);
 
         anotherStudent.setOnClickListener(new View.OnClickListener() {
             @Override

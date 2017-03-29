@@ -15,42 +15,37 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:layout_marginTop="77dp"
         android:id="@+id/studentNameEditBox"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="false"
-        android:hint="Student Name"
         android:textAlignment="center"
         android:textColorLink="@color/radiobutton2"
         android:textColorHighlight="@color/radiobutton2"
-        android:backgroundTint="@color/radiobutton2" />
+        android:backgroundTint="@color/radiobutton2"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="500dp"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:layout_below="@+id/studentNameEditBox"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="41dp"
         android:id="@+id/studentIdEditBox"
-        android:hint="Unique Identification Number"
         android:textAlignment="center"
         android:textColorHighlight="#0958CF"
         android:textColorLink="#0958CF"
         android:backgroundTint="#0958CF"
         android:focusableInTouchMode="true"
-        />
+        android:layout_marginTop="7dp"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="500dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:layout_below="@+id/studentIdEditBox"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp"
         android:id="@+id/classNameUnedit"
-
         android:textAlignment="center"
         android:inputType="none"
         android:enabled="false"
@@ -59,29 +54,68 @@
         android:textColorHighlight="#0958CF"
         android:textColorLink="#0958CF"
         android:focusableInTouchMode="true"
-        android:focusable="true"/>
+        android:focusable="true"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 
-    <TextView
+    <Button
         android:text="Submit and add another student"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="77dp"
         android:id="@+id/AddAnotherStudentText"
-        android:textColor="#1A2844" />
+        android:textColor="#1A2844"
+        android:layout_marginTop="91dp"
+        android:layout_below="@+id/studentNameEditBox"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
-    <TextView
+    <Button
         android:text="Submit and Finish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/AddAnotherStudentText"
-        android:layout_alignStart="@+id/AddAnotherStudentText"
-        android:layout_marginLeft="43dp"
-        android:layout_marginStart="43dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginTop="51dp"
         android:id="@+id/FinishText"
-        android:textColor="#1A2844" />
+        android:textColor="#1A2844"
+        android:layout_alignTop="@+id/AddAnotherStudentText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student name"
+        android:layout_below="@+id/classNameUnedit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student ID"
+        android:layout_alignTop="@+id/studentNameEditBox"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="52dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course code"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
 </RelativeLayout>
