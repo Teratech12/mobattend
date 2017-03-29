@@ -3,7 +3,7 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/nav_help"
             android:icon="@drawable/todayhelp"
             android:title="Help "/>
     </group>
@@ -13,11 +13,11 @@
     <item android:title="Add Class">
         <menu>
             <item
-                android:id="@+id/nav_share"
+                android:id="@+id/nav_importFromExcel"
                 android:icon="@drawable/todayimport"
                 android:title="Import from Excel" />
             <item
-                android:id="@+id/nav_send"
+                android:id="@+id/nav_addManually"
                 android:icon="@drawable/todaynewreminder"
                 android:title="Add Manually" />
         </menu>
@@ -26,11 +26,11 @@
     <item android:title="Statictics">
         <menu>
             <item
-                android:id="@+id/nav_shar"
+                android:id="@+id/nav_searchParticularDay"
                 android:icon="@drawable/todaysearch2"
                 android:title="Search a Particular day" />
             <item
-                android:id="@+id/nav_sen"
+                android:id="@+id/nav_generalView"
                 android:icon="@drawable/todaysearch1"
                 android:title="Get a general view of a class" />
         </menu>
@@ -39,11 +39,11 @@
     <item android:title="Reminders">
         <menu>
             <item
-                android:id="@+id/nav_sha"
+                android:id="@+id/nav_newReminder"
                 android:icon="@drawable/todayreminder"
                 android:title="Create a new Reminder" />
             <item
-                android:id="@+id/nav_se"
+                android:id="@+id/nav_EditReminder"
                 android:icon="@drawable/todayreminder2"
                 android:title="Edit a reminder" />
         </menu>

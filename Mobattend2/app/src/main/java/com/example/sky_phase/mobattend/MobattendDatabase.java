@@ -1,15 +1,18 @@
 package com.example.sky_phase.mobattend;
 
-// the code for the Data base should be here
-
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.Toast;
+
+import java.util.Date;
+import java.text.SimpleDateFormat;
+import java.util.Locale;
 
 /**
- * Created by Jeneral on 3/5/2017.
+ * Created by SKY-PHASE on 3/5/2017.
  */
 public class MobattendDatabase extends SQLiteOpenHelper {
     public static final  String DATABASE_NAME = "mobattend.db";
@@ -56,7 +59,7 @@ public class MobattendDatabase extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String CREATE_CLASS_TABLE = "CREATE TABLE " + CLASS_TABLE_NAME + "("
-                + CLASS_ID_COLUMN + " VARCHAR PRIMARY KEY NOT NULL," + CLASS_NAME_COLUMN +" VARCHAR"  +");";
+                + CLASS_ID_COLUMN + " VARCHAR PRIMARY KEY NOT NULL," + CLASS_NAME_COLUMN +" TEXT"  +");";
         //Student Table has one foreign Key
         // from Class_id
         //deleted should be boolean and by default 0
@@ -67,7 +70,7 @@ public class MobattendDatabase extends SQLiteOpenHelper {
 
         //Attendance Table has no Foreign Key
         String CREATE_ATTENDANCE_TABLE = "CREATE TABLE " + ATTENDANCE_TABLE_NAME + "("
-                + ATTENDANCE_ID_COLUMN +" INTEGER PRIMARY KEY NOT NULL," + ATTENDANCE_TIME_COLUMN +" VARCHAR"  +");";
+                + ATTENDANCE_ID_COLUMN +" INTEGER PRIMARY KEY NOT NULL," + ATTENDANCE_TIME_COLUMN +" DATETIME"  +");";
 
         // Event Table has no Foreign Key
         String CREATE_EVENT_TABLE = "CREATE TABLE " + EVENT_TABLE_NAME + "("
@@ -155,6 +158,29 @@ public class MobattendDatabase extends SQLiteOpenHelper {
 
 
 
+    }
+
+    private String getDateTime() {
+        SimpleDateFormat dateFormat = new SimpleDateFormat(
+                "dd-MM-yyyy HH:mm:ss", Locale.getDefault());
+        Date date = new Date();
+        return dateFormat.format(date);
+    }
+
+    public boolean insertAttendanceDate(String Attendance_id){
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(ATTENDANCE_ID_COLUMN, Attendance_id);
+        contentValues.put(ATTENDANCE_TIME_COLUMN,getDateTime());
+        long result = db.insert(ATTENDANCE_TABLE_NAME, null,  contentValues);
+        if(result==-1)
+        {
+            return  false;
+        }
+        else {
+            return true;
+        }
     }
 
 

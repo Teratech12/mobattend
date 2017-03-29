@@ -1,10 +1,5 @@
 package com.example.sky_phase.mobattend;
 
-//Code to take attendance
-
-
-
-
 import android.annotation.TargetApi;
 import android.content.Intent;
 import android.database.Cursor;
@@ -15,13 +10,10 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -31,8 +23,8 @@ public class Myattendance extends AppCompatActivity {
     String date;
     private static CustomAdapter adapter;
     ClasssFragment you = new ClasssFragment();
-    // String queryname;
-    String myname;
+   // String queryname;
+   String myname;
     String getID;
     String getClass;
     ImageButton shakebutton;
@@ -50,24 +42,24 @@ public class Myattendance extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         listView = (ListView) findViewById(R.id.list);
-        shakebutton = (ImageButton)findViewById(R.id.shakebutton) ;
-        Animation shake = AnimationUtils.loadAnimation(this, R.anim.shakewell);
-        shakebutton.startAnimation(shake);
+        //shakebutton = (ImageButton)findViewById(R.id.shakebutton) ;
+        //Animation shake = AnimationUtils.loadAnimation(this, R.anim.shakewell);
+        //shakebutton.startAnimation(shake);
 
 
         dataModels = new ArrayList<>();
 
 
         Intent intent2 = getIntent();
-        final String queryname = intent2.getStringExtra("classidname");
+     final String queryname = intent2.getStringExtra("classidname");
 
         String fine = you.gblbalmert;
-        Toast.makeText(Myattendance.this,fine,Toast.LENGTH_LONG).show();
+
         final RelativeLayout cordinate = (RelativeLayout) findViewById(R.id.content_myattendance);
 
         //Toast.makeText(Myattendance.this,"put "+queryname,Toast.LENGTH_LONG).show();
 
-        // Toast.makeText(Myattendance.this,queryname,Toast.LENGTH_LONG).show();
+       // Toast.makeText(Myattendance.this,queryname,Toast.LENGTH_LONG).show();
         MobattendDatabase db1 = new MobattendDatabase(getApplicationContext());
         Cursor sky = db1.getListContents2(fine);
         if(sky.getCount() == 0){
@@ -77,9 +69,9 @@ public class Myattendance extends AppCompatActivity {
             while (sky.moveToNext()){
                 dataModels.add(new DataModel(sky.getString(1),sky.getString(0)));
                 adapter = new CustomAdapter(dataModels,getApplicationContext());
-                myname = sky.getString(1);
-                getID = sky.getString(0);
-                getClass = sky.getString(3);
+                     myname = sky.getString(1);
+                     getID = sky.getString(0);
+                     getClass = sky.getString(3);
                 listView.setAdapter(adapter);
             }
         }
@@ -137,15 +129,15 @@ public class Myattendance extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+             @Override
+             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                Snackbar.make(cordinate, "Replace ", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                 Snackbar.make(cordinate, "Replace ", Snackbar.LENGTH_LONG)
+                         .setAction("Action", null).show();
 
-            }
-        });
+             }
+         });
 
     }
 

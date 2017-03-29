@@ -28,16 +28,6 @@
         android:layout_marginBottom="20dp"
         android:textColor="#0D0D0D" />
 
-    <View
-        android:layout_width="300dp"
-        android:layout_height="1dp"
-        android:layout_toRightOf="@+id/item_info"
-        android:layout_centerVertical="true"
-        android:id="@+id/myView"
-        android:visibility="visible"
-        android:background="@android:color/darker_gray"
-        android:layout_marginLeft="10dp" />
-
     <TextView
         android:text="DateSaved"
         android:layout_width="wrap_content"
@@ -48,16 +38,15 @@
         android:id="@+id/type1"
         android:textColor="#0AAEF3" />
 
-    <TextView
-        android:text="courseCode"
-        android:layout_width="wrap_content"
+    <Switch
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:id="@+id/type"
-        android:layout_toRightOf="@+id/type1"
-        android:layout_toEndOf="@+id/name"
-        android:layout_marginLeft="154dp"
-
-        android:layout_below="@+id/item_info" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="36dp"
+        android:layout_marginEnd="36dp"
+        android:id="@+id/switch1"
+        android:layout_alignTop="@+id/item_info" />
 
 
 </RelativeLayout>

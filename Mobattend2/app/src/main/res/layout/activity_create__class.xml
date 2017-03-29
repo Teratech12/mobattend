@@ -11,57 +11,69 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.sky_phase.mobattend.CREATE_CLASS">
 
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:text="Enter class name" />
+
+    <Button
+        android:text="Add Students"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addstudentText"
+        android:textColor="#1A2844"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter course code"
+        android:layout_above="@+id/ClassIdEditBox"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
     <EditText
         android:layout_width="500dp"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:layout_marginTop="195dp"
         android:id="@+id/ClassNameEditBox"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:hint="Class/Course/Meeting Name"
         android:textAlignment="center"
         android:backgroundTint="#0958CF"
         android:textColorHighlight="#0958CF"
         android:textColorLink="#0958CF"
+        android:focusable="true"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
-        android:focusable="true"/>
-
-    <TextView
-        android:text="Add Students"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="24dp"
-        android:id="@+id/addstudentText"
-        android:textColor="#1A2844"
-        />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/myappicon"
-        android:layout_marginTop="51dp"
-        android:id="@+id/imageView2"
-        android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/addstudentText"
-        android:layout_alignEnd="@+id/addstudentText" />
 
     <EditText
         android:layout_width="500dp"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:layout_below="@+id/ClassNameEditBox"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="44dp"
         android:id="@+id/ClassIdEditBox"
         android:hint="Unique Class Id"
         android:textAlignment="center"
         android:backgroundTint="#0958CF"
         android:textColorHighlight="#0958CF"
         android:textColorLink="#0958CF"
-        android:focusable="true" />
+        android:focusable="true"
+        android:layout_marginBottom="34dp"
+        android:layout_above="@+id/addstudentText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>
