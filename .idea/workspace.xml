@@ -1,103 +1,363 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a5b00277-425f-4ee3-bfbc-7c52a7737336" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/.idea/copyright/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/.idea/gradle.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/.idea/runConfigurations.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/proguard-rules.pro" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/java/com/example/sky_phase/tab/CustomAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/java/com/example/sky_phase/tab/CustomAdapterforGrid.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/java/com/example/sky_phase/tab/CustomAdapterforScreenTwo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/java/com/example/sky_phase/tab/DataModel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/java/com/example/sky_phase/tab/DataModelForGrid.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/java/com/example/sky_phase/tab/DataModelforScreenTwo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/java/com/example/sky_phase/tab/FirstTab.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/java/com/example/sky_phase/tab/MainActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/java/com/example/sky_phase/tab/Myattendance.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/java/com/example/sky_phase/tab/Navigation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/java/com/example/sky_phase/tab/SecondTab.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/java/com/example/sky_phase/tab/StatisticsTab.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/java/com/example/sky_phase/tab/ThirdTab.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/java/com/example/sky_phase/tab/WhenStatisticsIsSelected.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/java/com/example/sky_phase/tab/fragmentActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/java/com/example/sky_phase/tab/fragmentActivityFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/java/com/example/sky_phase/tab/newme.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/anim/down_from_top.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/anim/up_from_bottom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/drawable-v21/ic_menu_camera.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/drawable-v21/ic_menu_gallery.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/drawable-v21/ic_menu_manage.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/drawable-v21/ic_menu_send.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/drawable-v21/ic_menu_share.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/drawable-v21/ic_menu_slideshow.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/drawable-v21/myappicon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/drawable-v21/userplus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/drawable/drawing1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/drawable/foldericon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/drawable/layoutbackground1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/drawable/pic1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/drawable/radiobuttonbackground.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/drawable/renamem.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/drawable/searchme.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/drawable/side_nav_bar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/drawable/user.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/layout/activity_fragment.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/layout/activity_main.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/layout/activity_myattendance.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/layout/activity_navigation.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/layout/app_bar_navigation.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/layout/content_fragment.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/layout/content_myattendance.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/layout/content_navigation.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/layout/firsttab.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/layout/fragment_fragment.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/layout/nav_header_navigation.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/layout/row_item.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/layout/row_itemforgrid.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/layout/row_itemforscreentwo.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/layout/row_itemrevised.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/layout/secondtab.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/layout/statistics.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/layout/text_entry.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/layout/thirdtab.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/layout/whenstatisticsisselected.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/menu/activity_navigation_drawer.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/menu/menu_add.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/menu/menu_fragment.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/menu/menu_main.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/menu/menu_search.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/menu/navigation.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/values-v21/styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/values-w820dp/dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/values/colors.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/values/dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/values/drawables.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/values/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/main/res/values/styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/app/src/test/java/com/example/sky_phase/tab/ExampleUnitTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/gradle.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/gradle/wrapper/gradle-wrapper.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/gradle/wrapper/gradle-wrapper.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/gradlew" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/gradlew.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mobattend/settings.gradle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Mobattend2/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/drawable-hdpi/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/drawable-mdpi/Thumbs.db" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Mobattend.iml" afterPath="$PROJECT_DIR$/.idea/Mobattend.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/.idea/compiler.xml" afterPath="$PROJECT_DIR$/Mobattend2/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/.idea/gradle.xml" afterPath="$PROJECT_DIR$/Mobattend2/.idea/gradle.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/.idea/misc.xml" afterPath="$PROJECT_DIR$/Mobattend2/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/.idea/modules.xml" afterPath="$PROJECT_DIR$/Mobattend2/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/.idea/runConfigurations.xml" afterPath="$PROJECT_DIR$/Mobattend2/.idea/runConfigurations.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/build.gradle" afterPath="$PROJECT_DIR$/Mobattend2/app/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/.gitignore" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/.settings/gradle/org.springsource.ide.eclipse.gradle.core.prefs" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/.settings/gradle/org.springsource.ide.eclipse.gradle.core.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/.gitignore" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/.settings/gradle/org.springsource.ide.eclipse.gradle.core.prefs" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/.settings/gradle/org.springsource.ide.eclipse.gradle.core.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/AndroidManifest.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/assets/cosine.txt" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/assets/cosine.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/assets/hugecosine.txt" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/assets/hugecosine.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/assets/hugesine.txt" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/assets/hugesine.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/assets/n.txt" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/assets/n.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/assets/nlogn.txt" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/assets/nlogn.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/assets/othersine.txt" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/assets/othersine.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/assets/sine.txt" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/assets/sine.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/assets/square.txt" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/assets/square.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/assets/stacked_bars.txt" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/assets/stacked_bars.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/assets/three.txt" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/assets/three.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/build.gradle" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/proguard-project.txt" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/proguard-project.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/project.properties" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/project.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/anim/move_left_in_activity.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/anim/move_left_in_activity.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/anim/move_left_out_activity.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/anim/move_left_out_activity.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/anim/move_right_in_activity.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/anim/move_right_in_activity.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/anim/move_right_out_activity.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/anim/move_right_out_activity.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/drawable/fade_red.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/drawable/fade_red.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/drawable/new_background.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/drawable/new_background.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_age_distribution.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_age_distribution.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_awesomedesign.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_awesomedesign.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_barchart.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_barchart.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_barchart_noseekbar.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_barchart_noseekbar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_barchart_sinus.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_barchart_sinus.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_bubblechart.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_bubblechart.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_bubblechart_noseekbar.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_bubblechart_noseekbar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_candlechart.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_candlechart.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_candlechart_noseekbar.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_candlechart_noseekbar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_colored_lines.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_colored_lines.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_combined.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_combined.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_draw_chart.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_draw_chart.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_horizontalbarchart.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_horizontalbarchart.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_horizontalbarchart_noseekbar.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_horizontalbarchart_noseekbar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_linechart.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_linechart.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_linechart_noseekbar.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_linechart_noseekbar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_linechart_time.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_linechart_time.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_listview_chart.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_listview_chart.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_performance_linechart.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_performance_linechart.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_piechart.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_piechart.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_piechart_half.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_piechart_half.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_piechart_noseekbar.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_piechart_noseekbar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_radarchart.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_radarchart.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_radarchart_noseekbar.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_radarchart_noseekbar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_realm_wiki.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_realm_wiki.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_realtime_linechart.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_realtime_linechart.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_scatterchart.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_scatterchart.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_scatterchart_noseekbar.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_scatterchart_noseekbar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_scrollview.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/activity_scrollview.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/custom_marker_view.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/custom_marker_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/frag_simple_bar.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/frag_simple_bar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/frag_simple_line.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/frag_simple_line.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/frag_simple_pie.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/frag_simple_pie.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/frag_simple_scatter.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/frag_simple_scatter.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/list_item.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/list_item.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/list_item_barchart.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/list_item_barchart.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/list_item_linechart.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/list_item_linechart.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/list_item_piechart.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/list_item_piechart.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/radar_markerview.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/layout/radar_markerview.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/menu/bar.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/menu/bar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/menu/bubble.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/menu/bubble.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/menu/candle.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/menu/candle.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/menu/combined.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/menu/combined.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/menu/draw.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/menu/draw.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/menu/dynamical.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/menu/dynamical.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/menu/line.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/menu/line.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/menu/main.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/menu/main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/menu/pie.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/menu/pie.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/menu/radar.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/menu/radar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/menu/realm.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/menu/realm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/menu/realtime.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/menu/realtime.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/menu/scatter.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/menu/scatter.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/values-sw600dp/dimens.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/values-sw600dp/dimens.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/values-sw720dp-land/dimens.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/values-sw720dp-land/dimens.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/values-v11/styles.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/values-v11/styles.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/values-v14/styles.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/values-v14/styles.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/values/dimens.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/values/dimens.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/values/strings.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/values/styles.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/res/values/styles.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/AnotherBarActivity.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/AnotherBarActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/BarChartActivity.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/BarChartActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/BarChartActivityMultiDataset.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/BarChartActivityMultiDataset.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/BarChartActivitySinus.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/BarChartActivitySinus.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/BarChartPositiveNegative.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/BarChartPositiveNegative.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/BubbleChartActivity.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/BubbleChartActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/CandleStickChartActivity.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/CandleStickChartActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/CombinedChartActivity.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/CombinedChartActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/CubicLineChartActivity.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/CubicLineChartActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/DrawChartActivity.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/DrawChartActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/DynamicalAddingActivity.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/DynamicalAddingActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/FilledLineActivity.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/FilledLineActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/HalfPieChartActivity.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/HalfPieChartActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/HorizontalBarChartActivity.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/HorizontalBarChartActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/InvertedLineChartActivity.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/InvertedLineChartActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/LineChartActivity1.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/LineChartActivity1.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/LineChartActivity2.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/LineChartActivity2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/LineChartActivityColored.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/LineChartActivityColored.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/LineChartTime.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/LineChartTime.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/ListViewBarChartActivity.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/ListViewBarChartActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/ListViewMultiChartActivity.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/ListViewMultiChartActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/MultiLineChartActivity.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/MultiLineChartActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/PerformanceLineChart.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/PerformanceLineChart.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/PieChartActivity.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/PieChartActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/PiePolylineChartActivity.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/PiePolylineChartActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/RadarChartActivitry.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/RadarChartActivitry.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/RealtimeLineChartActivity.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/RealtimeLineChartActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/ScatterChartActivity.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/ScatterChartActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/ScrollViewActivity.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/ScrollViewActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/StackedBarActivity.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/StackedBarActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/StackedBarActivityNegative.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/StackedBarActivityNegative.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/custom/CustomScatterShapeRenderer.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/custom/CustomScatterShapeRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/custom/DayAxisValueFormatter.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/custom/DayAxisValueFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/custom/MyAxisValueFormatter.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/custom/MyAxisValueFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/custom/MyCustomXAxisValueFormatter.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/custom/MyCustomXAxisValueFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/custom/MyEasingFunction.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/custom/MyEasingFunction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/custom/MyFillFormatter.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/custom/MyFillFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/custom/MyMarkerView.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/custom/MyMarkerView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/custom/MyValueFormatter.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/custom/MyValueFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/custom/RadarMarkerView.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/custom/RadarMarkerView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/custom/RealmDemoData.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/custom/RealmDemoData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/custom/RealmFloat.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/custom/RealmFloat.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/custom/StackedBarsMarkerView.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/custom/StackedBarsMarkerView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/custom/YearXAxisFormatter.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/custom/YearXAxisFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/fragments/BarChartFrag.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/fragments/BarChartFrag.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/fragments/ComplexityFragment.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/fragments/ComplexityFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/fragments/PieChartFrag.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/fragments/PieChartFrag.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/fragments/ScatterChartFrag.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/fragments/ScatterChartFrag.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/fragments/SimpleChartDemo.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/fragments/SimpleChartDemo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/fragments/SimpleFragment.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/fragments/SimpleFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/fragments/SineCosineFragment.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/fragments/SineCosineFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/listviewitems/BarChartItem.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/listviewitems/BarChartItem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/listviewitems/ChartItem.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/listviewitems/ChartItem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/listviewitems/LineChartItem.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/listviewitems/LineChartItem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/listviewitems/PieChartItem.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/listviewitems/PieChartItem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/notimportant/ContentItem.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/notimportant/ContentItem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/notimportant/DemoBase.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/notimportant/DemoBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/notimportant/MainActivity.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/notimportant/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/notimportant/MyAdapter.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/notimportant/MyAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/realm/RealmBaseActivity.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/realm/RealmBaseActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/realm/RealmDatabaseActivityBar.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/realm/RealmDatabaseActivityBar.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/realm/RealmDatabaseActivityBubble.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/realm/RealmDatabaseActivityBubble.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/realm/RealmDatabaseActivityCandle.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/realm/RealmDatabaseActivityCandle.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/realm/RealmDatabaseActivityHorizontalBar.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/realm/RealmDatabaseActivityHorizontalBar.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/realm/RealmDatabaseActivityLine.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/realm/RealmDatabaseActivityLine.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/realm/RealmDatabaseActivityPie.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/realm/RealmDatabaseActivityPie.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/realm/RealmDatabaseActivityRadar.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/realm/RealmDatabaseActivityRadar.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/realm/RealmDatabaseActivityScatter.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/realm/RealmDatabaseActivityScatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/realm/RealmMainActivity.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/realm/RealmMainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/realm/RealmWikiExample.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/realm/RealmWikiExample.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/realm/Score.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartExample/src/com/xxmassdeveloper/mpchartexample/realm/Score.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/.gitignore" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/.settings/gradle/org.springsource.ide.eclipse.gradle.core.prefs" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/.settings/gradle/org.springsource.ide.eclipse.gradle.core.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/build.gradle" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/pom.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/proguard-project.txt" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/proguard-project.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/project.properties" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/project.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/animation/ChartAnimator.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/animation/ChartAnimator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/animation/Easing.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/animation/Easing.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/animation/EasingFunction.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/animation/EasingFunction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/buffer/AbstractBuffer.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/buffer/AbstractBuffer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/buffer/BarBuffer.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/buffer/BarBuffer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/buffer/HorizontalBarBuffer.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/buffer/HorizontalBarBuffer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/buffer/ScatterBuffer.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/buffer/ScatterBuffer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/charts/BarChart.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/charts/BarChart.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/charts/BarLineChartBase.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/charts/BarLineChartBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/charts/BubbleChart.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/charts/BubbleChart.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/charts/CandleStickChart.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/charts/CandleStickChart.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/charts/Chart.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/charts/Chart.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/charts/CombinedChart.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/charts/CombinedChart.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/charts/HorizontalBarChart.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/charts/HorizontalBarChart.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/charts/LineChart.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/charts/LineChart.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/charts/PieChart.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/charts/PieChart.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/charts/PieRadarChartBase.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/charts/PieRadarChartBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/charts/RadarChart.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/charts/RadarChart.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/charts/ScatterChart.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/charts/ScatterChart.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/components/AxisBase.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/components/AxisBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/components/ComponentBase.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/components/ComponentBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/components/Legend.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/components/Legend.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/components/LimitLine.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/components/LimitLine.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/components/MarkerView.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/components/MarkerView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/components/XAxis.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/components/XAxis.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/components/YAxis.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/components/YAxis.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/BarData.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/BarData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/BarDataSet.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/BarDataSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/BarEntry.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/BarEntry.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/BarLineScatterCandleBubbleData.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/BarLineScatterCandleBubbleData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/BarLineScatterCandleBubbleDataSet.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/BarLineScatterCandleBubbleDataSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/BaseDataSet.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/BaseDataSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/BaseEntry.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/BaseEntry.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/BubbleData.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/BubbleData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/BubbleDataSet.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/BubbleDataSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/BubbleEntry.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/BubbleEntry.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/CandleData.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/CandleData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/CandleDataSet.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/CandleDataSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/CandleEntry.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/CandleEntry.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/ChartData.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/ChartData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/CombinedData.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/CombinedData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/DataSet.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/DataSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/Entry.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/Entry.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/LineData.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/LineData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/LineDataSet.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/LineDataSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/LineRadarDataSet.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/LineRadarDataSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/LineScatterCandleRadarDataSet.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/LineScatterCandleRadarDataSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/PieData.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/PieData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/PieDataSet.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/PieDataSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/PieEntry.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/PieEntry.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/RadarData.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/RadarData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/RadarDataSet.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/RadarDataSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/RadarEntry.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/RadarEntry.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/ScatterData.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/ScatterData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/ScatterDataSet.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/ScatterDataSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/filter/Approximator.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/data/filter/Approximator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/exception/DrawingDataSetNotCreatedException.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/exception/DrawingDataSetNotCreatedException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/formatter/AxisValueFormatter.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/formatter/AxisValueFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/formatter/ColorFormatter.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/formatter/ColorFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/formatter/DefaultAxisValueFormatter.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/formatter/DefaultAxisValueFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/formatter/DefaultFillFormatter.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/formatter/DefaultFillFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/formatter/DefaultValueFormatter.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/formatter/DefaultValueFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/formatter/FillFormatter.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/formatter/FillFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/formatter/LargeValueFormatter.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/formatter/LargeValueFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/formatter/PercentFormatter.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/formatter/PercentFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/formatter/StackedValueFormatter.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/formatter/StackedValueFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/formatter/ValueFormatter.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/formatter/ValueFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/highlight/BarHighlighter.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/highlight/BarHighlighter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/highlight/ChartHighlighter.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/highlight/ChartHighlighter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/highlight/CombinedHighlighter.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/highlight/CombinedHighlighter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/highlight/Highlight.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/highlight/Highlight.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/highlight/Highlighter.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/highlight/Highlighter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/highlight/HorizontalBarHighlighter.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/highlight/HorizontalBarHighlighter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/highlight/PieHighlighter.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/highlight/PieHighlighter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/highlight/PieRadarHighlighter.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/highlight/PieRadarHighlighter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/highlight/RadarHighlighter.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/highlight/RadarHighlighter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/highlight/Range.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/highlight/Range.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/dataprovider/BarDataProvider.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/dataprovider/BarDataProvider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/dataprovider/BarLineScatterCandleBubbleDataProvider.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/dataprovider/BarLineScatterCandleBubbleDataProvider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/dataprovider/BubbleDataProvider.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/dataprovider/BubbleDataProvider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/dataprovider/CandleDataProvider.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/dataprovider/CandleDataProvider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/dataprovider/ChartInterface.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/dataprovider/ChartInterface.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/dataprovider/CombinedDataProvider.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/dataprovider/CombinedDataProvider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/dataprovider/LineDataProvider.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/dataprovider/LineDataProvider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/dataprovider/ScatterDataProvider.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/dataprovider/ScatterDataProvider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/datasets/IBarDataSet.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/datasets/IBarDataSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/datasets/IBarLineScatterCandleBubbleDataSet.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/datasets/IBarLineScatterCandleBubbleDataSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/datasets/IBubbleDataSet.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/datasets/IBubbleDataSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/datasets/ICandleDataSet.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/datasets/ICandleDataSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/datasets/IDataSet.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/datasets/IDataSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/datasets/ILineDataSet.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/datasets/ILineDataSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/datasets/ILineRadarDataSet.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/datasets/ILineRadarDataSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/datasets/ILineScatterCandleRadarDataSet.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/datasets/ILineScatterCandleRadarDataSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/datasets/IPieDataSet.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/datasets/IPieDataSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/datasets/IRadarDataSet.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/datasets/IRadarDataSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/datasets/IScatterDataSet.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/interfaces/datasets/IScatterDataSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/jobs/AnimatedMoveViewJob.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/jobs/AnimatedMoveViewJob.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/jobs/AnimatedViewPortJob.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/jobs/AnimatedViewPortJob.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/jobs/AnimatedZoomJob.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/jobs/AnimatedZoomJob.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/jobs/MoveViewJob.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/jobs/MoveViewJob.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/jobs/ViewPortJob.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/jobs/ViewPortJob.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/jobs/ZoomJob.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/jobs/ZoomJob.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/listener/BarLineChartTouchListener.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/listener/BarLineChartTouchListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/listener/ChartTouchListener.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/listener/ChartTouchListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/listener/OnChartGestureListener.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/listener/OnChartGestureListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/listener/OnChartValueSelectedListener.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/listener/OnChartValueSelectedListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/listener/OnDrawLineChartTouchListener.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/listener/OnDrawLineChartTouchListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/listener/OnDrawListener.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/listener/OnDrawListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/listener/PieRadarChartTouchListener.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/listener/PieRadarChartTouchListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/matrix/Vector3.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/matrix/Vector3.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/AxisRenderer.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/AxisRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/BarChartRenderer.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/BarChartRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/BarLineScatterCandleBubbleRenderer.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/BarLineScatterCandleBubbleRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/BubbleChartRenderer.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/BubbleChartRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/CandleStickChartRenderer.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/CandleStickChartRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/CombinedChartRenderer.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/CombinedChartRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/DataRenderer.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/DataRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/HorizontalBarChartRenderer.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/HorizontalBarChartRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/LegendRenderer.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/LegendRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/LineChartRenderer.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/LineChartRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/LineRadarRenderer.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/LineRadarRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/LineScatterCandleRadarRenderer.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/LineScatterCandleRadarRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/PieChartRenderer.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/PieChartRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/RadarChartRenderer.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/RadarChartRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/Renderer.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/Renderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/ScatterChartRenderer.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/ScatterChartRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/XAxisRenderer.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/XAxisRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/XAxisRendererHorizontalBarChart.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/XAxisRendererHorizontalBarChart.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/XAxisRendererRadarChart.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/XAxisRendererRadarChart.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/YAxisRenderer.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/YAxisRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/YAxisRendererHorizontalBarChart.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/YAxisRendererHorizontalBarChart.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/YAxisRendererRadarChart.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/YAxisRendererRadarChart.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/scatter/ChevronDownShapeRenderer.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/scatter/ChevronDownShapeRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/scatter/ChevronUpShapeRenderer.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/scatter/ChevronUpShapeRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/scatter/CircleShapeRenderer.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/scatter/CircleShapeRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/scatter/CrossShapeRenderer.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/scatter/CrossShapeRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/scatter/ShapeRenderer.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/scatter/ShapeRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/scatter/SquareShapeRenderer.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/scatter/SquareShapeRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/scatter/TriangleShapeRenderer.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/scatter/TriangleShapeRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/scatter/XShapeRenderer.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/renderer/scatter/XShapeRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/utils/ColorTemplate.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/utils/ColorTemplate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/utils/EntryXComparator.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/utils/EntryXComparator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/utils/FSize.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/utils/FSize.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/utils/FileUtils.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/utils/FileUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/utils/HorizontalViewPortHandler.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/utils/HorizontalViewPortHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/utils/PointD.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/utils/PointD.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/utils/ShapeRendererHandler.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/utils/ShapeRendererHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/utils/Transformer.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/utils/Transformer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/utils/TransformerHorizontalBarChart.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/utils/TransformerHorizontalBarChart.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/utils/Utils.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/utils/Utils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/utils/ViewPortHandler.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/main/java/com/github/mikephil/charting/utils/ViewPortHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/test/java/com/github/mikephil/charting/test/ApproximatorTest.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/test/java/com/github/mikephil/charting/test/ApproximatorTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/test/java/com/github/mikephil/charting/test/AxisRendererTest.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/test/java/com/github/mikephil/charting/test/AxisRendererTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/test/java/com/github/mikephil/charting/test/BarDataTest.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/test/java/com/github/mikephil/charting/test/BarDataTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/test/java/com/github/mikephil/charting/test/ChartDataTest.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/test/java/com/github/mikephil/charting/test/ChartDataTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/test/java/com/github/mikephil/charting/test/DataSetTest.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/test/java/com/github/mikephil/charting/test/DataSetTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/test/java/com/github/mikephil/charting/test/LargeValueFormatterTest.java" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/MPChartLib/src/test/java/com/github/mikephil/charting/test/LargeValueFormatterTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/README.md" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/build.gradle" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/gradle/wrapper/gradle-wrapper.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/gradlew" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/gradlew" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/settings.gradle" afterPath="$PROJECT_DIR$/Mobattend2/app/libs/MPAndroidChart-3.0.0-beta/settings.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/src/main/java/com/example/sky_phase/mobattend/ADDING_STUDENTS.java" afterPath="$PROJECT_DIR$/Mobattend2/app/src/main/java/com/example/sky_phase/mobattend/ADDING_STUDENTS.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/src/main/java/com/example/sky_phase/mobattend/CREATE_CLASS.java" afterPath="$PROJECT_DIR$/Mobattend2/app/src/main/java/com/example/sky_phase/mobattend/CREATE_CLASS.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/src/main/java/com/example/sky_phase/mobattend/MobattendDatabase.java" afterPath="$PROJECT_DIR$/Mobattend2/app/src/main/java/com/example/sky_phase/mobattend/MobattendDatabase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/src/main/java/com/example/sky_phase/mobattend/Myattendance.java" afterPath="$PROJECT_DIR$/Mobattend2/app/src/main/java/com/example/sky_phase/mobattend/Myattendance.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/src/main/java/com/example/sky_phase/mobattend/ReminderDatabase.java" afterPath="$PROJECT_DIR$/Mobattend2/app/src/main/java/com/example/sky_phase/mobattend/ReminderDatabase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/src/main/java/com/example/sky_phase/mobattend/ReminderDatabaseOriginal.java" afterPath="$PROJECT_DIR$/Mobattend2/app/src/main/java/com/example/sky_phase/mobattend/ReminderDatabaseOriginal.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/src/main/res/drawable/ic_menu_camera.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/src/main/res/drawable/ic_menu_camera.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/src/main/res/drawable/ic_menu_gallery.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/src/main/res/drawable/ic_menu_gallery.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/src/main/res/drawable/ic_menu_manage.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/src/main/res/drawable/ic_menu_manage.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/src/main/res/drawable/ic_menu_send.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/src/main/res/drawable/ic_menu_send.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/src/main/res/drawable/ic_menu_share.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/src/main/res/drawable/ic_menu_share.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/src/main/res/drawable/ic_menu_slideshow.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/src/main/res/drawable/ic_menu_slideshow.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/app/src/main/res/drawable/side_nav_bar.xml" afterPath="$PROJECT_DIR$/Mobattend2/app/src/main/res/drawable/side_nav_bar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/build.gradle" afterPath="$PROJECT_DIR$/Mobattend2/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/Mobattend2/gradle/wrapper/gradle-wrapper.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mobattend2/gradlew" afterPath="$PROJECT_DIR$/Mobattend2/gradlew" />
     </list>
     <ignored path="Mobattend.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -116,6 +376,40 @@
   <component name="FavoritesManager">
     <favorites_list name="Mobattend" />
   </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="CustomAdapterforListData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Mobattend2/app/src/main/java/com/example/sky_phase/mobattend/CustomAdapterforListData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Mobattend2/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Mobattend2/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -127,7 +421,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1378" />
+    <option name="width" value="1370" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -155,11 +449,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView">
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
         <subPane />
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -172,17 +465,310 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Mobattend">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Mobattend2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Mobattend">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Mobattend2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="build">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Mobattend">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Mobattend2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Mobattend">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Mobattend2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Mobattend">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Mobattend2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Mobattend">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Mobattend2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="java/com/example/sky_phase/mobattend">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Mobattend">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Mobattend2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT=".gradle/2.14.1">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Mobattend">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Mobattend">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="build">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Mobattend">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT=".idea">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView">
+        <subPane />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Mobattend\Mobattend2\app\Manifest" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Mobattend\Mobattend2\app" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android App.Unnamed">
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+      </Native>
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+      </Native>
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <method />
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -196,6 +782,22 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -217,6 +819,27 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -255,6 +878,82 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unnamed" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="Mobattend" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+      </Native>
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="false" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Android App.Unnamed" />
+    </list>
     <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="HTML_FILE_NAME" />
@@ -282,23 +981,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1378" height="744" extended-state="1" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25419846" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24961832" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -308,7 +1012,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -318,5 +1021,40 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Mobattend2/app/src/main/java/com/example/sky_phase/mobattend/CustomAdapterforListData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mobattend2/app/src/main/java/com/example/sky_phase/mobattend/CustomAdapterforListData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mobattend2/app/Manifest/AndroidManifest.xml" />
+    <entry file="file://$PROJECT_DIR$/Mobattend2/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mobattend2/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
