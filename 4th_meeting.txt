@@ -7,7 +7,7 @@ LOCATION: Vodafone Cafe.
 
 PRESENT: Prince Baffour(PM),Danso Jephter(APM),Richard Opuni(Backend Team Lead),Michael Tetteh(Front End Developer).
 
-ABSENT: Adrew Ayikwey(System Analyst),Charles Asamoah(Front End Designer),Akua Apau(Front End Designer),Gregory Aidoo(System Analyst),Edward Banson(Marketting Manager),Samuel Gyamfi(Marketting Director),Samuel Brifo(Ass. MArketting Director).
+ABSENT: Adade Andrew Ayikwei (System Analyst),Charles Asamoah(Front End Designer),Akua Apau(Front End Designer),Gregory Aidoo(System Analyst),Edward Banson(Marketting Manager),Samuel Gyamfi(Marketting Director),Samuel Brifo(Ass. MArketting Director).
 
 
 An emergency meeting held on Sunday to restructure our git repository(Teratech12/mobattend) due to some errors on the part of our back-end team.

@@ -5,7 +5,7 @@ Date: 25th Feb, 2017
 TIME: 2:00pm - 5:30pm
 LOCATION: Vodafone Cafe
 
-PRESENT: Prince Baffour(PM),Danso Jephter(APM),Richard Opuni(Backend Team Lead),Adrew Ayikwey(System Analyst),Michael Tetteh(Front End Developer),Charles Asamoah(Front End Designer),Akua Apau(Front End Designer),Gregory Aidoo(System Analyst),Edward Banson(Marketting Manager)
+PRESENT: Prince Baffour(PM),Danso Jephter(APM),Richard Opuni(Backend Team Lead),Adade Andrew Ayikwei(System Analyst),Michael Tetteh(Front End Developer),Charles Asamoah(Front End Designer),Akua Apau(Front End Designer),Gregory Aidoo(System Analyst),Edward Banson(Marketting Manager)
 
 ABSENT: Samuel Gyamfi(Marketting Director & PRO),Samuel Brifo(Ass. Marketting Manager)
 
