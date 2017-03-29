@@ -63,7 +63,7 @@ public class ClasssFragment extends Fragment {
         //MobattendDatabase db3 = new MobattendDatabase(getContext());
         eventid = generate_Event_id();
 
-       
+
 
 
         View emptyView = getActivity().getLayoutInflater().inflate(R.layout.emptyclasslist, null);
