@@ -1,1 +1,1 @@
-# mobattend is a students attendance software to help go paperless as a teacher
+# mobattend is a mobile attendance software
