@@ -13,7 +13,11 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="139dp">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -114,13 +118,13 @@
                                 android:layout_marginLeft="130dp">
 
                                 <Button
-                                    android:text="Button"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="40dp"
                                     android:id="@+id/submitAns"
-                                    android:textColor="#1A2844"
+                                    android:layout_width="124dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginBottom="10dp"
                                     android:background="#F7F8FB"
-                                    android:layout_marginBottom="10dp" />
+                                    android:text="Save"
+                                    android:textColor="#1A2844" />
                             </LinearLayout>
 
                         </LinearLayout>

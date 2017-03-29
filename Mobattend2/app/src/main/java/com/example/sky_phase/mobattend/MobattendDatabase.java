@@ -1,7 +1,5 @@
 package com.example.sky_phase.mobattend;
 
-// the code for the Data base should be here
-
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -14,7 +12,7 @@ import java.text.SimpleDateFormat;
 import java.util.Locale;
 
 /**
- * Created by Jeneral on 3/5/2017.
+ * Created by SKY-PHASE on 3/5/2017.
  */
 public class MobattendDatabase extends SQLiteOpenHelper {
     public static final  String DATABASE_NAME = "mobattend.db";

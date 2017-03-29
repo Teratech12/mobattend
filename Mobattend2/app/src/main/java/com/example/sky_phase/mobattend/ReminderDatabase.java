@@ -1,7 +1,5 @@
 package com.example.sky_phase.mobattend;
 
-//the Database for the reminder goes here
-
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -9,7 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 /**
- * Created by Jeneral on 1/20/2017.
+ * Created by SKY-PHASE on 1/20/2017.
  */
 
 public class ReminderDatabase extends SQLiteOpenHelper {
@@ -32,7 +30,7 @@ public class ReminderDatabase extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String CREATE_MY_TABLE = "CREATE TABLE " + REMINDER_TABLE_NAME + "("
-                + PERSON_COLUMN_ID + " INTEGER PRIMARY KEY," + REMINDER_NAME +" TEXT," + REMINDER_DESCRIPTION + " TEXT," + REMINDER_DATE + " TEXT" +");";
+                 + PERSON_COLUMN_ID + " INTEGER PRIMARY KEY," + REMINDER_NAME +" TEXT," + REMINDER_DESCRIPTION + " TEXT," + REMINDER_DATE + " TEXT" +");";
         db.execSQL(CREATE_MY_TABLE);
 
     }
@@ -51,7 +49,7 @@ public class ReminderDatabase extends SQLiteOpenHelper {
         contentValues.put(REMINDER_DESCRIPTION, description);
         contentValues.put(REMINDER_DATE, date);
 
-        long result = db.insert(REMINDER_TABLE_NAME, null,  contentValues);
+     long result = db.insert(REMINDER_TABLE_NAME, null,  contentValues);
         if(result==-1)
         {
             return  false;

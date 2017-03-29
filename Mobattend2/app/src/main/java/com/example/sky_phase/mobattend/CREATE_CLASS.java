@@ -1,25 +1,21 @@
 package com.example.sky_phase.mobattend;
 
-//Code for creating Class goes here
-
-
-
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class CREATE_CLASS extends AppCompatActivity {
-    TextView addStudent;
+    Button addStudent;
     EditText getClass;
     EditText getClassID;
     MobattendDatabase db1 = new MobattendDatabase(this);
     String className;
-    public  static String classId = null;
+ public  static String classId = null;
 
 
 
@@ -31,13 +27,13 @@ public class CREATE_CLASS extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.activity_create__class);
-        addStudent = (TextView)findViewById(R.id.addstudentText);
+        addStudent = (Button) findViewById(R.id.addstudentText);
         getClass = (EditText)findViewById(R.id.ClassNameEditBox);
         getClassID = (EditText)findViewById(R.id.ClassIdEditBox);
 
 
 
-        // classId = getClassID.getText().toString();
+       // classId = getClassID.getText().toString();
 
 
 
@@ -66,8 +62,8 @@ public class CREATE_CLASS extends AppCompatActivity {
                     startActivity(intent);
                     //MobattendDatabase db1 = new MobattendDatabase(getApplicationContext());
 
-                    //  className = getClass.getText().toString();
-                    // classId = getClassID.getText().toString();
+                  //  className = getClass.getText().toString();
+                   // classId = getClassID.getText().toString();
                     db1.getWritableDatabase();
                     boolean isInseerted = db1.insertClass(getClassID.getText().toString(),getClass.getText().toString());
                     if(isInseerted== true){

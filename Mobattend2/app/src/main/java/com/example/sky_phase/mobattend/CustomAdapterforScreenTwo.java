@@ -1,6 +1,7 @@
 package com.example.sky_phase.mobattend;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.support.design.widget.Snackbar;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,8 +13,13 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.amulyakhare.textdrawable.TextDrawable;
+
 import java.util.ArrayList;
 import java.util.Locale;
+import java.util.Random;
+
+
 
 /**
  * Created by SKY-PHASE on 1/10/2017.
@@ -110,8 +116,23 @@ public class CustomAdapterforScreenTwo extends ArrayAdapter<DataModelforScreenTw
         result.startAnimation(animation);
         lastPosition = position;
         viewHolder.txtName.setText(DataModelforScreenTwo.getName());
+        //viewHolder.txtName.setText((CharSequence) getItem(position));
+        // viewHolder.txtName.setText( getItem(position).toString());
+        String firstLetter = String.valueOf(String.valueOf(getItem(position)).charAt(0));
         viewHolder.txtType.setText(DataModelforScreenTwo.getType());
         viewHolder.mydate.setText(DataModelforScreenTwo.getDate());
+        Random rand = new Random();
+        int r = rand.nextInt(255);
+        int g = rand.nextInt(255);
+        int b = rand.nextInt(255);
+        int randomColor = Color.rgb(r,b,g);
+        TextDrawable drawable = TextDrawable.builder()
+                .buildRound(firstLetter, randomColor);
+
+       // viewHolder.info.setImageDrawable(drawable);
+
+
+
 
 
         viewHolder.mydate.setText(DataModelforScreenTwo.getMydate())

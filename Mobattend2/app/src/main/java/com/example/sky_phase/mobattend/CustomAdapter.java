@@ -1,6 +1,7 @@
 package com.example.sky_phase.mobattend;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.support.design.widget.Snackbar;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,8 +14,11 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.amulyakhare.textdrawable.TextDrawable;
+
 import java.util.ArrayList;
 import java.util.Locale;
+import java.util.Random;
 
 /**
  * Created by SKY-PHASE on 1/10/2017.
@@ -99,6 +103,7 @@ public class CustomAdapter extends ArrayAdapter<DataModel> implements View.OnCli
             viewHolder.txtName = (TextView) convertView.findViewById(R.id.name);
             viewHolder.txtType = (TextView) convertView.findViewById(R.id.type);
             viewHolder.mydate = (TextView) convertView.findViewById(R.id.type) ;
+            viewHolder.info = (ImageView)convertView.findViewById(R.id.item_info);
             viewHolder.radioGroup = (RadioGroup)convertView.findViewById(R.id.radiogroup);
             viewHolder.present = (RadioButton) convertView.findViewById(R.id.present);
             viewHolder.permission = (RadioButton) convertView.findViewById(R.id.permission);
@@ -170,6 +175,18 @@ public class CustomAdapter extends ArrayAdapter<DataModel> implements View.OnCli
 //        viewHolder.mydate.setText(dataModel.getFeature())
         ;        viewHolder.info.setOnClickListener(this);
         viewHolder.info.setTag(position);
+       // String firstLetter = String.valueOf(String.valueOf(getItem(position)).charAt(0));
+        String firstLetter = String.valueOf(viewHolder.txtName.getText().toString().charAt(0));
+        Random rand = new Random();
+        int r = rand.nextInt(255);
+        int g = rand.nextInt(255);
+        int b = rand.nextInt(255);
+        int randomColor = Color.rgb(r,b,g);
+        TextDrawable drawable = TextDrawable.builder()
+                .buildRound(firstLetter, randomColor);
+
+        viewHolder.info.setImageDrawable(drawable);
+
         //Return the comple view render on screen
         return convertView;
     }

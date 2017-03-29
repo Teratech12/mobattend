@@ -24,7 +24,6 @@ import android.widget.Toast;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.Locale;
 import java.util.Random;
 
 /**
@@ -62,7 +61,7 @@ public class ClasssFragment extends Fragment {
         dataModels = new ArrayList<>();
         date = new SimpleDateFormat("MMMM d,yyyy").format(new Date());
         //MobattendDatabase db3 = new MobattendDatabase(getContext());
-
+        eventid = generate_Event_id();
 
 
 
@@ -82,20 +81,28 @@ public class ClasssFragment extends Fragment {
                 listView.setEmptyView(emptyView);
             }
         }
-
+       /* dataModels.add(new DataModelforScreenTwo("Linear Electronics", "COE 251","January 23, 2016"));
+        dataModels.add(new DataModelforScreenTwo("Calculus", "MATH 151","March 4, 2015"));
+        dataModels.add(new DataModelforScreenTwo("Embedded System", "COE 351","March 4, 2015"));
+        dataModels.add(new DataModelforScreenTwo("Thermodynamics", "MATH 151","March 4, 2014"));
+        dataModels.add(new DataModelforScreenTwo("Operating System", "COE 151","March 4, 2015"));
+      */
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                eventid = generate_Event_id();
-                //GET THE ID FROM THE CREATE_CLASS USING DIFERENT INTENT
+
+
+//GET THE ID FROM THE CREATE_CLASS USING DIFERENT INTENT
                 mert = adapter.getItem(position).getName();//GETTING CLASS ID
                 Intent intent = new Intent(getActivity(), Myattendance.class);
                 intent.putExtra("classidname", adapter.getItem(position).getType());
                 gblbalmert = mert;
-                Toast.makeText(getContext(),eventid,Toast.LENGTH_LONG).show();
-                //Toast.makeText(getContext(),getDateTime().toString(),Toast.LENGTH_LONG).show();
 
+
+
+                //Intent intent1 = new Intent(getContext(),Myattendance.class);
+                //startActivity(intent1);
 
                 LayoutInflater factory = LayoutInflater.from(getContext());
                 final View textEntryView = factory.inflate(R.layout.activity_event, null);
@@ -115,27 +122,59 @@ public class ClasssFragment extends Fragment {
                 TextView two = (TextView) textEntryView.findViewById(R.id.daytext);
                 TextView three = (TextView) textEntryView.findViewById(R.id.weektext);
                 EditText event_id = (EditText) textEntryView.findViewById(R.id.eventnamebox);
-                final EditText week_edtxt = (EditText) textEntryView.findViewById(R.id.weekbox);
-                final Spinner day_spinner = (Spinner) textEntryView.findViewById(R.id.spin);
+            final EditText week_edtxt = (EditText) textEntryView.findViewById(R.id.weekbox);
+               final Spinner day_spinner = (Spinner) textEntryView.findViewById(R.id.spin);
 
                 event_id.setText(eventid);
+
 
                 alert.setPositiveButton("Take attendance ", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
 
-                String eventName = "Week "+ week_edtxt.getText().toString()+" Day "+ day_spinner.getSelectedItem().toString();
-                MobattendDatabase db2 = new MobattendDatabase(getActivity());
-                boolean datetaken = db2.insertAttendanceDate(generate_Attendance_id());
-                boolean isCreated = db2.insertEvent(eventid,eventName);
-                if (isCreated == true && datetaken == true){
 
-                    Toast.makeText(getContext(), "Event Created", Toast.LENGTH_LONG).show();
-                    Intent intent1 = new Intent(getContext(),Myattendance.class);
-                    startActivity(intent1);
-                }
-                else
-                    Toast.makeText(getContext(), "Event not Created", Toast.LENGTH_LONG).show();
+                        //  Toast.makeText(MainActivity.this,"this feature isnt added yet",Toast.LENGTH_LONG).show();
+
+
+
+                        String eventName = "Week "+ week_edtxt.getText().toString()+" Day "+ day_spinner.getSelectedItem().toString();
+                        MobattendDatabase db2 = new MobattendDatabase(getActivity());
+                        boolean isCreated = db2.insertEvent(eventid,eventName);
+                        if (isCreated == true){
+
+                            Toast.makeText(getContext(), "Event Created", Toast.LENGTH_LONG).show();
+                            Intent intent1 = new Intent(getContext(),Myattendance.class);
+                            startActivity(intent1);
+                        }
+                        else
+                            Toast.makeText(getContext(), "Event not Created", Toast.LENGTH_LONG).show();
+
+
+
+
+
+
+
+
+
+/*
+                        Cursor data = db.getListContents();
+
+                        if (data.getCount() == 0){
+                            Toast.makeText(MainActivity.this, "database empty", Toast.LENGTH_SHORT).show();
+                        }else{
+                            while(data.moveToNext()){
+                                dataModels.add(new DataModel(data.getString(1), data.getString(2),data.getString(3),data.getString(4),date));
+                                adapter = new CustomAdapter(dataModels,getApplicationContext());
+
+                                listView.setAdapter(adapter);
+
+                            }
+                        }*/
+
+                        // dataModels.add(new DataModel("sky", "022","atlanta",date,date));
+                        // adapter.notifyDataSetChanged();
+
 
                     }
                 }).setNegativeButton("Cancel       ", new DialogInterface.OnClickListener() {
@@ -160,6 +199,9 @@ public class ClasssFragment extends Fragment {
 
 
         });
+
+
+
 
 
 
@@ -252,21 +294,6 @@ public class ClasssFragment extends Fragment {
         return result.toString();
     }
 
-    public String generate_Attendance_id (){
-        int alphaL=2, numL = 2;
-        Random rand = new Random();
-        String alphab = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        String numb = "123456789";
-        StringBuilder result = new StringBuilder();
-        for (int i=0; i<alphaL; i++){
-            result.append(alphab.charAt(rand.nextInt(alphab.length())));
-        }
-        for (int i=0; i<numL; i++){
-            result.append(numb.charAt(rand.nextInt(numb.length())));
-        }
-
-        return result.toString();
-    }
 
 
 
