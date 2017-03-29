@@ -162,7 +162,7 @@ public class MobattendDatabase extends SQLiteOpenHelper {
 
     private String getDateTime() {
         SimpleDateFormat dateFormat = new SimpleDateFormat(
-                "yyyy-MM-dd HH:mm:ss", Locale.getDefault());
+                "dd-MM-yyyy HH:mm:ss", Locale.getDefault());
         Date date = new Date();
         return dateFormat.format(date);
     }

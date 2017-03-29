@@ -61,7 +61,7 @@ public class ClasssFragment extends Fragment {
         dataModels = new ArrayList<>();
         date = new SimpleDateFormat("MMMM d,yyyy").format(new Date());
         //MobattendDatabase db3 = new MobattendDatabase(getContext());
-        eventid = generate_Event_id();
+
 
 
 
@@ -98,6 +98,8 @@ public class ClasssFragment extends Fragment {
                 Intent intent = new Intent(getActivity(), Myattendance.class);
                 intent.putExtra("classidname", adapter.getItem(position).getType());
                 gblbalmert = mert;
+
+                eventid = generate_Event_id();
 
 
 
@@ -139,8 +141,9 @@ public class ClasssFragment extends Fragment {
 
                         String eventName = "Week "+ week_edtxt.getText().toString()+" Day "+ day_spinner.getSelectedItem().toString();
                         MobattendDatabase db2 = new MobattendDatabase(getActivity());
+                        boolean datetaken = db2.insertAttendanceDate(generate_Attendance_id());
                         boolean isCreated = db2.insertEvent(eventid,eventName);
-                        if (isCreated == true){
+                        if (isCreated == true && datetaken == true){
 
                             Toast.makeText(getContext(), "Event Created", Toast.LENGTH_LONG).show();
                             Intent intent1 = new Intent(getContext(),Myattendance.class);
@@ -280,6 +283,22 @@ public class ClasssFragment extends Fragment {
 
     public String generate_Event_id (){
         int alphaL=3, numL = 3;
+        Random rand = new Random();
+        String alphab = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        String numb = "123456789";
+        StringBuilder result = new StringBuilder();
+        for (int i=0; i<alphaL; i++){
+            result.append(alphab.charAt(rand.nextInt(alphab.length())));
+        }
+        for (int i=0; i<numL; i++){
+            result.append(numb.charAt(rand.nextInt(numb.length())));
+        }
+
+        return result.toString();
+    }
+
+    public String generate_Attendance_id (){
+        int alphaL=2, numL = 2;
         Random rand = new Random();
         String alphab = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         String numb = "123456789";
