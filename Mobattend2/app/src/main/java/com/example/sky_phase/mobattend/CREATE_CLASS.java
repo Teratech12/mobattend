@@ -1,10 +1,5 @@
 package com.example.sky_phase.mobattend;
 
-//Code for creating Class goes here
-
-
-
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -19,7 +14,7 @@ public class CREATE_CLASS extends AppCompatActivity {
     EditText getClassID;
     MobattendDatabase db1 = new MobattendDatabase(this);
     String className;
-    public  static String classId = null;
+ public  static String classId = null;
 
 
 
@@ -37,7 +32,7 @@ public class CREATE_CLASS extends AppCompatActivity {
 
 
 
-        // classId = getClassID.getText().toString();
+       // classId = getClassID.getText().toString();
 
 
 
@@ -66,8 +61,8 @@ public class CREATE_CLASS extends AppCompatActivity {
                     startActivity(intent);
                     //MobattendDatabase db1 = new MobattendDatabase(getApplicationContext());
 
-                    //  className = getClass.getText().toString();
-                    // classId = getClassID.getText().toString();
+                  //  className = getClass.getText().toString();
+                   // classId = getClassID.getText().toString();
                     db1.getWritableDatabase();
                     boolean isInseerted = db1.insertClass(getClassID.getText().toString(),getClass.getText().toString());
                     if(isInseerted== true){

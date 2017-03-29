@@ -1,9 +1,5 @@
 package com.example.sky_phase.mobattend;
 
-//Code for adding student goes here
-
-
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -22,14 +18,14 @@ public class ADDING_STUDENTS extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        // classIdFK = myclass.classId;
+       // classIdFK = myclass.classId;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adding__students);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         studentName = (EditText)findViewById(R.id.studentNameEditBox);
-        // final String student = studentName.getText().toString();
+       // final String student = studentName.getText().toString();
         studentID = (EditText)findViewById(R.id.studentIdEditBox);
-        // final String id = studentID.getText().toString();
+      // final String id = studentID.getText().toString();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
@@ -64,8 +60,8 @@ public class ADDING_STUDENTS extends AppCompatActivity {
 
                 }
 
-                studentName.setText("");
-                studentID.setText("");
+                       studentName.setText("");
+                       studentID.setText("");
 
             }
         });
@@ -129,5 +125,3 @@ public class ADDING_STUDENTS extends AppCompatActivity {
 
 
 }
-
-

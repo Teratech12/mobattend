@@ -1,14 +1,14 @@
 package com.example.sky_phase.mobattend;
 
-// Working code for ReminderDatabase goes here
-
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-
+/**
+ * Created by SKY-PHASE on 1/20/2017.
+ */
 
 public class ReminderDatabaseOriginal extends SQLiteOpenHelper {
     public static final  String DATABASE_NAME = "Remind.db";
@@ -72,7 +72,7 @@ public class ReminderDatabaseOriginal extends SQLiteOpenHelper {
     public  Integer deleteData(String id){
 
         SQLiteDatabase db = this.getWritableDatabase();
-        return   db.delete(REMINDER_TABLE_NAME, "id = ?", new String[] {id} );
+      return   db.delete(REMINDER_TABLE_NAME, "id = ?", new String[] {id} );
 
     }
 }
