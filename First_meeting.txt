@@ -1,0 +1,25 @@
+MEETING
+
+PROJECT: Mobattend App
+Date: 25th Feb, 2017
+TIME: 2:00pm - 5:30pm
+LOCATION: Vodafone Cafe
+
+PRESENT: Prince Baffour(PM),Danso Jephter(APM),Richard Opuni(Backend Team Lead),Adrew Ayikwey(System Analyst),Michael Tetteh(Front End Developer),Charles Asamoah(Front End Designer),Akua Apau(Front End Designer),Gregory Aidoo(System Analyst),Edward Banson(Marketting Manager)
+
+ABSENT: Samuel Gyamfi(Marketting Director & PRO),Samuel Brifo(Ass. Marketting Manager)
+
+
+A meeting was held at the Vodafone Cafe on Saturday Feb. 25th, 2017 to divide discuss how our app will be built and our progress in learning Android Programming.
+
+
+Summary:
+
+* Jeph suggests taking the team's website development and gives an overview on Python Programming.
+
+* Rich volunteers to start the project since he knows Android programming already.
+
+* Team agrees on weekly contribution of GH 1.00 cedis to fund the team.
+
+* PM gives a tutorial on git and gitbash.
+
