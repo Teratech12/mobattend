@@ -7,7 +7,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class ADDING_STUDENTS extends AppCompatActivity {
@@ -118,8 +117,9 @@ public class ADDING_STUDENTS extends AppCompatActivity {
     }
     @Override
     public  boolean onSupportNavigateUp(){
-        Intent intent = new Intent(ADDING_STUDENTS.this,MainActivity.class);
-        startActivity(intent);
+        //Intent intent = new Intent(ADDING_STUDENTS.this,MainActivity.class);
+       // startActivity(intent);
+        finish();
 
         return true;
     }

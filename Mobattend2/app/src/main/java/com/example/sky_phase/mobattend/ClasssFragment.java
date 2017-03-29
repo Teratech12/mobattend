@@ -99,8 +99,7 @@ public class ClasssFragment extends Fragment {
                 intent.putExtra("classidname", adapter.getItem(position).getType());
                 gblbalmert = mert;
 
-
-
+                view.setSelected(true);
                 //Intent intent1 = new Intent(getContext(),Myattendance.class);
                 //startActivity(intent1);
 
