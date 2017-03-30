@@ -92,6 +92,7 @@ public class ClasssFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                eventid = generate_Event_id();
 
 
 //GET THE ID FROM THE CREATE_CLASS USING DIFERENT INTENT
@@ -100,11 +101,15 @@ public class ClasssFragment extends Fragment {
                 intent.putExtra("classidname", adapter.getItem(position).getType());
                 gblbalmert = mert;
 
+<<<<<<< HEAD
+                view.setSelected(true);
+=======
                 eventid = generate_Event_id();
                 attendanceid = generate_Attendance_id();
 
 
 
+>>>>>>> 70820587fb330612a336bc3a440b96f92a7265a6
                 //Intent intent1 = new Intent(getContext(),Myattendance.class);
                 //startActivity(intent1);
 

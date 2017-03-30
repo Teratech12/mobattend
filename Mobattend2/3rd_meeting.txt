@@ -1,0 +1,23 @@
+MEETING 
+
+PROJECT: Mobattend App
+Date: 17th March, 2017
+TIME: 10pm - 3:30am
+LOCATION: Vodafone Cafe
+
+PRESENT: Prince Baffour(PM),Danso Jephter(APM),Richard Opuni(Backend Team Lead),Adrew Ayikwey(System Analyst),Akua Apau(Front End Designer).
+
+ABSENT: Samuel Brifo(Ass. MArketting Director),Samuel Gyamfi(Marketting Director),Michael Tetteh(Front End Developer),Charles Asamoah(Front End Designer),Gregory Aidoo(System Analyst),Edward Banson(Marketting Manager).
+
+
+SUMMARY:
+
+* Rich explains to the team how to merge indivual files to his and come out with a working prototype.
+
+* PM explains relational databases and how to write the backend codes for our mobattend app.
+
+* Jeph tops up with MySQL syntax usage vs SQL lite3.
+
+* Andrew gives an overview of Entity Relation Diagram.
+
+* PM and Rich writes backend codes for the app.

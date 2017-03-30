@@ -118,7 +118,8 @@ public class CustomAdapterforScreenTwo extends ArrayAdapter<DataModelforScreenTw
         viewHolder.txtName.setText(DataModelforScreenTwo.getName());
         //viewHolder.txtName.setText((CharSequence) getItem(position));
         // viewHolder.txtName.setText( getItem(position).toString());
-        String firstLetter = String.valueOf(String.valueOf(getItem(position)).charAt(0));
+       // String firstLetter = String.valueOf(String.valueOf(getItem(position)).charAt(0));
+        String firstLetter = String.valueOf(viewHolder.txtName.getText().toString().charAt(0));
         viewHolder.txtType.setText(DataModelforScreenTwo.getType());
         viewHolder.mydate.setText(DataModelforScreenTwo.getDate());
         Random rand = new Random();
@@ -127,9 +128,9 @@ public class CustomAdapterforScreenTwo extends ArrayAdapter<DataModelforScreenTw
         int b = rand.nextInt(255);
         int randomColor = Color.rgb(r,b,g);
         TextDrawable drawable = TextDrawable.builder()
-                .buildRound(firstLetter, randomColor);
+                .buildRoundRect(firstLetter, randomColor, 20);
 
-       // viewHolder.info.setImageDrawable(drawable);
+        viewHolder.info.setImageDrawable(drawable);
 
 
 

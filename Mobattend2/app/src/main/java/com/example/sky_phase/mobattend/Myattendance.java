@@ -14,7 +14,6 @@ import android.widget.AdapterView;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -55,7 +54,7 @@ public class Myattendance extends AppCompatActivity {
      final String queryname = intent2.getStringExtra("classidname");
 
         String fine = you.gblbalmert;
-         Toast.makeText(Myattendance.this,fine,Toast.LENGTH_LONG).show();
+
         final RelativeLayout cordinate = (RelativeLayout) findViewById(R.id.content_myattendance);
 
         //Toast.makeText(Myattendance.this,"put "+queryname,Toast.LENGTH_LONG).show();

@@ -7,6 +7,7 @@
 
 
 
+
     tools:context="com.example.sky_phase.mobattend.ReminderActivity"
     android:background="#ffffff">
 
@@ -16,8 +17,7 @@
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="139dp">
+        android:layout_alignParentStart="true">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -45,7 +45,6 @@
                         android:id="@+id/editText2"
                         android:layout_marginLeft="20dp"
                         android:layout_marginRight="20dp"
-                        android:background="@drawable/drawingedited"
                         android:hint="Name of reminder"
                         android:textSize="18sp" />
                 </LinearLayout>
@@ -54,19 +53,6 @@
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
-
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textMultiLine"
-                        android:ems="10"
-                        android:id="@+id/editText3"
-                        android:layout_marginBottom="20dp"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
-                        android:background="@drawable/drawingedited"
-                        android:hint="Describe reminder"
-                        android:textSize="18sp" />
 
                     <LinearLayout
                         android:orientation="vertical"
@@ -82,18 +68,25 @@
                             android:textColor="#F8F9FB"/>
 
                         <DatePicker
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_width="250dp"
+                            android:layout_height="120dp"
                             android:id="@+id/datePicker"
                             android:datePickerMode="spinner"
+                            android:theme="@style/AlertDialCustom"
                             style="@android:style/Widget.DatePicker"
                             android:layout_marginBottom="10dp"
-                            android:background="#F8F9FB" />
+                            android:background="#F8F9FB"
+                            android:dayOfWeekBackground="@color/radiobutton1"
+                            android:yearListSelectorColor="@color/radiobutton1"
+                            android:headerBackground="@color/radiobutton1"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"/>
 
                         <LinearLayout
                             android:orientation="vertical"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent">
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="25dp">
 
                             <TextView
                                 android:text="Select Time"
@@ -104,28 +97,14 @@
                                 android:textColor="#F8F9FB"/>
 
                             <TimePicker
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_width="250dp"
+                                android:layout_height="140dp"
                                 android:id="@+id/timePicker"
                                 android:timePickerMode="spinner"
                                 android:layout_marginBottom="10dp"
-                                android:background="#F8F9FB" />
-
-                            <LinearLayout
-                                android:orientation="vertical"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_marginLeft="130dp">
-
-                                <Button
-                                    android:id="@+id/submitAns"
-                                    android:layout_width="124dp"
-                                    android:layout_height="40dp"
-                                    android:layout_marginBottom="10dp"
-                                    android:background="#F7F8FB"
-                                    android:text="Save"
-                                    android:textColor="#1A2844" />
-                            </LinearLayout>
+                                android:background="#F8F9FB"
+                                android:theme="@style/AlertDialCustom"
+                                android:layout_gravity="center"/>
 
                         </LinearLayout>
 
@@ -134,5 +113,24 @@
 
             </LinearLayout>
         </ScrollView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="476dp">
+
+            <Button
+                android:id="@+id/submitAns"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="#1A2844"
+                android:text="Save"
+                android:textColor="#ffff" />
+        </LinearLayout>
     </RelativeLayout>
 </RelativeLayout>

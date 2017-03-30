@@ -25,8 +25,9 @@
         android:layout_marginLeft="34dp"
         android:layout_marginStart="34dp"
         android:id="@+id/name"
-        android:layout_marginBottom="20dp"
-        android:textColor="#0D0D0D" />
+        android:layout_marginBottom="10dp"
+        android:textColor="#0D0D0D"
+        android:textSize="20dp" />
 
     <TextView
         android:text="DateSaved"
@@ -41,12 +42,12 @@
     <Switch
         android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="36dp"
-        android:layout_marginEnd="36dp"
         android:id="@+id/switch1"
-        android:layout_alignTop="@+id/item_info" />
+        android:layout_alignTop="@+id/item_info"
+        android:theme="@style/SwitchTheme"
+            android:checked="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 
 </RelativeLayout>
