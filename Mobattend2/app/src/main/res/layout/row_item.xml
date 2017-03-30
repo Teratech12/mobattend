@@ -40,14 +40,6 @@
         android:textColor="#0AAEF3"
         android:id="@+id/type" />
 
-    <EditText
-        android:layout_width="60dp"
-        android:layout_height="30dp"
-        android:layout_alignParentRight="true"
-
-        android:id="@+id/editText"
-        android:layout_alignTop="@+id/radiogroup" />
-
     <RadioGroup
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"

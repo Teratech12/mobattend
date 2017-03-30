@@ -8,32 +8,33 @@
     tools:context="com.example.sky_phase.mobattend.EventActivity">
 
     <TextView
-        android:text="Event Name"
+        android:id="@+id/eventnametext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="62dp"
-        android:id="@+id/eventnametext"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:paddingLeft="12dp" />
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="62dp"
+        android:paddingLeft="12dp"
+        android:text="Event ID" />
 
     <EditText
+        android:id="@+id/eventnamebox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/eventnamebox"
         android:layout_alignBaseline="@+id/eventnametext"
         android:layout_alignBottom="@+id/eventnametext"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="14dp"
+        android:layout_alignParentRight="true"
         android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
         android:backgroundTint="#0958CF"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
         android:textColorHighlight="#0958CF"
-        android:textColorLink="#0958CF"
-        android:hint="Unique event Id" />
+        android:textColorLink="#0958CF" />
 
     <TextView
         android:text="Week"
@@ -51,21 +52,21 @@
         android:paddingLeft="12dp" />
 
     <EditText
+        android:id="@+id/weekbox"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:layout_marginLeft="12dp"
-        android:layout_marginStart="12dp"
-        android:id="@+id/weekbox"
         android:layout_alignBaseline="@+id/weektext"
         android:layout_alignBottom="@+id/weektext"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
         android:layout_toRightOf="@+id/weektext"
         android:backgroundTint="#0958CF"
-        android:textColorHighlight="#0958CF"
-        android:textColorLink="#0958CF"
+        android:ems="10"
         android:hint="week"
-        android:textAlignment="center" />
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHighlight="#0958CF"
+        android:textColorLink="#0958CF" />
 
     <TextView
         android:text="Day"
