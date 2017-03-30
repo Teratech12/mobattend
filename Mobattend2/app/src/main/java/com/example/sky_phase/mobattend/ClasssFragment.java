@@ -100,14 +100,13 @@ public class ClasssFragment extends Fragment {
                 intent.putExtra("classidname", adapter.getItem(position).getType());
                 gblbalmert = mert;
 
-<<<<<<< HEAD
+
                 view.setSelected(true);
-=======
+
                 eventid = generate_Event_id();
 
 
 
->>>>>>> 70820587fb330612a336bc3a440b96f92a7265a6
                 //Intent intent1 = new Intent(getContext(),Myattendance.class);
                 //startActivity(intent1);
 
