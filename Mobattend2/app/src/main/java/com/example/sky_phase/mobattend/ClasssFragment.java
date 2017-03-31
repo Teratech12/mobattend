@@ -61,7 +61,7 @@ public class ClasssFragment extends Fragment {
         dataModels = new ArrayList<>();
         date = new SimpleDateFormat("MMMM d,yyyy").format(new Date());
         //MobattendDatabase db3 = new MobattendDatabase(getContext());
-        eventid = generate_Event_id();
+
 
 
 
@@ -91,6 +91,7 @@ public class ClasssFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                eventid = generate_Event_id();
 
 
 //GET THE ID FROM THE CREATE_CLASS USING DIFERENT INTENT

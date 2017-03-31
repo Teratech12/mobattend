@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity
 
         item1.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
-            public boolean onMenuItemClick(MenuItem item) {
+            public boolean onMenuItemClick(MenuItem item)  {
 
 
 
@@ -117,10 +117,11 @@ public class MainActivity extends AppCompatActivity
                 final View textEntryView = factory.inflate(R.layout.choosemanually, null);
 
 
-                final AlertDialog.Builder alert = new AlertDialog.Builder(context);
+                final AlertDialog.Builder alert = new AlertDialog.Builder(context, R.style.AlertDialCustom);
 
 
                 alert.setView(textEntryView);
+
 
 
                 alert .setPositiveButton("Insert Manually ", new DialogInterface.OnClickListener() {
@@ -277,17 +278,18 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_sha) {
+        if (id == R.id.nav_help) {
+            Intent intent = new Intent(MainActivity.this,Help.class);
+            startActivity(intent);
+        } else if (id == R.id.nav_importFromExcel) {
 
-        } else if (id == R.id.nav_se) {
+        } else if (id == R.id.nav_addManually) {
 
-        } else if (id == R.id.nav_sen) {
+        } else if (id == R.id.nav_searchParticularDay) {
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.nav_EditReminder) {
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_newReminder) {
 
         }
 

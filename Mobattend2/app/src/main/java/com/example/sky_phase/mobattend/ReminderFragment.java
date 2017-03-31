@@ -15,6 +15,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.Switch;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
@@ -31,6 +33,8 @@ public class ReminderFragment extends Fragment {
     ListView listView;
     String date;
     ReminderDatabaseOriginal db = new ReminderDatabaseOriginal(getActivity());
+    TextView remindermessage;
+    Switch myswitch;
 
     private static CustomAdapterforGrid adapter;
 
@@ -40,9 +44,13 @@ public class ReminderFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.reminderxml, container, false);
 
         listView = (ListView) rootView.findViewById(R.id.grid);
+        myswitch = (Switch)rootView.findViewById(R.id.switch1);
+
+
 
 
         reminder = (ImageView)rootView.findViewById(R.id.reminder);
+        remindermessage = (TextView)rootView.findViewById(R.id.remindermessage);
 
 
         View emptyView = getActivity().getLayoutInflater().inflate(R.layout.emptyreminder, null);
@@ -68,14 +76,18 @@ public class ReminderFragment extends Fragment {
         }
 
         else{
-            while(datareminder.moveToNext()){
-                dataModels.add(new DataModelForGrid(datareminder.getString(1), datareminder.getString(2)));
+            datareminder.moveToLast();
+                dataModels.add(new DataModelForGrid(datareminder.getString(2), datareminder.getString(3)));
                 adapter = new CustomAdapterforGrid(dataModels,getContext());
 
                 listView.setAdapter(adapter);
                 listView.setEmptyView(emptyView);
 
-            }
+
+           StringBuilder remindme = new StringBuilder().append(datareminder.getString(1));
+             remindermessage.setText(remindme);
+
+
         }
        // date = new SimpleDateFormat("MMMM d,yyyy").format(new Date());
        // dataModels.add2(new DataModelForGrid( "COE CLASS AT 2", "12/02/2015"));

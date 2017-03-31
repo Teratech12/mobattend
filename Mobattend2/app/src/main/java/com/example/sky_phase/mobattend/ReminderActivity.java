@@ -2,6 +2,7 @@ package com.example.sky_phase.mobattend;
 
 import android.annotation.TargetApi;
 import android.app.AlarmManager;
+import android.app.DatePickerDialog;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
@@ -14,22 +15,30 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
-public class ReminderActivity extends AppCompatActivity {
+public class ReminderActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
    // ReminderDatabase reminderDatabase = new ReminderDatabase(g);
-    Button submit;
+    Button submit,datepickerbtn,timepickerbtn;
     TimePicker timePicker;
     DatePicker datePicker;
     NotificationManager notificationManager;
     EditText myedit1;
     EditText myedit2;
     String date;
+
+    ListView listView;
+    ArrayList<DataModelForGrid> dataModels;
+    private static CustomAdapterforGrid adapter;
+
+
 
 
     int timehour;
@@ -58,23 +67,27 @@ public class ReminderActivity extends AppCompatActivity {
 
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reminder);
         submit = (Button)findViewById(R.id.submitAns);
+
         timePicker = (TimePicker)findViewById(R.id.timePicker);
         datePicker = (DatePicker)findViewById(R.id.datePicker);
         myedit1 = (EditText)findViewById(R.id.editText2);
-        myedit2 = (EditText)findViewById(R.id.editText3);
-        Calendar now = Calendar.getInstance();
+
+        final Calendar now = Calendar.getInstance();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        listView = (ListView) findViewById(R.id.grid);
+
 
         datePicker.init(now.get(Calendar.YEAR),now.get(Calendar.MONTH),now.get(Calendar.DAY_OF_MONTH),null);
 
+
         timePicker.setCurrentHour(now.get(Calendar.HOUR_OF_DAY));
         timePicker.setCurrentMinute(now.get(Calendar.MINUTE));
-
 
 
         submit.setOnClickListener(new View.OnClickListener() {
@@ -83,44 +96,55 @@ public class ReminderActivity extends AppCompatActivity {
             public void onClick(View v) {
                 date = new SimpleDateFormat("mm dd,yyyy").format(new Date());
                 String remindername = myedit1.getText().toString();
-                String reminderdescription = myedit2.getText().toString();
+
+
                 String date = "correct";
+                StringBuilder keepdate = new StringBuilder().append(datePicker.getDayOfMonth()).append(" - ").append(datePicker.getMonth() + 1).append(" - ").append(datePicker.getYear());
+                StringBuilder keeptime = new StringBuilder().append(timePicker.getCurrentHour()).append(" : ").append(timePicker.getCurrentMinute());
 
-                db.getWritableDatabase();
-                boolean isInserted =   db.insertReminder(remindername,reminderdescription, date);
-                if(isInserted== true){
-                    Toast.makeText(ReminderActivity.this, "inserted", Toast.LENGTH_LONG).show();
+                Toast.makeText(ReminderActivity.this, keepdate, Toast.LENGTH_LONG).show();
 
-                }else {
-                    Toast.makeText(ReminderActivity.this, "not inserted", Toast.LENGTH_LONG).show();
-                }
-                Calendar current = Calendar.getInstance();
+
+                final Calendar current = Calendar.getInstance();
                 Calendar cal = Calendar.getInstance();
-             cal.set(datePicker.getYear(),datePicker.getMonth(),datePicker.getDayOfMonth(),timePicker.getCurrentHour(),timePicker.getCurrentMinute(),00);
-       Calendar Alarm = cal;
-                if (cal.compareTo(current) <=0){
-                    Toast.makeText(getApplicationContext(),"Invalid Date/Time",Toast.LENGTH_LONG).show();
+
+                cal.set(datePicker.getYear(), datePicker.getMonth(), datePicker.getDayOfMonth(), timePicker.getCurrentHour(), timePicker.getCurrentMinute(), 00);
+                Calendar Alarm = cal;
+                if (cal.compareTo(current) <= 0 || myedit1.length() == 0) {
+                    Toast.makeText(getApplicationContext(), "please provide name to reminder or make sure date/time is valid", Toast.LENGTH_LONG).show();
+                } else { // Toast.makeText(getApplicationContext(),"Reminder is set to " + cal.getTime(),Toast.LENGTH_LONG).show();
+
+                    db.getWritableDatabase();
+                    boolean isInserted = db.insertReminder(remindername, String.valueOf(keeptime), String.valueOf(keepdate));
+                    if (isInserted == true) {
+                        Toast.makeText(ReminderActivity.this, "inserted", Toast.LENGTH_LONG).show();
+                        Intent intent = new Intent(ReminderActivity.this,MainActivity.class);
+                        startActivity(intent);
+
+                    } else {
+                        Toast.makeText(ReminderActivity.this, "not inserted", Toast.LENGTH_LONG).show();
+                    }
+
+                    setAlarm(cal);
                 }
-                else {  Toast.makeText(getApplicationContext(),"Reminder is set to " + cal.getTime(),Toast.LENGTH_LONG).show();
-
-                    setAlarm(cal);}
 
 
+                adapter = new CustomAdapterforGrid(dataModels, getApplicationContext());
 
 
                 user_day = datePicker.getDayOfMonth();
-                user_month = datePicker.getMonth() +1;
+                user_month = datePicker.getMonth() + 1;
                 user_year = datePicker.getYear();
                 system_hour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY);
                 system_minute = Calendar.getInstance().get(Calendar.MINUTE);
-                system_day =Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
-                system_month = Calendar.getInstance().get(Calendar.MONTH)+1;
+                system_day = Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
+                system_month = Calendar.getInstance().get(Calendar.MONTH) + 1;
                 system_year = Calendar.getInstance().get(Calendar.YEAR);
                 user_hour = timePicker.getCurrentHour();
                 user_minute = timePicker.getCurrentMinute();
-               // myedit1.setText(Integer.toString(user_day)+""+ Integer.toString(user_month)+""+ Integer.toString(user_year)+"   "+Integer.toString(system_day)+""+Integer.toString(system_month)+""+Integer.toString(system_year));
-               // myedit2.setText(Integer.toString(user_hour)+""+Integer.toString(user_minute)+"      "+ Integer.toString(system_hour)+""+Integer.toString(system_minute));
-                 //ed.setText(Integer.toString(x));
+                // myedit1.setText(Integer.toString(user_day)+""+ Integer.toString(user_month)+""+ Integer.toString(user_year)+"   "+Integer.toString(system_day)+""+Integer.toString(system_month)+""+Integer.toString(system_year));
+                // myedit2.setText(Integer.toString(user_hour)+""+Integer.toString(user_minute)+"      "+ Integer.toString(system_hour)+""+Integer.toString(system_minute));
+                //ed.setText(Integer.toString(x));
           /*  if (system_day==user_day && system_month==user_month && system_year==user_year && system_hour==user_hour && system_minute==user_minute){
 
                 NotificationCompat.Builder notificatinonBuilder = (NotificationCompat.Builder) new NotificationCompat.Builder(getBaseContext()).setContentTitle("Mobattend").
@@ -138,6 +162,7 @@ public class ReminderActivity extends AppCompatActivity {
                 notificationManager = (NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
                 notificationManager.notify(nofifyID, notificatinonBuilder.build());
                 isNotificActive = true;
+
 
                 final MediaPlayer mediaPlayer = MediaPlayer.create(getBaseContext(), R.raw.arise);
                 mediaPlayer.start();
@@ -177,8 +202,8 @@ public class ReminderActivity extends AppCompatActivity {
                  month = datePicker.getMonth();
                  year = datePicker.getYear();*/
 
-
             }
+
 
         });
          system_hour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY);
@@ -229,6 +254,9 @@ public class ReminderActivity extends AppCompatActivity {
         AlarmManager alarmManager = (AlarmManager)getSystemService(Context.ALARM_SERVICE);
         alarmManager.set(AlarmManager.RTC_WAKEUP, targetCal.getTimeInMillis(),pendingIntent);
 
+
+
+
     }
 
 
@@ -252,5 +280,10 @@ public class ReminderActivity extends AppCompatActivity {
         finish();
 
         return true;
+    }
+
+    @Override
+    public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+
     }
 }
