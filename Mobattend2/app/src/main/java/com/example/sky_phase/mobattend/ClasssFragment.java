@@ -47,8 +47,8 @@ public class ClasssFragment extends Fragment {
 
    // private static CustomAdapterRetrieval adapter;
 
-    String eventid;
-    String attendanceid;
+    static   String eventid;
+    static   String attendanceid;
 
 
 
@@ -101,10 +101,7 @@ public class ClasssFragment extends Fragment {
                 intent.putExtra("classidname", adapter.getItem(position).getType());
                 gblbalmert = mert;
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 64787a36fdd9611df18c87f2778981250229bfe0
                 view.setSelected(true);
 
                 eventid = generate_Event_id();
@@ -113,10 +110,6 @@ public class ClasssFragment extends Fragment {
 
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 64787a36fdd9611df18c87f2778981250229bfe0
                 //Intent intent1 = new Intent(getContext(),Myattendance.class);
                 //startActivity(intent1);
 

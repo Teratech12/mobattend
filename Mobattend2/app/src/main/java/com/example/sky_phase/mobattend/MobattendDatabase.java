@@ -5,10 +5,9 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.widget.Toast;
 
-import java.util.Date;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Locale;
 
 /**
@@ -121,13 +120,13 @@ public class MobattendDatabase extends SQLiteOpenHelper {
 
     }
 
-    public boolean insertPerson(String S_EVENT_ID, String ID, int ATTEDANCE_ID, String EVEN_ID){
+    public boolean insertStudentEvent(String student_event_id, String student_id, String attendance_id, String event_id){
         SQLiteDatabase db = getWritableDatabase();
         ContentValues contentValues = new ContentValues();
-        contentValues.put(STUDENT_EVENT_ID_COLUMN, S_EVENT_ID);
-        contentValues.put(FK_STUDENT_ID_COLUMN, ID);
-        contentValues.put(FK_ATTENDANCE_ID_COLUMN, ATTEDANCE_ID);
-        contentValues.put(FK_EVENT_ID_COLUMN, EVEN_ID);
+        contentValues.put(STUDENT_EVENT_ID_COLUMN, student_event_id);
+        contentValues.put(FK_STUDENT_ID_COLUMN, student_id);
+        contentValues.put(FK_ATTENDANCE_ID_COLUMN, attendance_id);
+        contentValues.put(FK_EVENT_ID_COLUMN, event_id);
         long result = db.insert(STUDENT_EVENT_TABLE_NAME, null,  contentValues);
         if(result==-1)
         {
