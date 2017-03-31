@@ -55,7 +55,7 @@ public class LineDataSet extends LineRadarDataSet<Entry> implements ILineDataSet
         mCircleColors = new ArrayList<Integer>();
 
         // default colors
-        // mColors.add(Color.rgb(192, 255, 140));
+        // mColors.add(Color.rgb(ic_launcher, 255, 140));
         // mColors.add(Color.rgb(255, 247, 140));
         mCircleColors.add(Color.rgb(140, 234, 255));
     }

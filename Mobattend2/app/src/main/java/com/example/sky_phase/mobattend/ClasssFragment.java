@@ -48,6 +48,7 @@ public class ClasssFragment extends Fragment {
    // private static CustomAdapterRetrieval adapter;
 
     String eventid;
+    String attendanceid;
 
 
 
@@ -100,14 +101,22 @@ public class ClasssFragment extends Fragment {
                 intent.putExtra("classidname", adapter.getItem(position).getType());
                 gblbalmert = mert;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 64787a36fdd9611df18c87f2778981250229bfe0
                 view.setSelected(true);
 
                 eventid = generate_Event_id();
+                attendanceid = generate_Attendance_id();
 
 
 
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 64787a36fdd9611df18c87f2778981250229bfe0
                 //Intent intent1 = new Intent(getContext(),Myattendance.class);
                 //startActivity(intent1);
 
@@ -146,9 +155,10 @@ public class ClasssFragment extends Fragment {
 
                         String eventName = "Week "+ week_edtxt.getText().toString()+" Day "+ day_spinner.getSelectedItem().toString();
                         MobattendDatabase db2 = new MobattendDatabase(getActivity());
-                        boolean datetaken = db2.insertAttendanceDate(generate_Attendance_id());
+                        MobattendDatabase db4 = new MobattendDatabase(getActivity());
                         boolean isCreated = db2.insertEvent(eventid,eventName);
-                        if (isCreated == true && datetaken == true){
+                        boolean datetaken = db4.insertAttendanceDate(attendanceid);
+                        if ((isCreated == true) && (datetaken == true)){
 
                             Toast.makeText(getContext(), "Event Created", Toast.LENGTH_LONG).show();
                             Intent intent1 = new Intent(getContext(),Myattendance.class);
