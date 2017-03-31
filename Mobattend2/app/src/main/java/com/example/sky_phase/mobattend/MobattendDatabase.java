@@ -5,10 +5,9 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.widget.Toast;
 
-import java.util.Date;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Locale;
 
 /**
@@ -69,8 +68,9 @@ public class MobattendDatabase extends SQLiteOpenHelper {
                 + "FOREIGN KEY ("+FK_CLASS_ID_COLUMN+") REFERENCES " +CLASS_TABLE_NAME + " ("+CLASS_ID_COLUMN+")"  +");";
 
         //Attendance Table has no Foreign Key
+        //DateTime: TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         String CREATE_ATTENDANCE_TABLE = "CREATE TABLE " + ATTENDANCE_TABLE_NAME + "("
-                + ATTENDANCE_ID_COLUMN +" INTEGER PRIMARY KEY NOT NULL," + ATTENDANCE_TIME_COLUMN +" DATETIME"  +");";
+                + ATTENDANCE_ID_COLUMN +" VARCHAR PRIMARY KEY NOT NULL," + ATTENDANCE_TIME_COLUMN +" TIMESTAMP DEFAULT CURRENT_TIMESTAMP"  +");";
 
         // Event Table has no Foreign Key
         String CREATE_EVENT_TABLE = "CREATE TABLE " + EVENT_TABLE_NAME + "("
@@ -172,7 +172,7 @@ public class MobattendDatabase extends SQLiteOpenHelper {
 
         ContentValues contentValues = new ContentValues();
         contentValues.put(ATTENDANCE_ID_COLUMN, Attendance_id);
-        contentValues.put(ATTENDANCE_TIME_COLUMN,getDateTime());
+        //contentValues.put(ATTENDANCE_TIME_COLUMN,getDateTime());
         long result = db.insert(ATTENDANCE_TABLE_NAME, null,  contentValues);
         if(result==-1)
         {
