@@ -120,13 +120,13 @@ public class MobattendDatabase extends SQLiteOpenHelper {
 
     }
 
-    public boolean insertPerson(String S_EVENT_ID, String ID, int ATTEDANCE_ID, String EVEN_ID){
+    public boolean insertStudentEvent(String student_event_id, String student_id, String attendance_id, String event_id){
         SQLiteDatabase db = getWritableDatabase();
         ContentValues contentValues = new ContentValues();
-        contentValues.put(STUDENT_EVENT_ID_COLUMN, S_EVENT_ID);
-        contentValues.put(FK_STUDENT_ID_COLUMN, ID);
-        contentValues.put(FK_ATTENDANCE_ID_COLUMN, ATTEDANCE_ID);
-        contentValues.put(FK_EVENT_ID_COLUMN, EVEN_ID);
+        contentValues.put(STUDENT_EVENT_ID_COLUMN, student_event_id);
+        contentValues.put(FK_STUDENT_ID_COLUMN, student_id);
+        contentValues.put(FK_ATTENDANCE_ID_COLUMN, attendance_id);
+        contentValues.put(FK_EVENT_ID_COLUMN, event_id);
         long result = db.insert(STUDENT_EVENT_TABLE_NAME, null,  contentValues);
         if(result==-1)
         {
@@ -230,6 +230,16 @@ public class MobattendDatabase extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor sky = db.rawQuery("SELECT * FROM " + STUDENT_TABLE_NAME + " WHERE "+FK_CLASS_ID_COLUMN+ "='"+clkid + "'", null);
         return sky;
+    }
+
+
+    public int getCount(String clkid ){
+        //String be = "zggx";
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor sky = db.rawQuery("SELECT * FROM " + STUDENT_TABLE_NAME + " WHERE "+FK_CLASS_ID_COLUMN+ "='"+clkid + "'", null);
+          int count = sky.getCount();
+        return count;
     }
 
 

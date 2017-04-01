@@ -47,8 +47,8 @@ public class ClasssFragment extends Fragment {
 
    // private static CustomAdapterRetrieval adapter;
 
-    String eventid;
-    String attendanceid;
+    static   String eventid;
+    static   String attendanceid;
 
 
 
@@ -76,7 +76,8 @@ public class ClasssFragment extends Fragment {
         }
         else{
             while (sky2.moveToNext()){
-                dataModels.add(new DataModelforScreenTwo(sky2.getString(0),sky2.getString(1),date));
+             int count = db.getCount(sky2.getString(0));
+                dataModels.add(new DataModelforScreenTwo(sky2.getString(0),sky2.getString(1),String.valueOf(count)));
                 adapter = new CustomAdapterforScreenTwo(dataModels,getContext());
                 listView.setAdapter(adapter);
                 listView.setEmptyView(emptyView);
@@ -102,8 +103,11 @@ public class ClasssFragment extends Fragment {
                 gblbalmert = mert;
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> d45ef14c40e80ad658d597ba87cd78935ea6deee
                 view.setSelected(true);
 
                 eventid = generate_Event_id();
