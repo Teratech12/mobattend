@@ -76,7 +76,8 @@ public class ClasssFragment extends Fragment {
         }
         else{
             while (sky2.moveToNext()){
-                dataModels.add(new DataModelforScreenTwo(sky2.getString(0),sky2.getString(1),date));
+             int count = db.getCount(sky2.getString(0));
+                dataModels.add(new DataModelforScreenTwo(sky2.getString(0),sky2.getString(1),String.valueOf(count)));
                 adapter = new CustomAdapterforScreenTwo(dataModels,getContext());
                 listView.setAdapter(adapter);
                 listView.setEmptyView(emptyView);

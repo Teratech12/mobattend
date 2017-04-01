@@ -16,6 +16,7 @@ public class DataModelforScreenTwo {String name;
     String mydate;
 
 
+
     public DataModelforScreenTwo(String name, String type, String mydate /*String version_number, String feature, String date*/){
         this.name = name;
         this.type = type;

@@ -134,7 +134,7 @@ public class CustomAdapter extends ArrayAdapter<DataModel> implements View.OnCli
             convertView = inflater.inflate(R.layout.row_item, parent, false);
             viewHolder.txtName = (TextView) convertView.findViewById(R.id.name);
             viewHolder.txtType = (TextView) convertView.findViewById(R.id.type);
-            viewHolder.mydate = (TextView) convertView.findViewById(R.id.type) ;
+            viewHolder.mydate = (TextView) convertView.findViewById(R.id.type1) ;
             viewHolder.info = (ImageView)convertView.findViewById(R.id.item_info);
             viewHolder.radioGroup = (RadioGroup)convertView.findViewById(radiogroup);
             viewHolder.present = (RadioButton) convertView.findViewById(R.id.present);
@@ -187,7 +187,7 @@ public class CustomAdapter extends ArrayAdapter<DataModel> implements View.OnCli
             public void onClick(View v) {
                 boolean checked = ((RadioButton) v).isChecked();
 
-                switch (v.getId()) {
+                switch (v.getId()) {/*
                     case R.id.present:
                         if (checked)
                             Toast.makeText(getContext(), " present", Toast.LENGTH_LONG).show();
@@ -196,7 +196,7 @@ public class CustomAdapter extends ArrayAdapter<DataModel> implements View.OnCli
                         if (checked)
                             Toast.makeText(getContext(), " permission", Toast.LENGTH_LONG).show();
                         break;
-
+*/
                 }
             }
         });
@@ -227,6 +227,8 @@ public class CustomAdapter extends ArrayAdapter<DataModel> implements View.OnCli
                 .buildRound(firstLetter, randomColor);
 
         viewHolder.info.setImageDrawable(drawable);
+
+
 
         //Return the comple view render on screen
         return convertView;

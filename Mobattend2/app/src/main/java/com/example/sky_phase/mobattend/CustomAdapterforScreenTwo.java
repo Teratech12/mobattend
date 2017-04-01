@@ -38,6 +38,7 @@ public class CustomAdapterforScreenTwo extends ArrayAdapter<DataModelforScreenTw
         ImageView info, call,message;
         TextView mydate;
         EditText editText;
+        ImageView displaycount;
 
     }
 
@@ -85,6 +86,7 @@ public class CustomAdapterforScreenTwo extends ArrayAdapter<DataModelforScreenTw
     public View getView(int position, View convertView, ViewGroup parent) {
         //get data item for this position
         DataModelforScreenTwo DataModelforScreenTwo = getItem(position);
+        String GETID = DataModelforScreenTwo.getType();
         //check if an existing view is being reused
         viewHolder viewHolder;
         //view lookup cache
@@ -99,6 +101,7 @@ public class CustomAdapterforScreenTwo extends ArrayAdapter<DataModelforScreenTw
             viewHolder.mydate = (TextView) convertView.findViewById(R.id.type1) ;
            // viewHolder.txtVersion = (TextView) convertView.findViewById(R.id.version_number);
             viewHolder.info = (ImageView) convertView.findViewById(R.id.item_info);
+            viewHolder.displaycount = (ImageView) convertView.findViewById(R.id.displaycount);
             viewHolder.editText = (EditText)convertView.findViewById(R.id.editText);
             viewHolder.Date = (TextView)convertView.findViewById(R.id.type) ;
             // viewHolder.call = (ImageView)convertView.findViewById(R.id.makecall);
@@ -121,7 +124,7 @@ public class CustomAdapterforScreenTwo extends ArrayAdapter<DataModelforScreenTw
        // String firstLetter = String.valueOf(String.valueOf(getItem(position)).charAt(0));
         String firstLetter = String.valueOf(viewHolder.txtName.getText().toString().charAt(0));
         viewHolder.txtType.setText(DataModelforScreenTwo.getType());
-        viewHolder.mydate.setText(DataModelforScreenTwo.getDate());
+       // viewHolder.mydate.setText(DataModelforScreenTwo.getDate());
         Random rand = new Random();
         int r = rand.nextInt(255);
         int g = rand.nextInt(255);
@@ -132,13 +135,27 @@ public class CustomAdapterforScreenTwo extends ArrayAdapter<DataModelforScreenTw
 
         viewHolder.info.setImageDrawable(drawable);
 
+        String keep = viewHolder.mydate.getText().toString();
+        Random rand1 = new Random();
+        int a = rand1.nextInt(255);
+        int d = rand1.nextInt(255);
+        int c = rand1.nextInt(255);
+        int randomColor1 = Color.rgb(a,d,c);
+        int getcolor = Color.DKGRAY;
+        int color = Color.alpha(R.color.colorPrimary);
+        TextDrawable mydrawable = TextDrawable.builder().buildRound(keep,getcolor);
+        viewHolder.displaycount.setImageDrawable(mydrawable);
+
+
 
 
 
 
         viewHolder.mydate.setText(DataModelforScreenTwo.getMydate())
         ;        viewHolder.info.setOnClickListener(this);
+             viewHolder.displaycount.setOnClickListener(this);
         viewHolder.info.setTag(position);
+        viewHolder.displaycount.setTag(position);
         //Return the comple view render on screen
         return convertView;
     }

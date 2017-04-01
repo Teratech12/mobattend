@@ -233,6 +233,16 @@ public class MobattendDatabase extends SQLiteOpenHelper {
     }
 
 
+    public int getCount(String clkid ){
+        //String be = "zggx";
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor sky = db.rawQuery("SELECT * FROM " + STUDENT_TABLE_NAME + " WHERE "+FK_CLASS_ID_COLUMN+ "='"+clkid + "'", null);
+          int count = sky.getCount();
+        return count;
+    }
+
+
     public Cursor getRandomInfo( ){
 
         SQLiteDatabase db = this.getWritableDatabase();
