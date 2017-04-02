@@ -20,12 +20,11 @@ import java.util.Locale;
 import java.util.Random;
 
 
-
 /**
  * Created by SKY-PHASE on 1/10/2017.
  */
 
-public class CustomAdapterforScreenTwo extends ArrayAdapter<DataModelforScreenTwo> implements View.OnClickListener {
+public class CustomAdapterforSearch extends ArrayAdapter<DataModelforScreenTwo> implements View.OnClickListener {
     private ArrayList<DataModelforScreenTwo> dataSet;
     Context mContext;
 
@@ -43,7 +42,7 @@ public class CustomAdapterforScreenTwo extends ArrayAdapter<DataModelforScreenTw
 
     }
 
-    public CustomAdapterforScreenTwo(ArrayList<DataModelforScreenTwo> data, Context context){
+    public CustomAdapterforSearch(ArrayList<DataModelforScreenTwo> data, Context context){
         super(context, R.layout.row_itemforscreentwo,data);
         this.dataSet = data;
         this.mContext = context;

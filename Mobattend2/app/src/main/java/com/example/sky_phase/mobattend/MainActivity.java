@@ -257,6 +257,7 @@ public class MainActivity extends AppCompatActivity
 
         @Override
         public CharSequence getPageTitle(int position) {
+            
             switch (position) {
 
                 case 0:
@@ -266,7 +267,7 @@ public class MainActivity extends AppCompatActivity
                 case 2:
                     return "STATISTICS";
                 case 3:
-                    return "ROLLCALL";
+                    return "SEARCH";
             }
             return null;
         }

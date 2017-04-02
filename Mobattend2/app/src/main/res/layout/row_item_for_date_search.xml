@@ -40,37 +40,5 @@
         android:textColor="#0AAEF3"
         android:id="@+id/type" />
 
-    <RadioGroup
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:id="@+id/radiogroup"
-          android:orientation="horizontal"
-
-        android:layout_below="@+id/name"
-        android:layout_alignLeft="@+id/name"
-    >
-
-     <RadioButton
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:buttonTint="@color/radiobutton3"
-         android:id="@+id/present" />
-          <RadioButton
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:buttonTint="@color/radiobutton2"
-              android:id="@+id/permission"
-             />
-          <RadioButton
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:buttonTint="@color/radiobutton1"
-              android:id="@+id/absent" />
-
-
-
-
-          </RadioGroup>
-
 
 </RelativeLayout>

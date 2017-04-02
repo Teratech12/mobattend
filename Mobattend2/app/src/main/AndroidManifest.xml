@@ -24,7 +24,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ReminderActivity" android:label="Set Reminder"/>
+        <activity
+            android:name=".ReminderActivity"
+            android:label="Set Reminder" />
         <activity
             android:name=".Myattendance"
             android:label="Attendance"
@@ -34,11 +36,20 @@
 
         <receiver android:name=".AlarmReceiver" />
 
-        <activity android:name=".CREATE_CLASS" android:label="Create Class" />
-        <activity android:name=".ADDING_STUDENTS" android:label="Add Students" />
-        <activity android:name=".HoldSdCard"  />
+        <activity
+            android:name=".CREATE_CLASS"
+            android:label="Create Class" />
+        <activity
+            android:name=".ADDING_STUDENTS"
+            android:label="Add Students" />
+        <activity android:name=".HoldSdCard" />
         <activity android:name=".EventActivity" />
-        <activity android:name=".Help" android:label="Help"></activity>
+        <activity
+            android:name=".Help"
+            android:label="Help" />
+        <activity android:name=".ChooseSearch" />
+        <activity android:name=".Display_Search_By_Date" />
+        <activity android:name=".Display_Search_By_Students"></activity>
     </application>
 
 </manifest>
