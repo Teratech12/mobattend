@@ -291,10 +291,10 @@ public class MobattendDatabase extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery("SELECT s.student_name, s.student_id " +
                 "FROM student AS s " +
-                "JOIN student_event AS v ON s.student_id = v.student_id " +
-                "JOIN event AS e ON e.event_id = v.event_id " +
-                "JOIN attendance AS a ON a.attendance_id = v.attendance_id " +
-                "JOIN class AS c ON c.class_id = s.class_id " +
+                "JOIN student_event AS v ON s.student_id = v.fk_student_id " +
+                "JOIN event AS e ON e.event_id = v.fk_event_id " +
+                "JOIN attendance AS a ON a.attendance_id = v.fk_attendance_id " +
+                "JOIN class AS c ON c.class_id = s.fk_class_id " +
                 "WHERE c.class_id = '"+ClassId+"' AND a.attendance_name ='"+AttendanceDate+"'"  ,null);
         return cursor;
 
