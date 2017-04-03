@@ -288,9 +288,6 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_addManually) {
             Intent intent = new Intent(MainActivity.this,CREATE_CLASS.class);
-
-        } else if (id == R.id.nav_searchParticularDay) {
-            Intent intent = new Intent(MainActivity.this,FirstTab.class);
             startActivity(intent);
 
         }  else if (id == R.id.nav_newReminder) {

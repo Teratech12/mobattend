@@ -23,15 +23,6 @@
         </menu>
     </item>
 
-    <item android:title="Search">
-        <menu>
-            <item
-                android:id="@+id/nav_searchParticularDay"
-                android:icon="@drawable/todaysearch2"
-                android:title="Create new search" />
-        </menu>
-    </item>
-
     <item android:title="Reminders">
         <menu>
             <item
