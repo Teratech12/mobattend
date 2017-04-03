@@ -56,7 +56,9 @@
         android:focusable="true"
         android:layout_below="@+id/textView6"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textCursorDrawable="@drawable/cursor"
+        android:theme="@style/EditTextStyleme"/>
 
 
     <EditText
@@ -74,6 +76,8 @@
         android:layout_marginBottom="34dp"
         android:layout_above="@+id/addstudentText"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textCursorDrawable="@drawable/cursor"
+        android:theme="@style/EditTextStyleme"/>
 
 </RelativeLayout>

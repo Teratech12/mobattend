@@ -29,6 +29,7 @@ public class Display_Search_By_Students extends AppCompatActivity {
         spinner = (Spinner)findViewById(R.id.spinnerforstudent);
         String fine = you.classid;
         click2 =  (Button)findViewById(R.id.click2);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         final MobattendDatabase db = new MobattendDatabase(this);
         Cursor sky3 = db.getListContents2(fine);
@@ -41,12 +42,12 @@ public class Display_Search_By_Students extends AppCompatActivity {
         spinner.setAdapter(adapter1);
 
         click2.setOnClickListener(new View.OnClickListener() {
-            ArrayList<DataModelForStudentSearch> dataModels;
+            ArrayList<DataModelForDateSearch> dataModels;
             @Override
             public void onClick(View v) {
 
                 listView = (ListView) findViewById(R.id.list2);
-                dataModels = new ArrayList<DataModelForStudentSearch>();
+                dataModels = new ArrayList<>();
 
                 String SpinnerText = spinner.getSelectedItem().toString();
 
@@ -58,7 +59,7 @@ public class Display_Search_By_Students extends AppCompatActivity {
 
                 } else {
                     while (getstudent.moveToNext()) {
-                        dataModels.add(new DataModelForStudentSearch(getstudent.getString(0), getstudent.getString(1)));
+                        dataModels.add(new DataModelForDateSearch(getstudent.getString(0), getstudent.getString(1)));
                         adapter = new CustomAdapterForDateSearch(dataModels, getApplicationContext());
                         listView.setAdapter(adapter);
 
@@ -69,5 +70,11 @@ public class Display_Search_By_Students extends AppCompatActivity {
 
             }
         });
+    }
+
+    public  boolean onSupportNavigateUp(){
+        finish();
+
+        return true;
     }
 }

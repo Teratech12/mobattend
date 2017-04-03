@@ -23,6 +23,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -117,7 +118,7 @@ public class MainActivity extends AppCompatActivity
                 final View textEntryView = factory.inflate(R.layout.choosemanually, null);
 
 
-                final AlertDialog.Builder alert = new AlertDialog.Builder(context, R.style.AlertDialCustom);
+                final AlertDialog.Builder alert = new AlertDialog.Builder(context);
 
 
                 alert.setView(textEntryView);
@@ -283,14 +284,18 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(MainActivity.this,Help.class);
             startActivity(intent);
         } else if (id == R.id.nav_importFromExcel) {
+            Toast.makeText(MainActivity.this,"feature not added yet",Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.nav_addManually) {
+            Intent intent = new Intent(MainActivity.this,CREATE_CLASS.class);
 
         } else if (id == R.id.nav_searchParticularDay) {
+            Intent intent = new Intent(MainActivity.this,FirstTab.class);
+            startActivity(intent);
 
-        } else if (id == R.id.nav_EditReminder) {
-
-        } else if (id == R.id.nav_newReminder) {
+        }  else if (id == R.id.nav_newReminder) {
+            Intent intent = new Intent(MainActivity.this,ReminderActivity.class);
+            startActivity(intent);
 
         }
 

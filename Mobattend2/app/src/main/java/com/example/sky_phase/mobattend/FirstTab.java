@@ -37,7 +37,7 @@ public class FirstTab extends Fragment {
     ;
         listView = (ListView) rootView.findViewById(R.id.list);
         dataModels = new ArrayList<>();
-        View emptyView = getActivity().getLayoutInflater().inflate(R.layout.emptyclasslist, null);
+        View emptyView = getActivity().getLayoutInflater().inflate(R.layout.emptyfirsttab, null);
         ((ViewGroup)listView.getParent()).addView(emptyView);
         MobattendDatabase db = new MobattendDatabase(getActivity());
         Cursor sky2 = db.getListContents();

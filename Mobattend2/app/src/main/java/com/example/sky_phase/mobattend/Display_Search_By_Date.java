@@ -8,7 +8,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,16 +30,19 @@ public class Display_Search_By_Date extends AppCompatActivity {
         setContentView(R.layout.activity_display__search__by__date);
         display_date_spinner = (Spinner) findViewById(R.id.display_date_spinner);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         click = (Button) findViewById(R.id.click);
+        String myclassid = frstTab.classid;
         final MobattendDatabase db = new MobattendDatabase(this);
-        Cursor sky3 = db.displayDate();
+        Cursor sky3 = db.displayDate1(myclassid);
         final List<String> array1 = new ArrayList<>();
 
         //  String[] array = new String[sky2.getCount()];
         //  int i =0;
         while (sky3.moveToNext()) {
-            uname = sky3.getString(sky3.getColumnIndex("attendance_name"));
+            uname = sky3.getString(0);
             array1.add(uname);
         }
         final ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, array1);
@@ -67,7 +69,7 @@ public class Display_Search_By_Date extends AppCompatActivity {
 
                 String fine1 = frstTab.classid;
 
-                Toast.makeText(Display_Search_By_Date.this, SpinnerText + "  " + fine1, Toast.LENGTH_LONG).show();
+
 
                 Cursor getstudent = db.checkingRoll(fine1, SpinnerText);
                 if (getstudent.getCount() == 0) {
@@ -94,6 +96,11 @@ public class Display_Search_By_Date extends AppCompatActivity {
 
 
 
+    }
+    public  boolean onSupportNavigateUp(){
+        finish();
+
+        return true;
     }
 
 }

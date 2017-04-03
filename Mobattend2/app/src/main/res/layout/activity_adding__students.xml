@@ -23,7 +23,9 @@
         android:layout_marginTop="18dp"
         android:layout_below="@+id/textView7"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textCursorDrawable="@drawable/cursor"
+        android:theme="@style/EditTextStyleme"/>
 
     <EditText
         android:layout_width="500dp"
@@ -39,7 +41,9 @@
         android:layout_marginTop="7dp"
         android:layout_below="@+id/textView8"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textCursorDrawable="@drawable/cursor"
+        android:theme="@style/EditTextStyleme"/>
 
     <EditText
         android:layout_width="500dp"
@@ -57,7 +61,9 @@
         android:focusable="true"
         android:layout_below="@+id/textView9"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textCursorDrawable="@drawable/cursor"
+        android:theme="@style/EditTextStyleme"/>
 
 
     <Button
@@ -71,7 +77,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        />
 
     <Button
         android:text="Submit and Finish"

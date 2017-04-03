@@ -49,7 +49,7 @@ public class CustomAdapterForDateSearch extends ArrayAdapter<DataModelForDateSea
 
     }
 
-    public CustomAdapterForDateSearch(ArrayList<DataModelForStudentSearch> data, Context context){
+    public CustomAdapterForDateSearch(ArrayList<DataModelForDateSearch> data, Context context){
         super(context, R.layout.row_item_for_date_search,data);
         this.dataSet = data;
         this.mContext = context;

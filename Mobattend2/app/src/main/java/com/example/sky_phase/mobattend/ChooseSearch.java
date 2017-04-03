@@ -18,6 +18,7 @@ public class ChooseSearch extends AppCompatActivity {
         setContentView(R.layout.activity_choose_search);
         search_by_date = (ImageView) findViewById(R.id.search_by_date);
         student = (ImageView) findViewById(R.id.student_name);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
        String keep = "Search  by  date";
         String keep2 = "Search using student name";
@@ -43,5 +44,11 @@ public class ChooseSearch extends AppCompatActivity {
             }
         });
 
+    }
+
+    public  boolean onSupportNavigateUp(){
+        finish();
+
+        return true;
     }
 }

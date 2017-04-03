@@ -65,8 +65,6 @@ public class WhenStatisticsIsSelected extends Fragment {
         mChart.setDescription("");
 
         text1 = (TextView)rootView.findViewById(R.id.text1);
-        text2 = (TextView)rootView.findViewById(R.id.text2);
-        text3 = (TextView)rootView.findViewById(R.id.text3);
 
         Toast.makeText(getContext(), randomClass2,Toast.LENGTH_LONG).show();
 

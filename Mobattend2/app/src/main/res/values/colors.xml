@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#1A2844</color>
     <color name="colorPrimaryDark">#1A2844</color>
-    <color name="colorAccent">#ffffff</color>
+    <color name="colorAccent">#ffff</color>
     <color name="radiobutton1">#da220f</color>
     <color name="radiobutton2">#3320ef</color>
     <color name="radiobutton3">#13D713</color>

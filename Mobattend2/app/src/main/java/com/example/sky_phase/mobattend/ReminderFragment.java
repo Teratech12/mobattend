@@ -72,7 +72,7 @@ public class ReminderFragment extends Fragment {
         ReminderDatabaseOriginal db = new ReminderDatabaseOriginal(getActivity());
         Cursor datareminder = db.getReminder();
        if (datareminder.getCount() == 0){
-            Toast.makeText(getActivity(), "database empty", Toast.LENGTH_SHORT).show();
+
         }
 
         else{

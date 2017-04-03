@@ -57,8 +57,8 @@ public class StatisticsFragment extends Fragment {
         mChart = (PieChart)rootView.findViewById(R.id.chart1);
 
         text1 = (TextView)rootView.findViewById(R.id.text1);
-        text2 = (TextView)rootView.findViewById(R.id.text2);
-        text3 = (TextView)rootView.findViewById(R.id.text3);
+
+
 
         mChart.setUsePercentValues(true);
         mChart.setDescription("");
