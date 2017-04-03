@@ -274,5 +274,18 @@ public class MobattendDatabase extends SQLiteOpenHelper {
 
     }
 
+    public Cursor QueryForDateSearch( ){
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        Cursor cursor = db.rawQuery("SELECT * FROM " + STUDENT_EVENT_TABLE_NAME + "s." + "JOIN" + ATTENDANCE_TABLE_NAME
+                + "a " + "ON s." + FK_ATTENDANCE_ID_COLUMN + "=p."+ ATTENDANCE_ID_COLUMN + "WHERE a."+ ATTENDANCE_TIME_COLUMN + "LIKE " +
+                "" ,null);
+
+        return cursor;
+
+
+    }
+
 
 }

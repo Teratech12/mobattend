@@ -257,7 +257,7 @@ public class MainActivity extends AppCompatActivity
 
         @Override
         public CharSequence getPageTitle(int position) {
-            
+
             switch (position) {
 
                 case 0:
