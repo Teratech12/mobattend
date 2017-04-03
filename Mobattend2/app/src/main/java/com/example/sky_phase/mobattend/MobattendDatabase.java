@@ -22,7 +22,7 @@ public class MobattendDatabase extends SQLiteOpenHelper {
     public  static  final String STUDENT_ID_COLUMN = "student_id";
     public  static  final String STUDENT_NAME_COLUMN = "student_name";
     public  static  final String DELETED_COLUMN = "deleted";
-    public  static  final String FK_CLASS_ID_COLUMN = "class_id";
+    public  static  final String FK_CLASS_ID_COLUMN = "fk_class_id";
 
 
     //CREATING CLASS TABLE
@@ -33,9 +33,9 @@ public class MobattendDatabase extends SQLiteOpenHelper {
     //CREATING STUDENT_EVENT TABLE
     public static final String STUDENT_EVENT_TABLE_NAME = "student_event";
     public  static  final String STUDENT_EVENT_ID_COLUMN = "student_event_id";
-    public  static  final String FK_STUDENT_ID_COLUMN = "student_id";
-    public  static  final String FK_ATTENDANCE_ID_COLUMN = "attendance_id";
-    public  static  final String FK_EVENT_ID_COLUMN = "event_id";
+    public  static  final String FK_STUDENT_ID_COLUMN = "fk_student_id";
+    public  static  final String FK_ATTENDANCE_ID_COLUMN = "fk_attendance_id";
+    public  static  final String FK_EVENT_ID_COLUMN = "fk_event_id";
 
     //CREATING THE EVENT TABLE
     public static final String EVENT_TABLE_NAME = "event";
@@ -274,19 +274,19 @@ public class MobattendDatabase extends SQLiteOpenHelper {
 
     }
 
-<<<<<<< HEAD
-    public Cursor QueryForDateSearch( ){
+
+    public Cursor QueryForDateSearch(String date) {
 
         SQLiteDatabase db = this.getWritableDatabase();
 
-        Cursor cursor = db.rawQuery("SELECT * FROM " + STUDENT_EVENT_TABLE_NAME + "s." + "JOIN" + ATTENDANCE_TABLE_NAME
-                + "a " + "ON s." + FK_ATTENDANCE_ID_COLUMN + "=p."+ ATTENDANCE_ID_COLUMN + "WHERE a."+ ATTENDANCE_TIME_COLUMN + "LIKE " +
-                "" ,null);
+        Cursor cursor = db.rawQuery("SELECT * FROM " + STUDENT_EVENT_TABLE_NAME + " s" + " JOIN " + ATTENDANCE_TABLE_NAME
+                + " a " + " ON s." + FK_ATTENDANCE_ID_COLUMN + " =p." + ATTENDANCE_ID_COLUMN + " WHERE a." + ATTENDANCE_TIME_COLUMN + " LIKE '%" +
+                date + "%'" , null);
 
         return cursor;
 
+    }
 
-=======
     public Cursor checkingRoll(String ClassId, String AttendanceDate){
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery("SELECT student.student_id, student.student_name" +
@@ -297,7 +297,7 @@ public class MobattendDatabase extends SQLiteOpenHelper {
                 " JOIN student ON class.class_id = student.class_id" +
                 " WHERE class.class_id = " + ClassId +" AND attendance_id.attendance_name = "+AttendanceDate  ,null);
         return cursor;
->>>>>>> 0b533bd9faee86a52b80aab40610cc9bfe8981ff
+
     }
 
 
