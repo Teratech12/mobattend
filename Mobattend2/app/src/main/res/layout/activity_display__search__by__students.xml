@@ -18,4 +18,23 @@
         android:layout_marginTop="41dp"
         android:id="@+id/spinnerforstudent"
         android:backgroundTint="#1A2844" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/spinnerforstudent"
+        android:layout_marginTop="85dp"
+        android:id="@+id/list2" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerforstudent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="19dp"
+        android:id="@+id/click2" />
 </RelativeLayout>

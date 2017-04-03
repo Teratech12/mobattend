@@ -26,11 +26,13 @@ import static com.example.sky_phase.mobattend.R.id.radiogroup;
  * Created by SKY-PHASE on 1/10/2017.
  */
 
-public class CustomAdapterForDateSearch extends ArrayAdapter<DataModelForDateSearch> implements View.OnClickListener {
-    private ArrayList<DataModelForDateSearch> dataSet;
+public class CustomAdapterForStudentSearch extends ArrayAdapter<DataModelForStudentSearch> implements View.OnClickListener {
+    private ArrayList<DataModelForStudentSearch> dataSet;
     Context mContext;
     ClasssFragment you = new ClasssFragment();
     DataModel dataModel;
+
+;
 
     public static class viewHolder{
         TextView txtName;
@@ -49,7 +51,7 @@ public class CustomAdapterForDateSearch extends ArrayAdapter<DataModelForDateSea
 
     }
 
-    public CustomAdapterForDateSearch(ArrayList<DataModelForStudentSearch> data, Context context){
+    public CustomAdapterForStudentSearch(ArrayList<DataModelForStudentSearch> data, Context context){
         super(context, R.layout.row_item_for_date_search,data);
         this.dataSet = data;
         this.mContext = context;
@@ -132,7 +134,7 @@ public class CustomAdapterForDateSearch extends ArrayAdapter<DataModelForDateSea
 
     public View getView(int position, View convertView, ViewGroup parent) {
         //get data item for this position
-        DataModelForDateSearch dataModel = getItem(position);
+        DataModelForStudentSearch dataModel = getItem(position);
         //check if an existing view is being reused
         viewHolder viewHolder;
         //view lookup cache
@@ -234,7 +236,7 @@ public class CustomAdapterForDateSearch extends ArrayAdapter<DataModelForDateSea
             dataSet.addAll(dataSet);
         }
         else{
-            for(DataModelForDateSearch postDetails: dataSet){
+            for(DataModelForStudentSearch postDetails: dataSet){
                 if(charText.length()!=0&& postDetails.getName().toLowerCase(Locale.getDefault()).contains(charText)){
                     dataSet.add(postDetails);
 
