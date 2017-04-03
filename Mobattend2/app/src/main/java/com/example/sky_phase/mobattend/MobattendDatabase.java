@@ -313,6 +313,21 @@ public class MobattendDatabase extends SQLiteOpenHelper {
 
     }
 
+    public Cursor displayDate1(String ClassId2 ){
 
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        Cursor cursor = db.rawQuery("SELECT a.attendance_name " +
+                "FROM student AS s " +
+                "JOIN student_event AS v ON s.student_id = v.fk_student_id " +
+                "JOIN event AS e ON e.event_id = v.fk_event_id " +
+                "JOIN attendance AS a ON a.attendance_id = v.fk_attendance_id " +
+                "JOIN class AS c ON c.class_id = s.fk_class_id " +
+                "WHERE c.class_id = '"+ClassId2+"'"   ,null);
+
+        return cursor;
+
+
+    }
 
 }
