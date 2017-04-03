@@ -289,13 +289,13 @@ public class MobattendDatabase extends SQLiteOpenHelper {
 
     public Cursor checkingRoll(String ClassId, String AttendanceDate){
         SQLiteDatabase db = this.getWritableDatabase();
-        Cursor cursor = db.rawQuery("SELECT student.student_id, student.student_name" +
-                " FROM student" +
-                " JOIN student_event ON student.student_id = student_event.student_id" +
-                " JOIN student_event ON event.event_id = student_event.event_id" +
-                " JOIN student_event ON attendance.attendance_id = student_event.attendance_id" +
-                " JOIN student ON class.class_id = student.class_id" +
-                " WHERE class.class_id = " + ClassId +" AND attendance_id.attendance_name = "+AttendanceDate  ,null);
+        Cursor cursor = db.rawQuery("SELECT s.student_name, s.student_id " +
+                "FROM student AS s " +
+                "JOIN student_event AS v ON s.student_id = v.student_id " +
+                "JOIN event AS e ON e.event_id = v.event_id " +
+                "JOIN attendance AS a ON a.attendance_id = v.attendance_id " +
+                "JOIN class AS c ON c.class_id = s.class_id " +
+                "WHERE c.class_id = '"+ClassId+"' AND a.attendance_name ='"+AttendanceDate+"'"  ,null);
         return cursor;
 
     }
