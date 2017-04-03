@@ -274,6 +274,7 @@ public class MobattendDatabase extends SQLiteOpenHelper {
 
     }
 
+<<<<<<< HEAD
     public Cursor QueryForDateSearch( ){
 
         SQLiteDatabase db = this.getWritableDatabase();
@@ -285,6 +286,18 @@ public class MobattendDatabase extends SQLiteOpenHelper {
         return cursor;
 
 
+=======
+    public Cursor checkingRoll(String ClassId, String AttendanceDate){
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery("SELECT student.student_id, student.student_name" +
+                " FROM student" +
+                " JOIN student_event ON student.student_id = student_event.student_id" +
+                " JOIN student_event ON event.event_id = student_event.event_id" +
+                " JOIN student_event ON attendance.attendance_id = student_event.attendance_id" +
+                " JOIN student ON class.class_id = student.class_id" +
+                " WHERE class.class_id = " + ClassId +" AND attendance_id.attendance_name = "+AttendanceDate  ,null);
+        return cursor;
+>>>>>>> 0b533bd9faee86a52b80aab40610cc9bfe8981ff
     }
 
 
