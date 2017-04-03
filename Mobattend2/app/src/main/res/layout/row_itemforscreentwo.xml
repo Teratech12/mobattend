@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="10dp"
@@ -36,9 +37,8 @@
         android:layout_alignBottom="@+id/name"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="50dp"
-        android:layout_marginEnd="50dp"
-        android:id="@+id/type" />
+        android:id="@+id/type"
+        android:layout_alignTop="@+id/item_info" />
     <View
         android:layout_width="300dp"
         android:layout_height="1dp"
@@ -50,14 +50,14 @@
         android:background="#DADCDD" />
 
     <TextView
-        android:text="DateSaved"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/type1"
         android:layout_alignRight="@+id/type"
         android:layout_alignEnd="@+id/type"
         android:layout_below="@+id/name"
-        android:textColor="#ffff"
+        android:textColor="#1A2844"
+        tools:text="Datesaved"
         android:visibility="invisible"/>
 
     <ImageView

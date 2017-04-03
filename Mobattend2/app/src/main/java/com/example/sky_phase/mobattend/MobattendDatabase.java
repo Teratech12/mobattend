@@ -254,5 +254,25 @@ public class MobattendDatabase extends SQLiteOpenHelper {
 
     }
 
+    public Integer DeleteFromStudentEventTable(String student_id, String attendance_id, String event_id){
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        return   db.delete(STUDENT_EVENT_TABLE_NAME, FK_STUDENT_ID_COLUMN + "=? AND " + FK_ATTENDANCE_ID_COLUMN + "=? AND " +
+                        FK_EVENT_ID_COLUMN + "=?",
+                new String[] {student_id, attendance_id, event_id});
+
+
+    }
+    public Cursor displayDate( ){
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        Cursor cursor = db.rawQuery("SELECT * FROM " + ATTENDANCE_TABLE_NAME  ,null);
+
+        return cursor;
+
+
+    }
+
 
 }

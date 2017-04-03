@@ -1,6 +1,7 @@
 package com.example.sky_phase.mobattend;
 
 import android.annotation.TargetApi;
+import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
@@ -53,9 +54,13 @@ public class AlarmReceiver extends BroadcastReceiver {
                 new Intent(context,ReminderFragment.class),0);
 
         NotificationCompat.Builder mBuilder = (NotificationCompat.Builder) new NotificationCompat.Builder(context)
-                .setSmallIcon(R.drawable.user)
+                .setSmallIcon(R.drawable.ic_launcher)
                 .setContentTitle(msg)
                 .setTicker(msgAlert)
+                .setCategory(Notification.CATEGORY_MESSAGE)
+                .setPriority(Notification.PRIORITY_HIGH)
+
+                .setDefaults(Notification.DEFAULT_ALL)
                 .setContentText(msgText);
 
                   mBuilder.setContentIntent(notificIntent);

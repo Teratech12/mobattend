@@ -26,8 +26,8 @@ import static com.example.sky_phase.mobattend.R.id.radiogroup;
  * Created by SKY-PHASE on 1/10/2017.
  */
 
-public class CustomAdapter extends ArrayAdapter<DataModel> implements View.OnClickListener {
-    private ArrayList<DataModel> dataSet;
+public class CustomAdapterForDateSearch extends ArrayAdapter<DataModelForDateSearch> implements View.OnClickListener {
+    private ArrayList<DataModelForDateSearch> dataSet;
     Context mContext;
     ClasssFragment you = new ClasssFragment();
     DataModel dataModel;
@@ -49,8 +49,8 @@ public class CustomAdapter extends ArrayAdapter<DataModel> implements View.OnCli
 
     }
 
-    public CustomAdapter(ArrayList<DataModel> data, Context context){
-        super(context, R.layout.row_item,data);
+    public CustomAdapterForDateSearch(ArrayList<DataModelForDateSearch> data, Context context){
+        super(context, R.layout.row_item_for_date_search,data);
         this.dataSet = data;
         this.mContext = context;
 
@@ -132,7 +132,7 @@ public class CustomAdapter extends ArrayAdapter<DataModel> implements View.OnCli
 
     public View getView(int position, View convertView, ViewGroup parent) {
         //get data item for this position
-        DataModel dataModel = getItem(position);
+        DataModelForDateSearch dataModel = getItem(position);
         //check if an existing view is being reused
         viewHolder viewHolder;
         //view lookup cache
@@ -141,7 +141,7 @@ public class CustomAdapter extends ArrayAdapter<DataModel> implements View.OnCli
         if (convertView == null) {
             viewHolder = new viewHolder();
             LayoutInflater inflater = LayoutInflater.from(getContext());
-            convertView = inflater.inflate(R.layout.row_item, parent, false);
+            convertView = inflater.inflate(R.layout.row_item_for_date_search, parent, false);
             viewHolder.txtName = (TextView) convertView.findViewById(R.id.name);
             viewHolder.txtType = (TextView) convertView.findViewById(R.id.type);
             viewHolder.mydate = (TextView) convertView.findViewById(R.id.type1) ;
@@ -251,7 +251,7 @@ public class CustomAdapter extends ArrayAdapter<DataModel> implements View.OnCli
             dataSet.addAll(dataSet);
         }
         else{
-            for(DataModel postDetails: dataSet){
+            for(DataModelForDateSearch postDetails: dataSet){
                 if(charText.length()!=0&& postDetails.getName().toLowerCase(Locale.getDefault()).contains(charText)){
                     dataSet.add(postDetails);
 
