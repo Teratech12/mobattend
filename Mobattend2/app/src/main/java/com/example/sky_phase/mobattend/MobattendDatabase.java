@@ -224,7 +224,8 @@ public class MobattendDatabase extends SQLiteOpenHelper {
     }
 
 
-    public Cursor getListContents2(String clkid ){
+    public Cursor
+    getListContents2(String clkid ){
         //String be = "zggx";
 
         SQLiteDatabase db = this.getWritableDatabase();

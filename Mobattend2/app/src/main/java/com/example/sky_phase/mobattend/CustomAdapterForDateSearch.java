@@ -192,24 +192,7 @@ public class CustomAdapterForDateSearch extends ArrayAdapter<DataModelForDateSea
             result = convertView;
         }
 
-        viewHolder.radioGroup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                boolean checked = ((RadioButton) v).isChecked();
 
-                switch (v.getId()) {/*
-                    case R.id.present:
-                        if (checked)
-                            Toast.makeText(getContext(), " present", Toast.LENGTH_LONG).show();
-                        break;
-                    case R.id.permission:
-                        if (checked)
-                            Toast.makeText(getContext(), " permission", Toast.LENGTH_LONG).show();
-                        break;
-*/
-                }
-            }
-        });
        // Animation animation = AnimationUtils.loadAnimation(mContext, (position > lastPosition) ? R.anim.up_from_bottom : R.anim.down_from_top);
       //  result.startAnimation(animation);
         lastPosition = position;
@@ -220,12 +203,12 @@ public class CustomAdapterForDateSearch extends ArrayAdapter<DataModelForDateSea
         ;        viewHolder.info.setOnClickListener(this);
 
         viewHolder.info.setTag(position);
-        viewHolder.absent.setTag(position);
-        viewHolder.absent.setOnClickListener(this);
-        viewHolder.permission.setTag(position);
-        viewHolder.permission.setOnClickListener(this);
-        viewHolder.present.setTag(position);
-        viewHolder.present.setOnClickListener(this);
+//        viewHolder.absent.setTag(position);
+       // viewHolder.absent.setOnClickListener(this);
+       // viewHolder.permission.setTag(position);
+      //  viewHolder.permission.setOnClickListener(this);
+      //  viewHolder.present.setTag(position);
+      //  viewHolder.present.setOnClickListener(this);
        // String firstLetter = String.valueOf(String.valueOf(getItem(position)).charAt(0));
         String firstLetter = String.valueOf(viewHolder.txtName.getText().toString().charAt(0));
         Random rand = new Random();
