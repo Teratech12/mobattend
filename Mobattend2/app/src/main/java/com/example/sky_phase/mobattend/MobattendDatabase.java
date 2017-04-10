@@ -22,7 +22,7 @@ public class MobattendDatabase extends SQLiteOpenHelper {
     public  static  final String STUDENT_ID_COLUMN = "student_id";
     public  static  final String STUDENT_NAME_COLUMN = "student_name";
     public  static  final String DELETED_COLUMN = "deleted";
-    public  static  final String FK_CLASS_ID_COLUMN = "class_id";
+    public  static  final String FK_CLASS_ID_COLUMN = "fk_class_id";
 
 
     //CREATING CLASS TABLE
@@ -33,9 +33,9 @@ public class MobattendDatabase extends SQLiteOpenHelper {
     //CREATING STUDENT_EVENT TABLE
     public static final String STUDENT_EVENT_TABLE_NAME = "student_event";
     public  static  final String STUDENT_EVENT_ID_COLUMN = "student_event_id";
-    public  static  final String FK_STUDENT_ID_COLUMN = "student_id";
-    public  static  final String FK_ATTENDANCE_ID_COLUMN = "attendance_id";
-    public  static  final String FK_EVENT_ID_COLUMN = "event_id";
+    public  static  final String FK_STUDENT_ID_COLUMN = "fk_student_id";
+    public  static  final String FK_ATTENDANCE_ID_COLUMN = "fk_attendance_id";
+    public  static  final String FK_EVENT_ID_COLUMN = "fk_event_id";
 
     //CREATING THE EVENT TABLE
     public static final String EVENT_TABLE_NAME = "event";
@@ -274,5 +274,60 @@ public class MobattendDatabase extends SQLiteOpenHelper {
 
     }
 
+
+    public Cursor QueryForDateSearch(String date) {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        Cursor cursor = db.rawQuery("SELECT * FROM " + STUDENT_EVENT_TABLE_NAME + " s" + " JOIN " + ATTENDANCE_TABLE_NAME
+                + " a " + " ON s." + FK_ATTENDANCE_ID_COLUMN + " =p." + ATTENDANCE_ID_COLUMN + " WHERE a." + ATTENDANCE_TIME_COLUMN + " LIKE '%" +
+                date + "%'" , null);
+
+        return cursor;
+
+    }
+
+    public Cursor checkingRoll(String ClassId, String AttendanceDate){
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery("SELECT s.student_name, s.student_id " +
+                "FROM student AS s " +
+                "JOIN student_event AS v ON s.student_id = v.fk_student_id " +
+                "JOIN event AS e ON e.event_id = v.fk_event_id " +
+                "JOIN attendance AS a ON a.attendance_id = v.fk_attendance_id " +
+                "JOIN class AS c ON c.class_id = s.fk_class_id " +
+                "WHERE c.class_id = '"+ClassId+"' AND a.attendance_name ='"+AttendanceDate+"'"  ,null);
+        return cursor;
+
+    }
+
+    public Cursor checkingRollbyName(String ClassId1, String studentName){
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery("SELECT e.event_name, a.attendance_name " +
+                "FROM student AS s " +
+                "JOIN student_event AS v ON s.student_id = v.fk_student_id " +
+                "JOIN event AS e ON e.event_id = v.fk_event_id " +
+                "JOIN attendance AS a ON a.attendance_id = v.fk_attendance_id " +
+                "JOIN class AS c ON c.class_id = s.fk_class_id " +
+                "WHERE c.class_id = '"+ClassId1+"' AND s.student_name ='"+studentName+"'"  ,null);
+        return cursor;
+
+    }
+
+    public Cursor displayDate1(String ClassId2 ){
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        Cursor cursor = db.rawQuery("SELECT a.attendance_name " +
+                "FROM student AS s " +
+                "JOIN student_event AS v ON s.student_id = v.fk_student_id " +
+                "JOIN event AS e ON e.event_id = v.fk_event_id " +
+                "JOIN attendance AS a ON a.attendance_id = v.fk_attendance_id " +
+                "JOIN class AS c ON c.class_id = s.fk_class_id " +
+                "WHERE c.class_id = '"+ClassId2+"'"   ,null);
+
+        return cursor;
+
+
+    }
 
 }
