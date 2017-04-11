@@ -46,7 +46,7 @@ public class MobattendDatabase extends SQLiteOpenHelper {
     //CREATING THE ATTENDANCE TABLE
     public static final String ATTENDANCE_TABLE_NAME = "attendance";
     public  static  final String ATTENDANCE_ID_COLUMN = "attendance_id";
-    public  static  final String ATTENDANCE_TIME_COLUMN = "attendance_name";
+    public  static  final String ATTENDANCE_TIME_COLUMN = "attendance_time";
 
 
 
@@ -63,7 +63,7 @@ public class MobattendDatabase extends SQLiteOpenHelper {
         // from Class_id
         //deleted should be boolean and by default 0
         String CREATE_STUDENT_TABLE = "CREATE TABLE " + STUDENT_TABLE_NAME + "("
-                + STUDENT_ID_COLUMN + " VARCHAR PRIMARY KEY NOT NULL," + STUDENT_NAME_COLUMN +" TEXT,"
+                + STUDENT_ID_COLUMN + " VARCHAR NOT NULL," + STUDENT_NAME_COLUMN +" TEXT,"
                 + DELETED_COLUMN +" BOOLEAN NOT NULL DEFAULT 0," + FK_CLASS_ID_COLUMN +" VARCHAR,"
                 + "FOREIGN KEY ("+FK_CLASS_ID_COLUMN+") REFERENCES " +CLASS_TABLE_NAME + " ("+CLASS_ID_COLUMN+")"  +");";
 
@@ -296,14 +296,14 @@ public class MobattendDatabase extends SQLiteOpenHelper {
                 "JOIN event AS e ON e.event_id = v.fk_event_id " +
                 "JOIN attendance AS a ON a.attendance_id = v.fk_attendance_id " +
                 "JOIN class AS c ON c.class_id = s.fk_class_id " +
-                "WHERE c.class_id = '"+ClassId+"' AND a.attendance_name ='"+AttendanceDate+"'"  ,null);
+                "WHERE c.class_id = '"+ClassId+"' AND a.attendance_time ='"+AttendanceDate+"'"  ,null);
         return cursor;
 
     }
 
     public Cursor checkingRollbyName(String ClassId1, String studentName){
         SQLiteDatabase db = this.getWritableDatabase();
-        Cursor cursor = db.rawQuery("SELECT e.event_name, a.attendance_name " +
+        Cursor cursor = db.rawQuery("SELECT distinct e.event_name, a.attendance_time " +
                 "FROM student AS s " +
                 "JOIN student_event AS v ON s.student_id = v.fk_student_id " +
                 "JOIN event AS e ON e.event_id = v.fk_event_id " +
@@ -318,7 +318,7 @@ public class MobattendDatabase extends SQLiteOpenHelper {
 
         SQLiteDatabase db = this.getWritableDatabase();
 
-        Cursor cursor = db.rawQuery("SELECT a.attendance_name " +
+        Cursor cursor = db.rawQuery("SELECT distinct a.attendance_time " +
                 "FROM student AS s " +
                 "JOIN student_event AS v ON s.student_id = v.fk_student_id " +
                 "JOIN event AS e ON e.event_id = v.fk_event_id " +
@@ -327,6 +327,59 @@ public class MobattendDatabase extends SQLiteOpenHelper {
                 "WHERE c.class_id = '"+ClassId2+"'"   ,null);
 
         return cursor;
+
+
+    }
+
+    public int getAttendanceCount(String ClassId2 ){
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        Cursor cursor = db.rawQuery("SELECT distinct e.event_id, e.event_name " +
+                "FROM student AS s " +
+                "JOIN student_event AS v ON s.student_id = v.fk_student_id " +
+                "JOIN event AS e ON e.event_id = v.fk_event_id " +
+                "JOIN attendance AS a ON a.attendance_id = v.fk_attendance_id " +
+                "JOIN class AS c ON c.class_id = s.fk_class_id " +
+                "WHERE c.class_id = '"+ClassId2+"'"   ,null);
+            int count = cursor.getCount();
+
+        return count;
+
+
+    }
+
+    public Cursor getAllStudentsofClass (String ClassId2 ){
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        Cursor cursor = db.rawQuery("SELECT distinct s.student_id, s.student_name " +
+                "FROM student AS s " +
+                "JOIN student_event AS v ON s.student_id = v.fk_student_id " +
+                "JOIN event AS e ON e.event_id = v.fk_event_id " +
+                "JOIN attendance AS a ON a.attendance_id = v.fk_attendance_id " +
+                "JOIN class AS c ON c.class_id = s.fk_class_id " +
+                "WHERE c.class_id = '"+ClassId2+"'"   ,null);
+
+        return cursor;
+
+
+    }
+
+    public int getNumbOfTimesOfStd (String ClassId2, String StudentId){
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        Cursor cursor = db.rawQuery("SELECT distinct a.attendance_time, e.event_name " +
+                "FROM student AS s " +
+                "JOIN student_event AS v ON s.student_id = v.fk_student_id " +
+                "JOIN event AS e ON e.event_id = v.fk_event_id " +
+                "JOIN attendance AS a ON a.attendance_id = v.fk_attendance_id " +
+                "JOIN class AS c ON c.class_id = s.fk_class_id " +
+                "WHERE c.class_id = '"+ClassId2+"' AND s.student_id ='"+StudentId+"'"   ,null);
+        int count = cursor.getCount();
+
+        return count;
 
 
     }
