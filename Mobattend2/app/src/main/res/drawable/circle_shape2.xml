@@ -6,6 +6,6 @@
     android:useLevel="false"
 
     >
-<solid android:color="@color/radiobutton1"/>
+    <solid android:color="@color/radiobutton2"/>
 
 </shape>

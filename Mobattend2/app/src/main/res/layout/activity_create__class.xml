@@ -22,30 +22,30 @@
         android:text="Enter class name" />
 
     <Button
-        android:text="Add Students"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/addstudentText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Students"
         android:textColor="#1A2844"
-        android:layout_centerVertical="true"
+        android:layout_below="@+id/ClassIdEditBox"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_marginTop="32dp" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Enter course code"
-        android:layout_above="@+id/ClassIdEditBox"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/ClassNameEditBox"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="500dp"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:inputType="textPersonName|textCapWords"
         android:ems="10"
         android:id="@+id/ClassNameEditBox"
         android:hint="Class/Course/Meeting Name"
@@ -65,6 +65,7 @@
         android:layout_width="500dp"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_"
         android:ems="10"
         android:id="@+id/ClassIdEditBox"
         android:hint="Unique Class Id"
@@ -73,11 +74,10 @@
         android:textColorHighlight="#0958CF"
         android:textColorLink="#0958CF"
         android:focusable="true"
-        android:layout_marginBottom="34dp"
-        android:layout_above="@+id/addstudentText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:textCursorDrawable="@drawable/cursor"
-        android:theme="@style/EditTextStyleme"/>
+        android:theme="@style/EditTextStyleme"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
