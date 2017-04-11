@@ -48,10 +48,13 @@
             android:name=".Help"
             android:label="Help" />
         <activity android:name=".ChooseSearch" />
-        <activity android:name=".Display_Search_By_Date"
-            android:label="Search by date"/>
-        <activity android:name=".Display_Search_By_Students"
-            android:label="Search using student name"></activity>
+        <activity
+            android:name=".Display_Search_By_Date"
+            android:label="Search by date" />
+        <activity
+            android:name=".Display_Search_By_Students"
+            android:label="Search using student name" />
+        <activity android:name=".Stats"></activity>
     </application>
 
 </manifest>

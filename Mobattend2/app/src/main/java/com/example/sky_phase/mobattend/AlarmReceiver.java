@@ -40,7 +40,7 @@ public class AlarmReceiver extends BroadcastReceiver {
         }
         Toast.makeText(context,"Mobattend Reminder",Toast.LENGTH_LONG).show();
         CreateNotification(context,"Mobattend",datareminder.getString(1),"Mobattend Reminder");
-        final MediaPlayer mediaPlayer = MediaPlayer.create(context, R.raw.arise);
+        final MediaPlayer mediaPlayer = MediaPlayer.create(context, R.raw.remindersound);
         mediaPlayer.start();
 
         Vibrator vibrator = (Vibrator)context.getSystemService(Context.VIBRATOR_SERVICE);

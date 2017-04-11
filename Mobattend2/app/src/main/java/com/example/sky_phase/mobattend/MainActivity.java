@@ -237,7 +237,7 @@ public class MainActivity extends AppCompatActivity
                     return tab3;
 
                 case 2:
-                    StatisticsFragment tab4 = new StatisticsFragment();
+                    ModifiedSecondTab tab4 = new ModifiedSecondTab();
                     return tab4;
                 case 3:
                     FirstTab me1 = new FirstTab();

@@ -200,7 +200,7 @@ public class CustomAdapterForDateSearch extends ArrayAdapter<DataModelForDateSea
         viewHolder.txtType.setText(dataModel.getType());
 //        viewHolder.txtVersion.setText(dataModel.getVersion_number());
 //        viewHolder.mydate.setText(dataModel.getFeature())
-        ;        viewHolder.info.setOnClickListener(this);
+        ;       // viewHolder.info.setOnClickListener(this);
 
         viewHolder.info.setTag(position);
 //        viewHolder.absent.setTag(position);
