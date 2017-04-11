@@ -1,45 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_query_page"
+    android:id="@+id/activity_create__class"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.sky_phase.mobattend.QueryPage">
+    tools:context="com.example.sky_phase.mobattend.CREATE_CLASS">
 
-    <Button
-        android:text="Button"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/button" />
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:text="Enter class name" />
+
+    <Button
+        android:text="Upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/importFromExcel"
+        android:textColor="#1A2844"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter course code"
+        android:layout_above="@+id/ClassIdEditBox1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <EditText
-        android:layout_width="170dp"
+        android:layout_width="500dp"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:layout_alignBottom="@+id/button"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="20dp"
-        android:layout_marginEnd="20dp"
-        android:id="@+id/editText4"
-        android:textColorLink="@android:color/holo_blue_dark"
-        android:textColorHighlight="@android:color/holo_blue_dark"
-        android:textColorHint="@android:color/holo_blue_dark" />
-
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:layout_toEndOf="@+id/button"
+        android:id="@+id/ClassNameEditBox1"
+        android:hint="Class/Course/Meeting Name"
+        android:textAlignment="center"
+        android:backgroundTint="#0958CF"
+        android:textColorHighlight="#0958CF"
+        android:textColorLink="#0958CF"
+        android:focusable="true"
+        android:textCursorDrawable="@drawable/cursor"
+        android:theme="@style/EditTextStyleme"
+        android:layout_below="@+id/textView6"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/button"
-        android:id="@+id/list" />
+        android:layout_alignParentStart="true" />
+
+
+    <EditText
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/ClassIdEditBox1"
+        android:hint="Unique Class Id"
+        android:textAlignment="center"
+        android:backgroundTint="#0958CF"
+        android:textColorHighlight="#0958CF"
+        android:textColorLink="#0958CF"
+        android:focusable="true"
+        android:layout_marginBottom="39dp"
+        android:textCursorDrawable="@drawable/cursor"
+        android:theme="@style/EditTextStyleme"
+        android:layout_above="@+id/importFromExcel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>

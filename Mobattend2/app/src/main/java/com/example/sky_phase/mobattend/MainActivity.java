@@ -171,7 +171,7 @@ public class MainActivity extends AppCompatActivity
 
 
                     }
-                }).setNegativeButton("Export from Excel       ", new DialogInterface.OnClickListener() {
+                }).setNegativeButton("Import from Excel", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
 
