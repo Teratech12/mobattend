@@ -5,15 +5,30 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
+import org.apache.poi.hslf.model.Sheet;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Iterator;
 import java.util.Locale;
+
 
 /**
  * Created by SKY-PHASE on 3/5/2017.
  */
 public class MobattendDatabase extends SQLiteOpenHelper {
+    Context context;
+
+
     public static final  String DATABASE_NAME = "mobattend.db";
     private  static  final int DATABASE_VERSION = 7;
 
@@ -53,6 +68,8 @@ public class MobattendDatabase extends SQLiteOpenHelper {
 
     public MobattendDatabase(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
+        this.context = context;
+
     }
 
     @Override
@@ -159,6 +176,31 @@ public class MobattendDatabase extends SQLiteOpenHelper {
 
 
     }
+
+
+
+
+
+    public boolean insertStudentFromExcel(String Student_Name, String Student_Id, String Class){
+        SQLiteDatabase db = getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(STUDENT_NAME_COLUMN, Student_Name);
+        contentValues.put(STUDENT_ID_COLUMN, Student_Id);
+        contentValues.put(FK_CLASS_ID_COLUMN , Class);
+
+        long result = db.insert(STUDENT_TABLE_NAME, null,  contentValues);
+        if(result==-1)
+        {
+            return  false;
+        }
+        else {
+            return true;
+        }
+
+
+
+    }
+
 
     private String getDateTime() {
         SimpleDateFormat dateFormat = new SimpleDateFormat(
@@ -332,7 +374,97 @@ public class MobattendDatabase extends SQLiteOpenHelper {
     }
 
 
+    public void insertExcelToSqlite(Sheet sheet){
+        SQLiteDatabase db = getWritableDatabase();
+
+        for(Iterator<Row> rit = (Iterator<Row>) sheet.getMasterSheet(); rit.hasNext();){
+            Row row = rit.next();
+
+            ContentValues contentValues = new ContentValues();
+
+            row.getCell(0, Row.CREATE_NULL_AS_BLANK).setCellType(Cell.CELL_TYPE_STRING);
+            row.getCell(1, Row.CREATE_NULL_AS_BLANK).setCellType(Cell.CELL_TYPE_STRING);
+            row.getCell(2, Row.CREATE_NULL_AS_BLANK).setCellType(Cell.CELL_TYPE_STRING);
+
+            contentValues.put(STUDENT_ID_COLUMN, row.getCell(0, Row.CREATE_NULL_AS_BLANK).getStringCellValue());
+
+            contentValues.put(STUDENT_NAME_COLUMN, row.getCell(1, Row.CREATE_NULL_AS_BLANK).getStringCellValue());
+            contentValues.put(FK_CLASS_ID_COLUMN, row.getCell(2, Row.CREATE_NULL_AS_BLANK).getStringCellValue());
 
 
+
+
+            try {
+
+                if (db.insert("mobattend.db",null, contentValues) < 0) {
+
+                    return;
+
+                }
+
+            } catch (Exception ex) {
+
+                Log.d("Exception in importing", ex.getMessage().toString());
+
+            }
+
+
+        }
+
+    }
+
+
+public boolean loadCSV(File path) throws IOException {
+    long result = 0;
+   // path = new File(context.getFilesDir() + "/document/primary:myexcel2.csv");
+   // path.mkdirs(); //create folders where write files
+   // final File file = new File(path, "BlockForTest.txt");
+    SQLiteDatabase db = getWritableDatabase();
+   // path.mkdir();
+      //  String me = "/csv.pdf";
+    path = new File("/storage/sdcard0/myexcel2.csv");
+    FileInputStream fin = new FileInputStream(path);
+    BufferedReader myreader = new BufferedReader(new InputStreamReader(fin));
+
+
+ String data = "";
+    while ((data = myreader.readLine())!=null){
+        String[] colums = data.split(",");
+        if (colums.length!=3){
+            Log.e("tag", "bad rows");
+            continue;
+        }
+
+
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(STUDENT_NAME_COLUMN, colums[0].trim());
+        contentValues.put(STUDENT_ID_COLUMN, colums[1].trim());
+        contentValues.put(FK_CLASS_ID_COLUMN, colums[2].trim());
+     result =    db.insert(STUDENT_TABLE_NAME, null, contentValues);
+        db.close();
+
+
+    }
+
+
+
+
+
+
+
+    if(result==-1)
+    {
+        Log.e("tag","not inserted");
+        return  false;
+
+    }
+    else {
+        Log.e("tag","inserted");
+        return true;
+    }
+
+
+
+}
 
 }
