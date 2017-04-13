@@ -65,7 +65,7 @@
         android:layout_width="500dp"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_ "
         android:ems="10"
         android:id="@+id/ClassIdEditBox"
         android:hint="Unique Class Id"

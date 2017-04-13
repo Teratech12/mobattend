@@ -5,6 +5,8 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.nfc.Tag;
+import android.util.Log;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -49,6 +51,8 @@ public class MobattendDatabase extends SQLiteOpenHelper {
     public  static  final String ATTENDANCE_TIME_COLUMN = "attendance_time";
 
 
+    //tag
+    private final String TAG = MobattendDatabase.class.getSimpleName().toString();
 
 
     public MobattendDatabase(Context context) {
@@ -382,6 +386,54 @@ public class MobattendDatabase extends SQLiteOpenHelper {
         return count;
 
 
+    }
+
+    public void DelClassAndAllRelated (String ClassId2){
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        String query1 = "DELETE FROM event " +
+                "WHERE event_id IN (SELECT distinct e.event_id " +
+                "FROM student AS s " +
+                "JOIN student_event AS v ON s.student_id = v.fk_student_id " +
+                "JOIN event AS e ON e.event_id = v.fk_event_id " +
+                "JOIN attendance AS a ON a.attendance_id = v.fk_attendance_id " +
+                "JOIN class AS c ON c.class_id = s.fk_class_id  " +
+                "WHERE c.class_id = '"+ClassId2+"');";
+        String query2 = "DELETE FROM attendance " +
+                "WHERE attendance_id IN (SELECT distinct a.attendance_id " +
+                "FROM student AS s " +
+                "JOIN student_event AS v ON s.student_id = v.fk_student_id  " +
+                "JOIN attendance AS a ON a.attendance_id = v.fk_attendance_id " +
+                "JOIN class AS c ON c.class_id = s.fk_class_id " +
+                "WHERE c.class_id = '"+ClassId2+"');";
+        String query3 = "DELETE FROM  student_event " +
+                "WHERE fk_student_id  IN (SELECT student_id FROM student WHERE fk_class_id = '"+ClassId2+"');";
+        String query4 = "DELETE FROM  student " +
+                "WHERE fk_class_id  IN (SELECT class_id FROM class WHERE class_id = '"+ClassId2+"');";
+        String query5 = "DELETE FROM  class " +
+                "WHERE class_id = '"+ClassId2+"');";
+
+        try{
+            db.beginTransaction();
+
+            Log.d(TAG, query1);
+            Log.d(TAG, query2);
+            Log.d(TAG, query3);
+            Log.d(TAG, query4);
+            Log.d(TAG, query5);
+            db.execSQL(query1);
+            db.execSQL(query2);
+            db.execSQL(query3);
+            db.execSQL(query4);
+            db.execSQL(query5);
+
+
+        }catch (Exception e){
+            Log.e(TAG, e.getMessage());
+        }finally {
+            db.endTransaction();
+        }
     }
 
 
