@@ -28,25 +28,17 @@ import java.util.Random;
 public class ModifiedSecondTab extends Fragment {
     ArrayList<DataModelforScreenTwo> dataModels;
     ListView listView;
-    String date;
     private static CustomAdapterforScreenTwo adapter;
        static String mert = new String();
-
+    static String mert1 = new String();
        Activity myactivity = this.getActivity();
-    String usesomewhere;
-    TextView me;
 
      static  String gblbalmert;
+    static  String gblbalmert1;
 
-
-
-   // private static CustomAdapterRetrieval adapter;
 
     static   String eventid;
     static   String attendanceid;
-
-
-
 
 
     @Override
@@ -55,15 +47,6 @@ public class ModifiedSecondTab extends Fragment {
         final View rootView = inflater.inflate(R.layout.modifiedsecondtab, container, false);
         listView = (ListView) rootView.findViewById(R.id.listsecond);
         dataModels = new ArrayList<>();
-        date = new SimpleDateFormat("MMMM d,yyyy").format(new Date());
-        //MobattendDatabase db3 = new MobattendDatabase(getContext());
-
-
-
-
-
-
-
 
         View emptyView = getActivity().getLayoutInflater().inflate(R.layout.emptyclasslist, null);
         ((ViewGroup)listView.getParent()).addView(emptyView);
@@ -91,11 +74,13 @@ public class ModifiedSecondTab extends Fragment {
      listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
          @Override
          public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-             mert = adapter.getItem(position).getType();//GETTING CLASS ID
+             mert = adapter.getItem(position).getType();//GETTING CLASS NAME
+             mert1 = adapter.getItem(position).getName();//GETTING CLASS ID
              Intent intent = new Intent(getActivity(), Stats.class);
 
              intent.putExtra("classidname", adapter.getItem(position).getType());
              gblbalmert = mert;
+             gblbalmert1 = mert1;
 
              Intent intent1 = new Intent(getActivity(), Stats.class);
              startActivity(intent1);

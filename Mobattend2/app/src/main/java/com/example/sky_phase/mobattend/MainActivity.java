@@ -171,7 +171,7 @@ public class MainActivity extends AppCompatActivity
 
 
                     }
-                }).setNegativeButton("Export from Excel       ", new DialogInterface.OnClickListener() {
+                }).setNegativeButton("Import from Excel", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
 
@@ -233,15 +233,15 @@ public class MainActivity extends AppCompatActivity
 
 
                 case 1:
-                    ReminderFragment tab3 = new ReminderFragment();
-                    return tab3;
-
-                case 2:
                     ModifiedSecondTab tab4 = new ModifiedSecondTab();
                     return tab4;
-                case 3:
+
+                case 2:
                     FirstTab me1 = new FirstTab();
                     return me1;
+                case 3:
+                    ReminderFragment tab3 = new ReminderFragment();
+                    return tab3;
 
 
                 default:
@@ -264,11 +264,11 @@ public class MainActivity extends AppCompatActivity
                 case 0:
                     return "CLASS";
                 case 1:
-                    return "REMINDER";
-                case 2:
                     return "STATISTICS";
-                case 3:
+                case 2:
                     return "SEARCH";
+                case 3:
+                    return "REMINDER";
             }
             return null;
         }
