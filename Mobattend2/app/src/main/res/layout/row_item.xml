@@ -60,6 +60,7 @@
             android:id="@+id/permission"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
             android:background="@drawable/circle_shape2"
             android:buttonTint="@color/radiobutton2" />
 
@@ -67,6 +68,7 @@
             android:id="@+id/absent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
             android:background="@drawable/circle_shape"
             android:buttonTint="@color/radiobutton1" />
 

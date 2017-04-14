@@ -23,7 +23,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -176,7 +175,7 @@ public class MainActivity extends AppCompatActivity
                     public void onClick(DialogInterface dialog, int which) {
 
 
-                        Intent intent = new Intent(MainActivity.this,QueryPage.class);
+                        Intent intent = new Intent(MainActivity.this,Importing_from_excel.class);
                         startActivity(intent);
 
 
@@ -284,7 +283,8 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(MainActivity.this,Help.class);
             startActivity(intent);
         } else if (id == R.id.nav_importFromExcel) {
-            Toast.makeText(MainActivity.this,"feature not added yet",Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(MainActivity.this,Importing_from_excel.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_addManually) {
             Intent intent = new Intent(MainActivity.this,CREATE_CLASS.class);

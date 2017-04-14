@@ -1,6 +1,7 @@
 package com.example.sky_phase.mobattend;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
@@ -53,9 +54,8 @@ public class ClasssFragment extends Fragment {
 
 
 
-
     @Override
-    public View onCreateView(final LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(final LayoutInflater inflater, final ViewGroup container,
                              Bundle savedInstanceState) {
         final View rootView = inflater.inflate(R.layout.secondtab, container, false);
         listView = (ListView) rootView.findViewById(R.id.listsecond);
@@ -63,7 +63,7 @@ public class ClasssFragment extends Fragment {
         date = new SimpleDateFormat("MMMM d,yyyy").format(new Date());
         //MobattendDatabase db3 = new MobattendDatabase(getContext());
 
-
+        registerForContextMenu(listView);
 
 
 
@@ -96,7 +96,7 @@ public class ClasssFragment extends Fragment {
                 eventid = generate_Event_id();
 
 
-//GET THE ID FROM THE CREATE_CLASS USING DIFERENT INTENT
+                //GET THE ID FROM THE CREATE_CLASS USING DIFERENT INTENT
                 mert = adapter.getItem(position).getName();//GETTING CLASS ID
                 Intent intent = new Intent(getActivity(), Myattendance.class);
                 intent.putExtra("classidname", adapter.getItem(position).getType());
@@ -221,65 +221,113 @@ public class ClasssFragment extends Fragment {
 
 
 
-
              listView.setOnCreateContextMenuListener(new View.OnCreateContextMenuListener() {
                  @Override
                  public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
-                     if(v.getId() == R.id.listsecond);{
-                       ClasssFragment.super.onCreateContextMenu(menu, v, menuInfo);
-                         MenuInflater inflater = getActivity().getMenuInflater();
-                         inflater.inflate(R.menu.mymenu,menu);
 
-                         /*
+                     /*if (v.getId() == R.id.listsecond) ;
+                     {
+                         ClasssFragment.super.onCreateContextMenu(menu, v, menuInfo);
+                         MenuInflater inflater = getActivity().getMenuInflater();
+                         inflater.inflate(R.menu.mymenu, menu);
+
+                         ///
                          AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo)menuInfo;
                          menu.setHeaderTitle("me");
                          String[] menuItems = getResources().getStringArray(R.array.menu);
                          for (int i =0; i<menuItems.length; i++){
                              menu.add(Menu.NONE, i, i, menuItems[i]);
-                         }*/
-                     }
-
+                         }/* /
+                     }*/
+                     menu.add(0,1,0, "add new person");
+                     menu.add(0,2,0, "edit");
+                     menu.add(0,3,0, "delete");
 
                  }
+             });
+        return rootView;
+    }
+
 
                  public  boolean onContextItemSelected(MenuItem item){
 
+                    MobattendDatabase db = new MobattendDatabase(getActivity());
+                     int position = new Integer(0);
+                     //GET THE ID FROM THE CREATE_CLASS USING DIFERENT INTENT
+                     mert = adapter.getItem(position).getName();//GETTING CLASS ID
+                     Intent intent = new Intent(getActivity(), Myattendance.class);
+                     intent.putExtra("classidname", adapter.getItem(position).getType());
+                     gblbalmert = mert;
 
-                     AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
-
-                     if (info.targetView.getParent() != getView().findViewById(android.R.id.list))
-                         return ClasssFragment.super.onContextItemSelected(item);
 
 
+
+                    /// AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
+
+                    // if (info.targetView.getParent() != getView().findViewById(android.R.id.list))
+                    //     return ClasssFragment.super.onContextItemSelected(item);
+
+                     AdapterView.AdapterContextMenuInfo menuInfo;
 
                      switch (item.getItemId()){
-                         case R.id.add:
+//                         case R.id.add:
+                         case 1:
 
                              Toast.makeText(getContext(),"add new person",Toast.LENGTH_LONG).show();
 
-                             return  true;
+                             //return  true;
+                             break;
 
-                         case R.id.edit:
+//                         case R.id.edit:
+                         case 2:
                              Toast.makeText(getContext(),"edit",Toast.LENGTH_LONG).show();
+                             break;
+                            // return true;
 
-                             return true;
+//                         case R.id.delete:
+                         case 3:
+                             db.getWritableDatabase();
+                             boolean isdeleted = db.DeletingClassAll(gblbalmert);
+                             if(isdeleted == true){
+                                 Toast.makeText(getContext(), "Deleted", Toast.LENGTH_LONG).show();
 
-                         case R.id.delete:
+                             }else {
+                                 Toast.makeText(getContext(), "not Deleted", Toast.LENGTH_LONG).show();
+
+                             }
+
+                             dataModels = new ArrayList<>();
 
 
+                             View emptyView = getActivity().getLayoutInflater().inflate(R.layout.emptyclasslist, null);
+                             ((ViewGroup)listView.getParent()).addView(emptyView);
+                            Cursor sky2 = db.getListContents();
+                             if(sky2.getCount() == 0){
+
+                             }
+                             else{
+                                 while (sky2.moveToNext()){
+                                     int count = db.getCount(sky2.getString(0));
+                                     dataModels.add(new DataModelforScreenTwo(sky2.getString(0),sky2.getString(1),String.valueOf(count)));
+                                     adapter = new CustomAdapterforScreenTwo(dataModels,getContext());
+                                     listView.setAdapter(adapter);
+                                     listView.setEmptyView(emptyView);
+                                 }
+                             }
 
 
-                             return  true;
+                             break;
+                             //return  true;
 
                          default:
                              return onContextItemSelected(item);
 
 
                      }
-
+                    return true;
                  }
 
-             });
+             //});
 
 
 
@@ -290,9 +338,8 @@ public class ClasssFragment extends Fragment {
         //adapter = new CustomAdapterforScreenTwo(this.dataModels, this.getActivity());
        // listView.setAdapter(adapter);
 
-        return rootView;
+       // return rootView;
 
-    }
 
 
     public String generate_Event_id (){

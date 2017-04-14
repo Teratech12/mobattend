@@ -6,14 +6,31 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import android.util.Log;
+import android.widget.Toast;
+
+//import org.apache.poi.hslf.model.Sheet;
+//import org.apache.poi.ss.usermodel.Cell;
+//import org.apache.poi.ss.usermodel.Row;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Iterator;
 import java.util.Locale;
+
 
 /**
  * Created by SKY-PHASE on 3/5/2017.
  */
 public class MobattendDatabase extends SQLiteOpenHelper {
+    Context context;
+     Importing_from_excel get = new Importing_from_excel();
+
     public static final  String DATABASE_NAME = "mobattend.db";
     private  static  final int DATABASE_VERSION = 7;
 
@@ -49,10 +66,14 @@ public class MobattendDatabase extends SQLiteOpenHelper {
     public  static  final String ATTENDANCE_TIME_COLUMN = "attendance_time";
 
 
+    //tag
+    private final String TAG = MobattendDatabase.class.getSimpleName().toString();
 
 
     public MobattendDatabase(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
+        this.context = context;
+
     }
 
     @Override
@@ -159,6 +180,31 @@ public class MobattendDatabase extends SQLiteOpenHelper {
 
 
     }
+
+
+
+
+
+    public boolean insertStudentFromExcel(String Student_Name, String Student_Id, String Class){
+        SQLiteDatabase db = getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(STUDENT_NAME_COLUMN, Student_Name);
+        contentValues.put(STUDENT_ID_COLUMN, Student_Id);
+        contentValues.put(FK_CLASS_ID_COLUMN , Class);
+
+        long result = db.insert(STUDENT_TABLE_NAME, null,  contentValues);
+        if(result==-1)
+        {
+            return  false;
+        }
+        else {
+            return true;
+        }
+
+
+
+    }
+
 
     private String getDateTime() {
         SimpleDateFormat dateFormat = new SimpleDateFormat(
@@ -355,11 +401,9 @@ public class MobattendDatabase extends SQLiteOpenHelper {
 
         Cursor cursor = db.rawQuery("SELECT distinct s.student_id, s.student_name " +
                 "FROM student AS s " +
-                "JOIN student_event AS v ON s.student_id = v.fk_student_id " +
-                "JOIN event AS e ON e.event_id = v.fk_event_id " +
-                "JOIN attendance AS a ON a.attendance_id = v.fk_attendance_id " +
                 "JOIN class AS c ON c.class_id = s.fk_class_id " +
-                "WHERE c.class_id = '"+ClassId2+"'"   ,null);
+                "WHERE c.class_id = '"+ClassId2+"' " +
+                "ORDER BY s.student_name"   ,null);
 
         return cursor;
 
@@ -384,8 +428,199 @@ public class MobattendDatabase extends SQLiteOpenHelper {
 
     }
 
+    public boolean DelClassAndAllRelated (String ClassId2){
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        String query1 = "DELETE FROM event " +
+                "WHERE event_id IN (SELECT distinct e.event_id " +
+                "FROM student AS s " +
+                "JOIN student_event AS v ON s.student_id = v.fk_student_id " +
+                "JOIN event AS e ON e.event_id = v.fk_event_id " +
+                "JOIN class AS c ON c.class_id = s.fk_class_id  " +
+                "WHERE c.class_id = '"+ClassId2+"');";
+        String query2 = "DELETE FROM attendance " +
+                "WHERE attendance_id IN (SELECT distinct a.attendance_id " +
+                "FROM student AS s " +
+                "JOIN student_event AS v ON s.student_id = v.fk_student_id  " +
+                "JOIN attendance AS a ON a.attendance_id = v.fk_attendance_id " +
+                "JOIN class AS c ON c.class_id = s.fk_class_id " +
+                "WHERE c.class_id = '"+ClassId2+"');";
+        String query3 = "DELETE FROM  student_event " +
+                "WHERE fk_student_id  IN (SELECT student_id FROM student WHERE fk_class_id = '"+ClassId2+"');";
+        String query4 = "DELETE FROM  student " +
+                "WHERE fk_class_id  IN (SELECT class_id FROM class WHERE class_id = '"+ClassId2+"');";
+        String query5 = "DELETE FROM  class " +
+                "WHERE class_id = '"+ClassId2+"';";
+
+        try{
+            db.beginTransaction();
+
+            Log.d(TAG, query1);
+            Log.d(TAG, query2);
+            Log.d(TAG, query3);
+            Log.d(TAG, query4);
+            Log.d(TAG, query5);
+            db.execSQL(query1);
+            db.execSQL(query2);
+            db.execSQL(query3);
+            db.execSQL(query4);
+            db.execSQL(query5);
+
+            return true;
+
+        }catch (Exception e){
+            e.getMessage();
+            return false;
+        }finally {
+            db.endTransaction();
+        db.close();
+        }
+
+    }
+
+    public boolean DeletingClassAll (String ClassId2){
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        Cursor cursor = db.rawQuery("SELECT distinct e.event_id " +
+                "FROM student AS s " +
+                "JOIN student_event AS v ON s.student_id = v.fk_student_id " +
+                "JOIN event AS e ON e.event_id = v.fk_event_id " +
+                "JOIN attendance AS a ON a.attendance_id = v.fk_attendance_id " +
+                "JOIN class AS c ON c.class_id = s.fk_class_id  " +
+                "WHERE c.class_id = '"+ClassId2+"'" ,null);
+        String ans1 = cursor.toString();
+        Cursor cursor2 = db.rawQuery("SELECT distinct a.attendance_id " +
+                "FROM student AS s " +
+                "JOIN student_event AS v ON s.student_id = v.fk_student_id  " +
+                "JOIN attendance AS a ON a.attendance_id = v.fk_attendance_id " +
+                "JOIN class AS c ON c.class_id = s.fk_class_id " +
+                "WHERE c.class_id = '"+ClassId2+"'" ,null);
+        String ans2 = cursor2.toString();
+        Cursor cursor3 = db.rawQuery("SELECT student_id FROM student " +
+                "WHERE fk_class_id = '"+ClassId2+"'" ,null);
+        String ans3 = cursor3.toString();
+        Cursor cursor4 = db.rawQuery("SELECT class_id FROM class " +
+                "WHERE class_id = '"+ClassId2+"'" ,null);
+        String ans4 = cursor4.toString();
+//        try{
+//            db.beginTransaction();
+
+        db.delete("event", "event_id =?", new String[] {ans1});
+        db.delete("attendance", "attendance_id =? ", new String[] {ans2});
+        db.delete("student_event", "fk_student_id =? ", new String[] {ans3});
+        db.delete("student", "fk_class_id =? ", new String[] {ClassId2});
+        db.delete("class", "class_id =? ", new String[] {ClassId2});
 
 
 
+            return true;
+
+//        }catch (Exception e){
+//            e.getMessage();
+//            return false;
+//        }finally {
+//            db.endTransaction();
+//            db.close();
+//        }
+
+
+
+    }
+
+   /* public void insertExcelToSqlite(Sheet sheet){
+        SQLiteDatabase db = getWritableDatabase();
+
+        for(Iterator<Row> rit = (Iterator<Row>) sheet.getMasterSheet(); rit.hasNext();){
+            Row row = rit.next();
+
+            ContentValues contentValues = new ContentValues();
+
+            row.getCell(0, Row.CREATE_NULL_AS_BLANK).setCellType(Cell.CELL_TYPE_STRING);
+            row.getCell(1, Row.CREATE_NULL_AS_BLANK).setCellType(Cell.CELL_TYPE_STRING);
+            row.getCell(2, Row.CREATE_NULL_AS_BLANK).setCellType(Cell.CELL_TYPE_STRING);
+
+            contentValues.put(STUDENT_ID_COLUMN, row.getCell(0, Row.CREATE_NULL_AS_BLANK).getStringCellValue());
+
+            contentValues.put(STUDENT_NAME_COLUMN, row.getCell(1, Row.CREATE_NULL_AS_BLANK).getStringCellValue());
+            contentValues.put(FK_CLASS_ID_COLUMN, row.getCell(2, Row.CREATE_NULL_AS_BLANK).getStringCellValue());
+
+
+
+
+
+            try {
+
+                if (db.insert("mobattend.db",null, contentValues) < 0) {
+
+                    return;
+
+                }
+
+            } catch (Exception ex) {
+
+                Log.d("Exception in importing", ex.getMessage().toString());
+
+            }
+
+
+        }
+
+    }
+    */
+
+
+public boolean loadCSV(File path) throws IOException {
+    long result = 0;
+   // path = new File(context.getFilesDir() + "/document/primary:myexcel2.csv");
+   // path.mkdirs(); //create folders where write files
+   // final File file = new File(path, "BlockForTest.txt");
+    SQLiteDatabase db = getWritableDatabase();
+   // path.mkdir();
+      //  String me = "/csv.pdf";
+    path = new File(get.me);
+    FileInputStream fin = new FileInputStream(path);
+    BufferedReader myreader = new BufferedReader(new InputStreamReader(fin));
+
+
+ String data = "";
+    while ((data = myreader.readLine())!=null){
+        String[] colums = data.split(",");
+        if (colums.length!=2){
+            Log.e("tag", "bad rows");
+            continue;
+        }
+
+
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(STUDENT_NAME_COLUMN, colums[0].trim());
+        contentValues.put(STUDENT_ID_COLUMN, colums[1].trim());
+        contentValues.put(FK_CLASS_ID_COLUMN, get.getID);
+     result =    db.insert(STUDENT_TABLE_NAME, null, contentValues);
+
+
+
+    }
+
+    db.close();
+
+
+
+
+
+    if(result==-1)
+    {
+        Toast.makeText(context,"bad rows or file not supported",Toast.LENGTH_SHORT).show();
+        return  false;
+
+    }
+    else {
+        Toast.makeText(context,get.getID,Toast.LENGTH_SHORT).show();
+        return true;
+    }
+
+
+
+}
 
 }
