@@ -23,29 +23,12 @@
         </menu>
     </item>
 
-    <item android:title="Statictics">
-        <menu>
-            <item
-                android:id="@+id/nav_searchParticularDay"
-                android:icon="@drawable/todaysearch2"
-                android:title="Search a Particular day" />
-            <item
-                android:id="@+id/nav_generalView"
-                android:icon="@drawable/todaysearch1"
-                android:title="Get a general view of a class" />
-        </menu>
-    </item>
-
     <item android:title="Reminders">
         <menu>
             <item
                 android:id="@+id/nav_newReminder"
                 android:icon="@drawable/todayreminder"
                 android:title="Create a new Reminder" />
-            <item
-                android:id="@+id/nav_EditReminder"
-                android:icon="@drawable/todayreminder2"
-                android:title="Edit a reminder" />
         </menu>
     </item>
 

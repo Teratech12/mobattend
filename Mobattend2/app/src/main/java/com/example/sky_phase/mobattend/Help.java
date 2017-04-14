@@ -29,7 +29,7 @@ public class Help extends AppCompatActivity {
         String text =  " <u><b><font color =#020202>ADD MANUALLY</></b></u> <br /> <br /> Add a new class by choosing the add new class image in the toolbar. Choose whether to <u>insert class manually</u> or to export from your phone.<br /> <br />" +
                 "<br /> <u><b><font color =#020202>INSERT MANUALLY</></b></u><br /> <br /> First provide the name of class and class id respectively, and choose add students to add student(s) to " +
                 "the class<br /> <br /> <br /> <u><b><font color =#020202>ADDING STUDENTS</></b></u><br /> Provide the name of student and id of student. Choose submit and add another student to add another " +
-                "student to that same class. You can add as many students as you wish. Choose submit and finish if you img src = <img src=\\\"%s\\\"/>\" are done adding students<br /> <br /> <br />" +
+                "student to that same class. You can add as many students as you wish. Choose submit and finish if you  are done adding students<br /> <br /> <br />" +
                 "<u><b><font color =#020202>TAKING ATTENDANCE</></b></u><br /> <br />The class tab contains all the names of the classes. Choose the class you want to take attendance. Select the week and Day " +
                 "from the pop up and choose take attendance. You will be given all the names of the students in that class. Pick red radiobutton when student is present" +
                 ", blue when student is absent with permission and red when student is absent. <br /> <br /> <br />" +

@@ -46,7 +46,11 @@
                         android:layout_marginLeft="20dp"
                         android:layout_marginRight="20dp"
                         android:hint="Name of reminder"
-                        android:textSize="18sp" />
+                        android:textSize="18sp"
+                        android:backgroundTint="#0958CF"
+                        android:textColorHighlight="#0958CF"
+                        android:textColorLink="#0958CF"
+                        android:textCursorDrawable="@drawable/cursor"/>
                 </LinearLayout>
 
                 <LinearLayout

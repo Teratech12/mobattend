@@ -23,6 +23,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -117,7 +118,7 @@ public class MainActivity extends AppCompatActivity
                 final View textEntryView = factory.inflate(R.layout.choosemanually, null);
 
 
-                final AlertDialog.Builder alert = new AlertDialog.Builder(context, R.style.AlertDialCustom);
+                final AlertDialog.Builder alert = new AlertDialog.Builder(context);
 
 
                 alert.setView(textEntryView);
@@ -170,7 +171,7 @@ public class MainActivity extends AppCompatActivity
 
 
                     }
-                }).setNegativeButton("Export from Excel       ", new DialogInterface.OnClickListener() {
+                }).setNegativeButton("Import from Excel", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
 
@@ -232,15 +233,15 @@ public class MainActivity extends AppCompatActivity
 
 
                 case 1:
-                    ReminderFragment tab3 = new ReminderFragment();
-                    return tab3;
+                    ModifiedSecondTab tab4 = new ModifiedSecondTab();
+                    return tab4;
 
                 case 2:
-                    StatisticsFragment tab4 = new StatisticsFragment();
-                    return tab4;
-                case 3:
                     FirstTab me1 = new FirstTab();
                     return me1;
+                case 3:
+                    ReminderFragment tab3 = new ReminderFragment();
+                    return tab3;
 
 
                 default:
@@ -263,11 +264,11 @@ public class MainActivity extends AppCompatActivity
                 case 0:
                     return "CLASS";
                 case 1:
-                    return "REMINDER";
-                case 2:
                     return "STATISTICS";
-                case 3:
+                case 2:
                     return "SEARCH";
+                case 3:
+                    return "REMINDER";
             }
             return null;
         }
@@ -283,14 +284,15 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(MainActivity.this,Help.class);
             startActivity(intent);
         } else if (id == R.id.nav_importFromExcel) {
+            Toast.makeText(MainActivity.this,"feature not added yet",Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.nav_addManually) {
+            Intent intent = new Intent(MainActivity.this,CREATE_CLASS.class);
+            startActivity(intent);
 
-        } else if (id == R.id.nav_searchParticularDay) {
-
-        } else if (id == R.id.nav_EditReminder) {
-
-        } else if (id == R.id.nav_newReminder) {
+        }  else if (id == R.id.nav_newReminder) {
+            Intent intent = new Intent(MainActivity.this,ReminderActivity.class);
+            startActivity(intent);
 
         }
 

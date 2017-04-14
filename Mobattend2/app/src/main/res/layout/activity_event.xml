@@ -11,45 +11,43 @@
         android:id="@+id/eventnametext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:paddingLeft="12dp"
+        android:text="Event ID"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="62dp"
-        android:paddingLeft="12dp"
-        android:text="Event ID" />
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp" />
 
     <EditText
         android:id="@+id/eventnamebox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/eventnametext"
-        android:layout_alignBottom="@+id/eventnametext"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="14dp"
-        android:layout_marginRight="14dp"
         android:backgroundTint="#0958CF"
         android:editable="false"
         android:ems="10"
         android:enabled="false"
         android:inputType="textPersonName"
         android:textColorHighlight="#0958CF"
-        android:textColorLink="#0958CF" />
+        android:textColorLink="#0958CF"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_alignBaseline="@+id/eventnametext"
+        android:layout_alignBottom="@+id/eventnametext"
+        android:layout_alignLeft="@+id/weekbox"
+        android:layout_alignStart="@+id/weekbox" />
 
     <TextView
         android:text="Week"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/eventnamebox"
-        android:layout_alignRight="@+id/eventnametext"
-        android:layout_alignEnd="@+id/eventnametext"
-        android:layout_marginRight="15dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginTop="55dp"
         android:id="@+id/weektext"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:paddingLeft="12dp" />
+        android:paddingLeft="12dp"
+        android:layout_below="@+id/eventnamebox"
+        android:layout_alignLeft="@+id/eventnametext"
+        android:layout_alignStart="@+id/eventnametext"
+        android:layout_marginTop="60dp" />
 
     <EditText
         android:id="@+id/weekbox"
@@ -72,21 +70,23 @@
         android:text="Day"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/weektext"
+        android:id="@+id/daytext"
+        android:layout_alignBaseline="@+id/weekbox"
+        android:layout_alignBottom="@+id/weekbox"
         android:layout_toRightOf="@+id/weekbox"
         android:layout_toEndOf="@+id/weekbox"
-        android:layout_marginLeft="57dp"
-        android:layout_marginStart="57dp"
-        android:id="@+id/daytext" />
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp" />
 
     <Spinner
         android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:id="@+id/spin"
-        android:layout_alignTop="@+id/daytext"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_alignBottom="@+id/daytext"
         android:layout_toRightOf="@+id/daytext"
-        android:layout_alignBottom="@+id/weekbox" />
+        android:layout_alignRight="@+id/eventnamebox"
+        android:layout_alignEnd="@+id/eventnamebox" />
 
 </RelativeLayout>

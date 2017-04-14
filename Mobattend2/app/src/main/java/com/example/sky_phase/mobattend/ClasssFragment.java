@@ -159,12 +159,12 @@ public class ClasssFragment extends Fragment {
                         boolean datetaken = db4.insertAttendanceDate(attendanceid);
                         if ((isCreated == true) && (datetaken == true)){
 
-                            Toast.makeText(getContext(), "Event Created", Toast.LENGTH_LONG).show();
+                           // Toast.makeText(getContext(), "Event Created", Toast.LENGTH_LONG).show();
                             Intent intent1 = new Intent(getContext(),Myattendance.class);
                             startActivity(intent1);
                         }
-                        else
-                            Toast.makeText(getContext(), "Event not Created", Toast.LENGTH_LONG).show();
+                       // else
+                         //   Toast.makeText(getContext(), "Event not Created", Toast.LENGTH_LONG).show();
 
 
 
@@ -349,7 +349,7 @@ public class ClasssFragment extends Fragment {
 
 
     }
-
+/*
     @Override
     public  boolean onContextItemSelected(MenuItem item){
         AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
@@ -380,7 +380,7 @@ public class ClasssFragment extends Fragment {
         }
 
 
-    }
+    }*/
 
 
 

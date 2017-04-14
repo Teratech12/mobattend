@@ -5,17 +5,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.sky_phase.mobattend.Display_Search_By_Students">
+    tools:context="com.example.sky_phase.mobattend.Display_Search_By_Students"
+    android:paddingLeft="10dp">
 
     <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="41dp"
         android:id="@+id/spinnerforstudent"
-        android:backgroundTint="#1A2844" />
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+
+        android:layout_above="@+id/list2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/drawing1" />
+
+    <Button
+        android:text="Search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/click2"
+
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/spinnerforstudent"
+        android:layout_toEndOf="@+id/spinnerforstudent" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list2"
+        android:layout_below="@+id/click2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp" />
 </RelativeLayout>

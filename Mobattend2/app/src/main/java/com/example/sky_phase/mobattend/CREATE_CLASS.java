@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class CREATE_CLASS extends AppCompatActivity {
@@ -67,10 +66,10 @@ public class CREATE_CLASS extends AppCompatActivity {
                     db1.getWritableDatabase();
                     boolean isInseerted = db1.insertClass(getClassID.getText().toString(),getClass.getText().toString());
                     if(isInseerted== true){
-                        Toast.makeText(CREATE_CLASS.this, "inserted", Toast.LENGTH_LONG).show();
+                        Toast.makeText(CREATE_CLASS.this, "class added", Toast.LENGTH_SHORT).show();
 
                     }else {
-                        Toast.makeText(CREATE_CLASS.this, "not inserted", Toast.LENGTH_LONG).show();
+                       Toast.makeText(CREATE_CLASS.this, "class not added", Toast.LENGTH_SHORT).show();
                     }
 
 

@@ -9,7 +9,7 @@
         android:id="@+id/text2">
 
         <TextView
-            android:text="You have no remindes yet. choose new above to add a new reminder"
+            android:text="You have no reminders yet. choose new below to add a new reminder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/text1"

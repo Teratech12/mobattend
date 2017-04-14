@@ -21,7 +21,7 @@
         android:id="@+id/search_by_date" />
 
     <TextView
-        android:text="Select from a drop down list dates for all the attendance taken. Choose a date from the list and get names of all the students present"
+        android:text="Select from a drop down list dates for all the attendance taken for the class chosen. Choose a date from the list and get names of all the students present"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/search_by_date"
@@ -39,7 +39,7 @@
         android:id="@+id/student_name" />
 
     <TextView
-        android:text="Select from a drop down list the names of all the students.Select a student to find out all the dates the student was present in that particular class"
+        android:text="Select from a drop down list the names of all the students in that class chosen.Select a student to find out all the dates the student was present in that particular class"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/student_name"
