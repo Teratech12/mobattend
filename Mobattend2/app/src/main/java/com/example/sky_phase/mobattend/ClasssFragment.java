@@ -1,7 +1,6 @@
 package com.example.sky_phase.mobattend;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
@@ -103,11 +102,6 @@ public class ClasssFragment extends Fragment {
                 gblbalmert = mert;
 
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> d45ef14c40e80ad658d597ba87cd78935ea6deee
                 view.setSelected(true);
 
                 eventid = generate_Event_id();
