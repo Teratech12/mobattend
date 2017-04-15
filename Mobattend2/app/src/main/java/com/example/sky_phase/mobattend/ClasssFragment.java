@@ -267,7 +267,7 @@ public class ClasssFragment extends Fragment {
                      switch (item.getItemId()){
 //                         case R.id.add:
                          case 1:
-                            
+
                              Toast.makeText(getContext(),"add new person",Toast.LENGTH_LONG).show();
 
                              //return  true;
