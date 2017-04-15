@@ -58,8 +58,10 @@
         <activity
             android:name=".Display_Search_By_Students"
             android:label="Search using student name" />
-        <activity android:name=".Stats" />
-        <activity android:name=".Importing_from_excel"></activity>
+        <activity android:name=".Stats"
+            android:label=""/>
+        <activity android:name=".Importing_from_excel"
+            android:label="Import From Excel"></activity>
     </application>
 
 </manifest>

@@ -5,11 +5,9 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-<<<<<<< HEAD
-=======
-import android.nfc.Tag;
->>>>>>> 0b1cea1d1dcda26e2847f76c57288c0cc80d4ca6
+
 import android.util.Log;
+import android.widget.Toast;
 
 import org.apache.poi.hslf.model.Sheet;
 import org.apache.poi.ss.usermodel.Cell;
@@ -31,7 +29,7 @@ import java.util.Locale;
  */
 public class MobattendDatabase extends SQLiteOpenHelper {
     Context context;
-
+     Importing_from_excel get = new Importing_from_excel();
 
     public static final  String DATABASE_NAME = "mobattend.db";
     private  static  final int DATABASE_VERSION = 7;
@@ -529,7 +527,7 @@ public boolean loadCSV(File path) throws IOException {
     SQLiteDatabase db = getWritableDatabase();
    // path.mkdir();
       //  String me = "/csv.pdf";
-    path = new File("/storage/sdcard0/myexcel2.csv");
+    path = new File(get.me);
     FileInputStream fin = new FileInputStream(path);
     BufferedReader myreader = new BufferedReader(new InputStreamReader(fin));
 
@@ -537,7 +535,7 @@ public boolean loadCSV(File path) throws IOException {
  String data = "";
     while ((data = myreader.readLine())!=null){
         String[] colums = data.split(",");
-        if (colums.length!=3){
+        if (colums.length!=2){
             Log.e("tag", "bad rows");
             continue;
         }
@@ -546,14 +544,14 @@ public boolean loadCSV(File path) throws IOException {
         ContentValues contentValues = new ContentValues();
         contentValues.put(STUDENT_NAME_COLUMN, colums[0].trim());
         contentValues.put(STUDENT_ID_COLUMN, colums[1].trim());
-        contentValues.put(FK_CLASS_ID_COLUMN, colums[2].trim());
+        contentValues.put(FK_CLASS_ID_COLUMN, get.getID);
      result =    db.insert(STUDENT_TABLE_NAME, null, contentValues);
-        db.close();
+
 
 
     }
 
-
+    db.close();
 
 
 
@@ -561,12 +559,12 @@ public boolean loadCSV(File path) throws IOException {
 
     if(result==-1)
     {
-        Log.e("tag","not inserted");
+        Toast.makeText(context,"bad rows or file not supported",Toast.LENGTH_SHORT).show();
         return  false;
 
     }
     else {
-        Log.e("tag","inserted");
+        Toast.makeText(context,get.getID,Toast.LENGTH_SHORT).show();
         return true;
     }
 
