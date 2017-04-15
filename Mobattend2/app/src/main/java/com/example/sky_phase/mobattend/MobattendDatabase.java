@@ -359,11 +359,9 @@ public class MobattendDatabase extends SQLiteOpenHelper {
 
         Cursor cursor = db.rawQuery("SELECT distinct s.student_id, s.student_name " +
                 "FROM student AS s " +
-                "JOIN student_event AS v ON s.student_id = v.fk_student_id " +
-                "JOIN event AS e ON e.event_id = v.fk_event_id " +
-                "JOIN attendance AS a ON a.attendance_id = v.fk_attendance_id " +
                 "JOIN class AS c ON c.class_id = s.fk_class_id " +
-                "WHERE c.class_id = '"+ClassId2+"'"   ,null);
+                "WHERE c.class_id = '"+ClassId2+"' " +
+                "ORDER BY s.student_name"   ,null);
 
         return cursor;
 
@@ -388,7 +386,7 @@ public class MobattendDatabase extends SQLiteOpenHelper {
 
     }
 
-    public void DelClassAndAllRelated (String ClassId2){
+    public boolean DelClassAndAllRelated (String ClassId2){
 
         SQLiteDatabase db = this.getWritableDatabase();
 
@@ -397,7 +395,6 @@ public class MobattendDatabase extends SQLiteOpenHelper {
                 "FROM student AS s " +
                 "JOIN student_event AS v ON s.student_id = v.fk_student_id " +
                 "JOIN event AS e ON e.event_id = v.fk_event_id " +
-                "JOIN attendance AS a ON a.attendance_id = v.fk_attendance_id " +
                 "JOIN class AS c ON c.class_id = s.fk_class_id  " +
                 "WHERE c.class_id = '"+ClassId2+"');";
         String query2 = "DELETE FROM attendance " +
@@ -412,7 +409,7 @@ public class MobattendDatabase extends SQLiteOpenHelper {
         String query4 = "DELETE FROM  student " +
                 "WHERE fk_class_id  IN (SELECT class_id FROM class WHERE class_id = '"+ClassId2+"');";
         String query5 = "DELETE FROM  class " +
-                "WHERE class_id = '"+ClassId2+"');";
+                "WHERE class_id = '"+ClassId2+"';";
 
         try{
             db.beginTransaction();
@@ -428,15 +425,67 @@ public class MobattendDatabase extends SQLiteOpenHelper {
             db.execSQL(query4);
             db.execSQL(query5);
 
+            return true;
 
         }catch (Exception e){
-            Log.e(TAG, e.getMessage());
+            e.getMessage();
+            return false;
         }finally {
             db.endTransaction();
+        db.close();
         }
+
     }
 
+    public boolean DeletingClassAll (String ClassId2){
 
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        Cursor cursor = db.rawQuery("SELECT distinct e.event_id " +
+                "FROM student AS s " +
+                "JOIN student_event AS v ON s.student_id = v.fk_student_id " +
+                "JOIN event AS e ON e.event_id = v.fk_event_id " +
+                "JOIN attendance AS a ON a.attendance_id = v.fk_attendance_id " +
+                "JOIN class AS c ON c.class_id = s.fk_class_id  " +
+                "WHERE c.class_id = '"+ClassId2+"'" ,null);
+        String ans1 = cursor.toString();
+        Cursor cursor2 = db.rawQuery("SELECT distinct a.attendance_id " +
+                "FROM student AS s " +
+                "JOIN student_event AS v ON s.student_id = v.fk_student_id  " +
+                "JOIN attendance AS a ON a.attendance_id = v.fk_attendance_id " +
+                "JOIN class AS c ON c.class_id = s.fk_class_id " +
+                "WHERE c.class_id = '"+ClassId2+"'" ,null);
+        String ans2 = cursor2.toString();
+        Cursor cursor3 = db.rawQuery("SELECT student_id FROM student " +
+                "WHERE fk_class_id = '"+ClassId2+"'" ,null);
+        String ans3 = cursor3.toString();
+        Cursor cursor4 = db.rawQuery("SELECT class_id FROM class " +
+                "WHERE class_id = '"+ClassId2+"'" ,null);
+        String ans4 = cursor4.toString();
+//        try{
+//            db.beginTransaction();
+
+        db.delete("event", "event_id =?", new String[] {ans1});
+        db.delete("attendance", "attendance_id =? ", new String[] {ans2});
+        db.delete("student_event", "fk_student_id =? ", new String[] {ans3});
+        db.delete("student", "fk_class_id =? ", new String[] {ClassId2});
+        db.delete("class", "class_id =? ", new String[] {ClassId2});
+
+
+
+            return true;
+
+//        }catch (Exception e){
+//            e.getMessage();
+//            return false;
+//        }finally {
+//            db.endTransaction();
+//            db.close();
+//        }
+
+
+
+    }
 
 
 
