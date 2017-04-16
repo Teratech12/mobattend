@@ -41,6 +41,7 @@ public class Display_Search_By_Students extends AppCompatActivity {
         ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_dropdown_item, array1);
         spinner.setAdapter(adapter1);
 
+
         click2.setOnClickListener(new View.OnClickListener() {
             ArrayList<DataModelForDateSearch> dataModels;
             @Override
