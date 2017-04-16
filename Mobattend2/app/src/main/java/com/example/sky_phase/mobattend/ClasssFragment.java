@@ -1,7 +1,6 @@
 package com.example.sky_phase.mobattend;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
@@ -220,23 +219,10 @@ public class ClasssFragment extends Fragment {
                  @Override
                  public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
 
-                     /*if (v.getId() == R.id.listsecond) ;
-                     {
-                         ClasssFragment.super.onCreateContextMenu(menu, v, menuInfo);
-                         MenuInflater inflater = getActivity().getMenuInflater();
-                         inflater.inflate(R.menu.mymenu, menu);
-
-                         ///
-                         AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo)menuInfo;
-                         menu.setHeaderTitle("me");
-                         String[] menuItems = getResources().getStringArray(R.array.menu);
-                         for (int i =0; i<menuItems.length; i++){
-                             menu.add(Menu.NONE, i, i, menuItems[i]);
-                         }/* /
-                     }*/
-                     menu.add(0,1,0, "add new person");
-                     menu.add(0,2,0, "edit");
-                     menu.add(0,3,0, "delete");
+                     menu.add(0,1,0, "add Person");
+                     menu.add(0,2,0, "delete Person");
+                     menu.add(0,3,0, "edit Class");
+                     menu.add(0,4,0, "delete Class");
 
                  }
              });
@@ -257,30 +243,32 @@ public class ClasssFragment extends Fragment {
 
 
 
-                    /// AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
 
-                    // if (info.targetView.getParent() != getView().findViewById(android.R.id.list))
-                    //     return ClasssFragment.super.onContextItemSelected(item);
 
                      AdapterView.AdapterContextMenuInfo menuInfo;
 
                      switch (item.getItemId()){
-//                         case R.id.add:
+
                          case 1:
 
                              Toast.makeText(getContext(),"add new person",Toast.LENGTH_LONG).show();
 
-                             //return  true;
                              break;
 
-//                         case R.id.edit:
                          case 2:
+
+                             Toast.makeText(getContext(),"add new person",Toast.LENGTH_LONG).show();
+
+
+                             break;
+
+
+                         case 3:
                              Toast.makeText(getContext(),"edit",Toast.LENGTH_LONG).show();
                              break;
-                            // return true;
 
-//                         case R.id.delete:
-                         case 3:
+
+                         case 4:
                              db.getWritableDatabase();
                              boolean isdeleted = db.DeletingClassAll(gblbalmert);
                              if(isdeleted == true){
@@ -309,10 +297,8 @@ public class ClasssFragment extends Fragment {
                                      listView.setEmptyView(emptyView);
                                  }
                              }
-
-
                              break;
-                             //return  true;
+
 
                          default:
                              return onContextItemSelected(item);
@@ -322,18 +308,8 @@ public class ClasssFragment extends Fragment {
                     return true;
                  }
 
-             //});
 
 
-
-
-
-
-
-        //adapter = new CustomAdapterforScreenTwo(this.dataModels, this.getActivity());
-       // listView.setAdapter(adapter);
-
-       // return rootView;
 
 
 

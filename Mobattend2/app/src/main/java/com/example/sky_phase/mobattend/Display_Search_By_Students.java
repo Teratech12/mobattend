@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Spinner;
@@ -14,6 +15,7 @@ import java.util.List;
 
 public class Display_Search_By_Students extends AppCompatActivity {
     Spinner spinner;
+    AutoCompleteTextView typeDropDown;
     String uname;
     FirstTab you = new FirstTab();
     private static CustomAdapterForDateSearch adapter;
@@ -26,6 +28,7 @@ public class Display_Search_By_Students extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display__search__by__students);
+        typeDropDown = (AutoCompleteTextView) findViewById(R.id.ACTV_forStudent);
         spinner = (Spinner)findViewById(R.id.spinnerforstudent);
         String fine = you.classid;
         click2 =  (Button)findViewById(R.id.click2);
@@ -39,6 +42,7 @@ public class Display_Search_By_Students extends AppCompatActivity {
             array1.add(uname);
         }
         ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_dropdown_item, array1);
+        typeDropDown.setAdapter(adapter1);
         spinner.setAdapter(adapter1);
 
 
@@ -73,6 +77,7 @@ public class Display_Search_By_Students extends AppCompatActivity {
         });
     }
 
+  
     public  boolean onSupportNavigateUp(){
         finish();
 

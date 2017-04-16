@@ -37,4 +37,15 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="47dp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/ACTV_forStudent"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinnerforstudent"
+        android:layout_toLeftOf="@+id/click2"
+        android:layout_toStartOf="@+id/click2"
+        android:background="@drawable/drawing1" />
 </RelativeLayout>

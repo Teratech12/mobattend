@@ -1,0 +1,52 @@
+public boolean loadCSV(File path) throws IOException {
+    long result = 0;
+   // path = new File(context.getFilesDir() + "/document/primary:myexcel2.csv");
+   // path.mkdirs(); //create folders where write files
+   // final File file = new File(path, "BlockForTest.txt");
+    SQLiteDatabase db = getWritableDatabase();
+   // path.mkdir();
+      //  String me = "/csv.pdf";
+    path = new File(get.me);
+    FileInputStream fin = new FileInputStream(path);
+    BufferedReader myreader = new BufferedReader(new InputStreamReader(fin));
+
+
+ String data = "";
+    while ((data = myreader.readLine())!=null){
+        String[] colums = data.split(",");
+        if (colums.length!=2){
+            Log.e("tag", "bad rows");
+            continue;
+        }
+
+
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(STUDENT_NAME_COLUMN, colums[0].trim());
+        contentValues.put(STUDENT_ID_COLUMN, colums[1].trim());
+        contentValues.put(FK_CLASS_ID_COLUMN, get.getID);
+     result =    db.insert(STUDENT_TABLE_NAME, null, contentValues);
+
+
+
+    }
+
+    db.close();
+
+
+
+
+
+    if(result==-1)
+    {
+        Toast.makeText(context,"bad rows or file not supported",Toast.LENGTH_SHORT).show();
+        return  false;
+
+    }
+    else {
+        Toast.makeText(context,get.getID,Toast.LENGTH_SHORT).show();
+        return true;
+    }
+
+
+
+}
