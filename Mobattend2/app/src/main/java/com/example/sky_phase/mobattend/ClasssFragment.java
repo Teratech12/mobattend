@@ -211,6 +211,28 @@ public class ClasssFragment extends Fragment {
 
         });
 
+            listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener(){
+
+                @Override
+                public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                    listView.setOnCreateContextMenuListener(new View.OnCreateContextMenuListener() {
+                        @Override
+                        public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+
+                            menu.add(0,1,0, "add Person");
+                            menu.add(0,2,0, "delete Person");
+                            menu.add(0,3,0, "edit Class");
+                            menu.add(0,4,0, "delete Class");
+
+                        }
+                    });
+                    mert = adapter.getItem(position).getName();//GETTING CLASS ID
+                    Intent intent = new Intent(getActivity(), Myattendance.class);
+                    intent.putExtra("classidname", adapter.getItem(position).getType());
+                    gblbalmert = mert;
+                    return false;
+                }
+            });
 
 
 
@@ -233,16 +255,6 @@ public class ClasssFragment extends Fragment {
                  public  boolean onContextItemSelected(MenuItem item){
 
                     MobattendDatabase db = new MobattendDatabase(getActivity());
-                     int position = new Integer(0);
-                     //GET THE ID FROM THE CREATE_CLASS USING DIFERENT INTENT
-                     mert = adapter.getItem(position).getName();//GETTING CLASS ID
-                     Intent intent = new Intent(getActivity(), Myattendance.class);
-                     intent.putExtra("classidname", adapter.getItem(position).getType());
-                     gblbalmert = mert;
-
-
-
-
 
 
                      AdapterView.AdapterContextMenuInfo menuInfo;
@@ -257,7 +269,7 @@ public class ClasssFragment extends Fragment {
 
                          case 2:
 
-                             Toast.makeText(getContext(),"add new person",Toast.LENGTH_LONG).show();
+                             Toast.makeText(getContext(),"delete person",Toast.LENGTH_LONG).show();
 
 
                              break;
