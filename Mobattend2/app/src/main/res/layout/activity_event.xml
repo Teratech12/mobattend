@@ -47,7 +47,8 @@
         android:layout_below="@+id/eventnamebox"
         android:layout_alignLeft="@+id/eventnametext"
         android:layout_alignStart="@+id/eventnametext"
-        android:layout_marginTop="60dp" />
+        android:layout_marginTop="60dp"
+        android:textCursorDrawable="@drawable/cursor"/>
 
     <EditText
         android:id="@+id/weekbox"
@@ -75,15 +76,17 @@
         android:layout_alignBottom="@+id/weekbox"
         android:layout_toRightOf="@+id/weekbox"
         android:layout_toEndOf="@+id/weekbox"
-        android:layout_marginLeft="12dp"
-        android:layout_marginStart="12dp" />
+        android:layout_alignTop="@+id/eventnamebox"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp" />
 
     <Spinner
-        android:layout_width="80dp"
-        android:layout_height="wrap_content"
         android:id="@+id/spin"
-        android:layout_alignBottom="@+id/daytext"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/weekbox"
         android:layout_alignRight="@+id/eventnamebox"
-        android:layout_alignEnd="@+id/eventnamebox" />
+        android:layout_alignEnd="@+id/eventnamebox"
+        android:layout_alignLeft="@+id/daytext"/>
 
 </RelativeLayout>
