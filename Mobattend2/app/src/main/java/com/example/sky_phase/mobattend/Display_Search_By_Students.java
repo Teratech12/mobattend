@@ -3,6 +3,7 @@ package com.example.sky_phase.mobattend;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
@@ -36,12 +37,16 @@ public class Display_Search_By_Students extends AppCompatActivity {
 
         final MobattendDatabase db = new MobattendDatabase(this);
         Cursor sky3 = db.getListContents2(fine);
+        ArrayList<String> allStudentsOfClass = db.checkingRollbyName_auto(fine);
+        ArrayAdapter<String> addAllStudents = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, allStudentsOfClass);
+        typeDropDown.setAdapter(addAllStudents);
         List<String> array1 = new ArrayList<>();
         while(sky3.moveToNext()){
             uname = sky3.getString(sky3.getColumnIndex("student_name"));
             array1.add(uname);
         }
         ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_dropdown_item, array1);
+        typeDropDown.setAdapter(adapter1);
         typeDropDown.setAdapter(adapter1);
         spinner.setAdapter(adapter1);
 
@@ -76,7 +81,7 @@ public class Display_Search_By_Students extends AppCompatActivity {
         });
     }
 
-  
+
     public  boolean onSupportNavigateUp(){
         finish();
 

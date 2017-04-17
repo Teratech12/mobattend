@@ -19,6 +19,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.Locale;
@@ -357,6 +358,28 @@ public class MobattendDatabase extends SQLiteOpenHelper {
                 "JOIN class AS c ON c.class_id = s.fk_class_id " +
                 "WHERE c.class_id = '"+ClassId1+"' AND s.student_name ='"+studentName+"'"  ,null);
         return cursor;
+
+    }
+    public ArrayList<String> checkingRollbyName_auto(String ClassId1/*, String studentName*/){
+        ArrayList<String> allStudentsofClass = new ArrayList<String>();
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery("SELECT distinct e.event_name, a.attendance_time " +
+                "FROM student AS s " +
+                "JOIN student_event AS v ON s.student_id = v.fk_student_id " +
+                "JOIN event AS e ON e.event_id = v.fk_event_id " +
+                "JOIN attendance AS a ON a.attendance_id = v.fk_attendance_id " +
+                "JOIN class AS c ON c.class_id = s.fk_class_id " +
+                "WHERE c.class_id = '"+ClassId1+"'"  ,null);
+//                "WHERE c.class_id = '"+ClassId1+"' AND s.student_name like'%"+studentName+"%'"  ,null);
+        if (cursor.getCount()>0){
+            cursor.moveToFirst();
+            while (!cursor.isAfterLast()){
+                allStudentsofClass.add(cursor.getString(0));
+                cursor.moveToNext();
+            }
+        }
+        cursor.close();
+        return allStudentsofClass;
 
     }
 
