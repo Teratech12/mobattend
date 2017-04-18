@@ -120,6 +120,7 @@ public class ReminderActivity extends AppCompatActivity implements DatePickerDia
                         Toast.makeText(ReminderActivity.this, "inserted", Toast.LENGTH_LONG).show();
                         Intent intent = new Intent(ReminderActivity.this,MainActivity.class);
                         startActivity(intent);
+                        finish();
 
                     } else {
                         Toast.makeText(ReminderActivity.this, "not inserted", Toast.LENGTH_LONG).show();

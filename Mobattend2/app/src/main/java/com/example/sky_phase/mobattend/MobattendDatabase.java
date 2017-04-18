@@ -5,13 +5,8 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-
 import android.util.Log;
 import android.widget.Toast;
-
-//import org.apache.poi.hslf.model.Sheet;
-//import org.apache.poi.ss.usermodel.Cell;
-//import org.apache.poi.ss.usermodel.Row;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -20,8 +15,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Iterator;
 import java.util.Locale;
+
+//import org.apache.poi.hslf.model.Sheet;
+//import org.apache.poi.ss.usermodel.Cell;
+//import org.apache.poi.ss.usermodel.Row;
 
 
 /**
@@ -37,6 +35,7 @@ public class MobattendDatabase extends SQLiteOpenHelper {
     //CREATING STUDENT TABLE
     public static final String STUDENT_TABLE_NAME = "student";
     public  static  final String STUDENT_ID_COLUMN = "student_id";
+    public  static  final String ROW_ID = "_id";
     public  static  final String STUDENT_NAME_COLUMN = "student_name";
     public  static  final String DELETED_COLUMN = "deleted";
     public  static  final String FK_CLASS_ID_COLUMN = "fk_class_id";
@@ -84,6 +83,7 @@ public class MobattendDatabase extends SQLiteOpenHelper {
         // from Class_id
         //deleted should be boolean and by default 0
         String CREATE_STUDENT_TABLE = "CREATE TABLE " + STUDENT_TABLE_NAME + "("
+
                 + STUDENT_ID_COLUMN + " VARCHAR NOT NULL," + STUDENT_NAME_COLUMN +" TEXT,"
                 + DELETED_COLUMN +" BOOLEAN NOT NULL DEFAULT 0," + FK_CLASS_ID_COLUMN +" VARCHAR,"
                 + "FOREIGN KEY ("+FK_CLASS_ID_COLUMN+") REFERENCES " +CLASS_TABLE_NAME + " ("+CLASS_ID_COLUMN+")"  +");";
@@ -270,14 +270,45 @@ public class MobattendDatabase extends SQLiteOpenHelper {
     }
 
 
-    public Cursor
-    getListContents2(String clkid ){
+    public Cursor getListContents2(String clkid ){
         //String be = "zggx";
 
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor sky = db.rawQuery("SELECT * FROM " + STUDENT_TABLE_NAME + " WHERE "+FK_CLASS_ID_COLUMN+ "='"+clkid + "'", null);
         return sky;
     }
+
+    public Cursor getListContents3(String clkid ){
+        //String be = "zggx";
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        String myquerry = "SELECT * FROM " + STUDENT_TABLE_NAME + " WHERE "+FK_CLASS_ID_COLUMN+ "='"+clkid + "'";
+        Cursor sky = db.rawQuery(myquerry,null);
+        if(sky == null){
+            return null;
+
+        }else  if (!sky.moveToNext()){
+            sky.close();
+        }
+        return sky;
+    }
+
+    public Cursor getListContentsSearch(String clkid, String Search ){
+        //String be = "zggx";
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query ="SELECT * FROM " + STUDENT_TABLE_NAME + " WHERE "+FK_CLASS_ID_COLUMN+ "='"+clkid + "'"+ " AND " + STUDENT_NAME_COLUMN + " LIKE '%" + Search + "%' ";
+        Cursor sky1 = db.rawQuery(query,null);
+        if(sky1 == null){
+            return  null;
+        }else if(!sky1.moveToNext()){
+            sky1.close();
+            return null;
+        }
+        return sky1;
+    }
+
+
 
 
     public int getCount(String clkid ){

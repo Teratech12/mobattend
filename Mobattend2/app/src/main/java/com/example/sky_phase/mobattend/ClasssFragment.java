@@ -42,6 +42,7 @@ public class ClasssFragment extends Fragment {
     TextView me;
 
      static  String gblbalmert;
+    static String contextclass;
 
 
 
@@ -155,8 +156,13 @@ public class ClasssFragment extends Fragment {
 
                            // Toast.makeText(getContext(), "Event Created", Toast.LENGTH_LONG).show();
                             Intent intent1 = new Intent(getContext(),Myattendance.class);
-                            startActivity(intent1);
+                           startActivity(intent1);
+
+
+
+
                         }
+
                        // else
                          //   Toast.makeText(getContext(), "Event not Created", Toast.LENGTH_LONG).show();
 
@@ -208,7 +214,6 @@ public class ClasssFragment extends Fragment {
 
 
 
-
         });
 
 
@@ -235,10 +240,11 @@ public class ClasssFragment extends Fragment {
                     MobattendDatabase db = new MobattendDatabase(getActivity());
                      int position = new Integer(0);
                      //GET THE ID FROM THE CREATE_CLASS USING DIFERENT INTENT
-                     mert = adapter.getItem(position).getName();//GETTING CLASS ID
+                     contextclass = adapter.getItem(position).getName();//GETTING CLASS ID
                      Intent intent = new Intent(getActivity(), Myattendance.class);
                      intent.putExtra("classidname", adapter.getItem(position).getType());
                      gblbalmert = mert;
+                     Toast.makeText(getContext(), contextclass,Toast.LENGTH_SHORT).show();
 
 
 
@@ -251,13 +257,16 @@ public class ClasssFragment extends Fragment {
 
                          case 1:
 
-                             Toast.makeText(getContext(),"add new person",Toast.LENGTH_LONG).show();
+                             Intent intent1 = new Intent(getActivity(), Adding_Student_From_Context.class);
+                             startActivity(intent1);
+
 
                              break;
 
                          case 2:
 
-                             Toast.makeText(getContext(),"add new person",Toast.LENGTH_LONG).show();
+                             Intent deleteIntent = new Intent(getActivity(),GetDeleteList.class);
+                             startActivity(deleteIntent);
 
 
                              break;

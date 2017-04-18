@@ -14,9 +14,8 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true"
         android:largeHeap="true"
-
+        android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
@@ -58,10 +57,19 @@
         <activity
             android:name=".Display_Search_By_Students"
             android:label="Search using student name" />
-        <activity android:name=".Stats"
-            android:label=""/>
-        <activity android:name=".Importing_from_excel"
-            android:label="Import From Excel"></activity>
+        <activity
+            android:name=".Stats"
+            android:label="" />
+        <activity
+            android:name=".Importing_from_excel"
+            android:label="Import From Excel" />
+        <activity android:name=".Adding_Student_From_Context" />
+        <activity
+            android:name=".Populate_With_Search"
+            android:label="@string/title_activity_populate__with__search"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".WhenListIsSelected" />
+        <activity android:name=".GetDeleteList"></activity>
     </application>
 
 </manifest>
