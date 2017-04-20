@@ -43,6 +43,7 @@ public class Display_Search_By_Date extends AppCompatActivity {
         //  int i =0;
         while (sky3.moveToNext()) {
             uname = sky3.getString(0);
+            array1.add("Select A date");
             array1.add(uname);
         }
         final ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, array1);
