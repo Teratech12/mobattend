@@ -12,7 +12,7 @@
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:maxLength="12"
+        android:maxLength="25"
         android:text="studentName"
         android:textColor="#0D0D0D"
         android:layout_alignParentTop="true"
@@ -31,6 +31,14 @@
         android:text="attended"
         android:textColor="#0AAEF3"
         android:textSize="16dp" />
+
+    <com.github.mikephil.charting.charts.HorizontalBarChart
+        android:id="@+id/myhorizontalchart"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/type"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp" />
 
 
 </RelativeLayout>

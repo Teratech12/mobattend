@@ -137,7 +137,7 @@ public class CustomAdapterToDeleteStudent extends ArrayAdapter<DataModelForDelet
         TextDrawable drawable = TextDrawable.builder()
                 .buildRoundRect("X", mycolor, 20);
 
-        viewHolder.info.setImageDrawable(drawable);
+       // viewHolder.info.setImageDrawable(drawable);
 
 
 

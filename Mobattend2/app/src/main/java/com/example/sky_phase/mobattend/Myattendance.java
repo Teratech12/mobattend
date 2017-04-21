@@ -5,15 +5,15 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -28,6 +28,7 @@ public class Myattendance extends AppCompatActivity {
     String getID;
     String getClass;
     ImageButton shakebutton;
+    TextView status;
 
 
     @TargetApi(Build.VERSION_CODES.M)
@@ -41,7 +42,8 @@ public class Myattendance extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        listView = (ListView) findViewById(R.id.list);
+        listView = (ListView) findViewById(R.id.listmylist);
+        status = (TextView)findViewById(R.id.myststusfinal);
         //shakebutton = (ImageButton)findViewById(R.id.shakebutton) ;
         //Animation shake = AnimationUtils.loadAnimation(this, R.anim.shakewell);
         //shakebutton.startAnimation(shake);
@@ -72,9 +74,12 @@ public class Myattendance extends AppCompatActivity {
                      myname = sky.getString(1);
                      getID = sky.getString(0);
                      getClass = sky.getString(3);
-                listView.setAdapter(adapter);
+                Parcelable state = listView.onSaveInstanceState();
+
+                listView.onRestoreInstanceState(state);
+
             }
-        }
+        } listView.setAdapter(adapter);
        /* date = new SimpleDateFormat("MMMM d,yyyy").format(new Date());
         dataModels.add(new DataModel("Afred Annor", "22752514"));
         dataModels.add(new DataModel("Obeng Richard", "2275714"));
@@ -125,19 +130,13 @@ public class Myattendance extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent intent = new Intent(Myattendance.this,MainActivity.class);
+                startActivity(intent);
+                finish();
+
             }
         });
-         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-             @Override
-             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                 Snackbar.make(cordinate, "Replace ", Snackbar.LENGTH_LONG)
-                         .setAction("Action", null).show();
-
-             }
-         });
 
     }
 

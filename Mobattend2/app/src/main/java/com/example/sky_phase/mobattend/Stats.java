@@ -22,26 +22,28 @@ public class Stats extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.stats);
-        classname = (TextView)findViewById(R.id.classname);
-        numberofstudents = (TextView)findViewById(R.id.numberofstudents);
-        classcode = (TextView)findViewById(R.id.classcode);
-        classAttendance = (TextView)findViewById(R.id.classAttendance);
+        //classname = (TextView)findViewById(R.id.classname);
+       // numberofstudents = (TextView)findViewById(R.id.numberofstudents);
+       // classcode = (TextView)findViewById(R.id.classcode);
+       // classAttendance = (TextView)findViewById(R.id.classAttendance);
         mylist = (ListView)findViewById(R.id.statlist);
         String set = you.gblbalmert;
         String set1 = you.gblbalmert1;
         dataModels = new ArrayList<>();
-        classname.setText(set);
-       classcode.setText(set1);
+     //   classname.setText(set);
+      // classcode.setText(set1);
       //  int getAttendanceCount = mydb.getAttendanceCount(you.gblbalmert1);
       //  classAttendance.setText(getAttendanceCount);
        int getNumberOfStudentCount = mydb.getCount(you.gblbalmert1);
-       numberofstudents.setText("NUMBER OF STUDENTS : "+getNumberOfStudentCount);
+      // numberofstudents.setText("NUMBER OF STUDENTS : "+getNumberOfStudentCount);
       // int count = mydb.getCount(you.gblbalmert1);
         //numberofstudents.setText(count);
 
         String ClassId = you.gblbalmert1;
 
         Cursor cursor = mydb.getAllStudentsofClass(ClassId);
+
+
         if (cursor.getCount() == 0){
 
         }else {

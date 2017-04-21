@@ -30,6 +30,7 @@
         <activity
             android:name=".ReminderActivity"
             android:label="Set Reminder" />
+
         <activity
             android:name=".Myattendance"
             android:label="Attendance"

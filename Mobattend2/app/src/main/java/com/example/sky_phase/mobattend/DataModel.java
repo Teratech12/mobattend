@@ -13,11 +13,20 @@ public class DataModel {String name;
     String feature;
     String date = new SimpleDateFormat("MMMM d,yyyy").format(new Date());
     String editText;
+    private boolean checked;
+    String status;
+    String yes = "Present";
+    String naa = "Absent";
+    int mychart;
+   //private boolean isnotChecked = false;
 
 
-    public DataModel( String name, String type /*String version_number, String feature, String date*/){
+
+    public DataModel( String name, String type/* String mystatus String feature, String date*/){
         this.name = name;
         this.type = type;
+       // this.status = mystatus;
+
         this.version_number = version_number;
         this.feature = feature;
         this.date = date;
@@ -32,7 +41,12 @@ public class DataModel {String name;
     }
     public String getDate(){return date;}
     public String getEditText(){return editText;}
+    public  String getPresent(){return yes;}
+    public  String getAbsent(){return naa;}
+    public  String getStatus(){return  status;}
+   public void  setChecked(boolean checked){this.checked=checked;}
 
+  //  private boolean isIsnotChecked(){return isnotChecked;}
 
 
     public String getVersion_number(){
@@ -41,5 +55,6 @@ public class DataModel {String name;
     public String getFeature(){
         return feature;
     }
+    public int getMychart(){return mychart;}
 
 }

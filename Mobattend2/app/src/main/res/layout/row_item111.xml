@@ -22,8 +22,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/item_info"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="34dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginStart="34dp"
         android:layout_toRightOf="@+id/item_info"
         android:maxLength="24"
@@ -40,49 +40,33 @@
         android:text="IndexNumber"
         android:textColor="#0AAEF3" />
 
-    <RadioGroup
-        android:id="@+id/radiogroup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/name"
 
-        android:layout_below="@+id/name"
-        android:orientation="horizontal">
+    <ImageView
+        android:src="@drawable/cancel"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/present"
+        android:layout_toEndOf="@+id/present"
+        android:id="@+id/absent"
+        />
 
-        <RadioButton
-            android:id="@+id/present"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/circle_shape3"
-            android:buttonTint="@color/radiobutton3" />
-
-        <RadioButton
-            android:id="@+id/permission"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:background="@drawable/circle_shape2"
-            android:buttonTint="@color/radiobutton2" />
-
-        <RadioButton
-            android:id="@+id/absent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:background="@drawable/circle_shape"
-            android:buttonTint="@color/radiobutton1" />
-
-
-    </RadioGroup>
+    <ImageView
+        android:src="@drawable/checked"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:id="@+id/present"
+        android:layout_below="@+id/type"
+        android:layout_toEndOf="@+id/item_info"
+        android:layout_marginStart="11dp" />
 
     <TextView
-        android:text="Not specified"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/radiogroup"
-        android:layout_alignParentEnd="true"
         android:id="@+id/myststusfinal"
-        android:textColor="@android:color/background_dark" />
+        android:textColor="@android:color/background_dark"
+        android:layout_below="@+id/name"
+        android:layout_alignParentEnd="true"
+        android:text="Not specified" />
 
 
 </RelativeLayout>
