@@ -42,11 +42,15 @@ public class Myattendance extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+<<<<<<< HEAD
         listView = (ListView) findViewById(R.id.listmylist);
         status = (TextView)findViewById(R.id.myststusfinal);
         //shakebutton = (ImageButton)findViewById(R.id.shakebutton) ;
         //Animation shake = AnimationUtils.loadAnimation(this, R.anim.shakewell);
         //shakebutton.startAnimation(shake);
+=======
+        listView = (ListView) findViewById(R.id.list);
+>>>>>>> dae4a18e0f604a8f6f6fa568fdfa72f30898567a
 
 
         dataModels = new ArrayList<>();
@@ -79,6 +83,7 @@ public class Myattendance extends AppCompatActivity {
                 listView.onRestoreInstanceState(state);
 
             }
+<<<<<<< HEAD
         } listView.setAdapter(adapter);
        /* date = new SimpleDateFormat("MMMM d,yyyy").format(new Date());
         dataModels.add(new DataModel("Afred Annor", "22752514"));
@@ -125,6 +130,9 @@ public class Myattendance extends AppCompatActivity {
         adapter = new CustomAdapter(dataModels,Myattendance.this);
 
         listView.setAdapter(adapter); */
+=======
+        }
+>>>>>>> dae4a18e0f604a8f6f6fa568fdfa72f30898567a
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {

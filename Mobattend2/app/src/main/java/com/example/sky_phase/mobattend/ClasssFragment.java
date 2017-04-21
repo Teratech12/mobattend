@@ -321,6 +321,8 @@ public class ClasssFragment extends Fragment {
                             Cursor sky2 = db.getListContents();
                              if(sky2.getCount() == 0){
 
+                                 listView.setEmptyView(emptyView);
+                                 ClasssFragment.this.listView.start;
                              }
                              else{
                                  while (sky2.moveToNext()){
@@ -328,7 +330,6 @@ public class ClasssFragment extends Fragment {
                                      dataModels.add(new DataModelforScreenTwo(sky2.getString(0),sky2.getString(1),String.valueOf(count)));
                                      adapter = new CustomAdapterforScreenTwo(dataModels,getContext());
                                      listView.setAdapter(adapter);
-                                     listView.setEmptyView(emptyView);
                                  }
                              }
                              break;

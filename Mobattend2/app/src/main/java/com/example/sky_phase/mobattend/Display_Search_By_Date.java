@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,9 +42,9 @@ public class Display_Search_By_Date extends AppCompatActivity {
 
         //  String[] array = new String[sky2.getCount()];
         //  int i =0;
+            array1.add("Select A date");
         while (sky3.moveToNext()) {
             uname = sky3.getString(0);
-            array1.add("Select A date");
             array1.add(uname);
         }
         final ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, array1);
@@ -74,7 +75,7 @@ public class Display_Search_By_Date extends AppCompatActivity {
 
                 Cursor getstudent = db.checkingRoll(fine1, SpinnerText);
                 if (getstudent.getCount() == 0) {
-
+                    Toast.makeText(Display_Search_By_Date.this, "No date is selected", Toast.LENGTH_LONG).show();
 
                 } else {
                     while (getstudent.moveToNext()) {
