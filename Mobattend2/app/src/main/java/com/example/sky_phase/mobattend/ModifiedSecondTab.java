@@ -64,12 +64,7 @@ public class ModifiedSecondTab extends Fragment {
                 listView.setEmptyView(emptyView);
             }
         }
-       /* dataModels.add(new DataModelforScreenTwo("Linear Electronics", "COE 251","January 23, 2016"));
-        dataModels.add(new DataModelforScreenTwo("Calculus", "MATH 151","March 4, 2015"));
-        dataModels.add(new DataModelforScreenTwo("Embedded System", "COE 351","March 4, 2015"));
-        dataModels.add(new DataModelforScreenTwo("Thermodynamics", "MATH 151","March 4, 2014"));
-        dataModels.add(new DataModelforScreenTwo("Operating System", "COE 151","March 4, 2015"));
-      */
+
 
      listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
          @Override
@@ -95,18 +90,10 @@ public class ModifiedSecondTab extends Fragment {
              listView.setOnCreateContextMenuListener(new View.OnCreateContextMenuListener() {
                  @Override
                  public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
-                     if(v.getId() == R.id.listsecond);{
+                     if(v.getId() == R.id.listsecond){
                        ModifiedSecondTab.super.onCreateContextMenu(menu, v, menuInfo);
                          MenuInflater inflater = getActivity().getMenuInflater();
                          inflater.inflate(R.menu.mymenu,menu);
-
-                         /*
-                         AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo)menuInfo;
-                         menu.setHeaderTitle("me");
-                         String[] menuItems = getResources().getStringArray(R.array.menu);
-                         for (int i =0; i<menuItems.length; i++){
-                             menu.add(Menu.NONE, i, i, menuItems[i]);
-                         }*/
                      }
 
 

@@ -42,9 +42,6 @@ public class Myattendance extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         listView = (ListView) findViewById(R.id.list);
-        //shakebutton = (ImageButton)findViewById(R.id.shakebutton) ;
-        //Animation shake = AnimationUtils.loadAnimation(this, R.anim.shakewell);
-        //shakebutton.startAnimation(shake);
 
 
         dataModels = new ArrayList<>();
@@ -75,51 +72,6 @@ public class Myattendance extends AppCompatActivity {
                 listView.setAdapter(adapter);
             }
         }
-       /* date = new SimpleDateFormat("MMMM d,yyyy").format(new Date());
-        dataModels.add(new DataModel("Afred Annor", "22752514"));
-        dataModels.add(new DataModel("Obeng Richard", "2275714"));
-        dataModels.add(new DataModel( "Jephter Danso", "2248714"));
-        dataModels.add(new DataModel("Prince Awuah", "224714"));
-        dataModels.add(new DataModel( "Michael Surname", "2275714"));
-        dataModels.add(new DataModel( "Andy Surname", "2275714"));
-        dataModels.add(new DataModel( "Akua Kobi", "2274554"));
-        dataModels.add(new DataModel("Gregory Aidoo", "22415714"));
-        dataModels.add(new DataModel("Afred Annor", "22752514"));
-        dataModels.add(new DataModel("Obeng Richard", "2275714"));
-        dataModels.add(new DataModel( "Jephter Danso", "2248714"));
-        dataModels.add(new DataModel("Prince Awuah", "224714"));
-        dataModels.add(new DataModel( "Michael Surname", "2275714"));
-        dataModels.add(new DataModel( "Andy Surname", "2275714"));
-        dataModels.add(new DataModel( "Akua Kobi", "2274554"));
-        dataModels.add(new DataModel("Gregory Aidoo", "22415714"));
-        dataModels.add(new DataModel("Afred Annor", "22752514"));
-        dataModels.add(new DataModel("Obeng Richard", "2275714"));
-        dataModels.add(new DataModel( "Jephter Danso", "2248714"));
-        dataModels.add(new DataModel("Prince Awuah", "224714"));
-        dataModels.add(new DataModel( "Michael Surname", "2275714"));
-        dataModels.add(new DataModel( "Andy Surname", "2275714"));
-        dataModels.add(new DataModel( "Akua Kobi", "2274554"));
-        dataModels.add(new DataModel("Gregory Aidoo", "22415714"));
-        dataModels.add(new DataModel("Afred Annor", "22752514"));
-        dataModels.add(new DataModel("Obeng Richard", "2275714"));
-        dataModels.add(new DataModel( "Jephter Danso", "2248714"));
-        dataModels.add(new DataModel("Prince Awuah", "224714"));
-        dataModels.add(new DataModel( "Michael Surname", "2275714"));
-        dataModels.add(new DataModel( "Andy Surname", "2275714"));
-        dataModels.add(new DataModel( "Akua Kobi", "2274554"));
-        dataModels.add(new DataModel("Gregory Aidoo", "22415714"));
-        dataModels.add(new DataModel("Afred Annor", "22752514"));
-        dataModels.add(new DataModel("Obeng Richard", "2275714"));
-        dataModels.add(new DataModel( "Jephter Danso", "2248714"));
-        dataModels.add(new DataModel("Prince Awuah", "224714"));
-        dataModels.add(new DataModel( "Michael Surname", "2275714"));
-        dataModels.add(new DataModel( "Andy Surname", "2275714"));
-        dataModels.add(new DataModel( "Akua Kobi", "2274554"));
-        dataModels.add(new DataModel("Gregory Aidoo", "22415714"));
-
-        adapter = new CustomAdapter(dataModels,Myattendance.this);
-
-        listView.setAdapter(adapter); */
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {

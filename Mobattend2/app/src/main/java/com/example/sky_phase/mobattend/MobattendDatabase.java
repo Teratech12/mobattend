@@ -343,7 +343,8 @@ public class MobattendDatabase extends SQLiteOpenHelper {
                 "JOIN event AS e ON e.event_id = v.fk_event_id " +
                 "JOIN attendance AS a ON a.attendance_id = v.fk_attendance_id " +
                 "JOIN class AS c ON c.class_id = s.fk_class_id " +
-                "WHERE c.class_id = '"+ClassId+"' AND a.attendance_time ='"+AttendanceDate+"'"  ,null);
+                "WHERE c.class_id = '"+ClassId+"' AND a.attendance_time ='"+AttendanceDate+"' " +
+                "ORDER BY s.student_name"  ,null);
         return cursor;
 
     }
@@ -645,5 +646,42 @@ public boolean loadCSV(File path) throws IOException {
 
 
 }
+    public boolean updateClass (String class_id, String nwClassName){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(CLASS_NAME_COLUMN, nwClassName);
 
+        int result=db.update(CLASS_TABLE_NAME, contentValues, "class_id="+ class_id, null);
+        if (result>0){
+            return true;
+        }else{
+            return false;
+        }
+
+    }
+
+    public boolean DelStudentOfClass (String ClassId2, String StudentID){
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        String query4 = "DELETE FROM  student " +
+                "WHERE fk_class_id  IN (SELECT class_id FROM class WHERE class_id = '"+ClassId2+"') " +
+                "AND student_id = '"+StudentID+"';";
+
+        try{
+            db.beginTransaction();
+            Log.d(TAG, query4);
+            db.execSQL(query4);
+
+            return true;
+
+        }catch (Exception e){
+            e.getMessage();
+            return false;
+        }finally {
+            db.endTransaction();
+            db.close();
+        }
+
+    }
 }
