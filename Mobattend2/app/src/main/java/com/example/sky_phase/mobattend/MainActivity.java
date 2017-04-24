@@ -91,6 +91,7 @@ public class MainActivity extends AppCompatActivity
         } else {
             super.onBackPressed();
         }
+        finish();
     }
 
     @Override
@@ -129,6 +130,7 @@ public class MainActivity extends AppCompatActivity
                     public void onClick(DialogInterface dialog, int which) {
                         Intent intent = new Intent(MainActivity.this,CREATE_CLASS.class);
                         startActivity(intent);
+                        finish();
 
                       //  Toast.makeText(MainActivity.this,"this feature isnt added yet",Toast.LENGTH_LONG).show();
 

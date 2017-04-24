@@ -59,6 +59,7 @@ public class CREATE_CLASS extends AppCompatActivity {
 
 
                     startActivity(intent);
+                    finish();
                     //MobattendDatabase db1 = new MobattendDatabase(getApplicationContext());
 
                   //  className = getClass.getText().toString();

@@ -42,6 +42,7 @@ public class ClasssFragment extends Fragment {
     TextView me;
 
      static  String gblbalmert;
+    static String contextclass;
 
 
 
@@ -155,8 +156,13 @@ public class ClasssFragment extends Fragment {
 
                            // Toast.makeText(getContext(), "Event Created", Toast.LENGTH_LONG).show();
                             Intent intent1 = new Intent(getContext(),Myattendance.class);
-                            startActivity(intent1);
+                           startActivity(intent1);
+
+
+
+
                         }
+
                        // else
                          //   Toast.makeText(getContext(), "Event not Created", Toast.LENGTH_LONG).show();
 
@@ -208,7 +214,6 @@ public class ClasssFragment extends Fragment {
 
 
 
-
         });
 
             listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener(){
@@ -218,6 +223,7 @@ public class ClasssFragment extends Fragment {
                     listView.setOnCreateContextMenuListener(new View.OnCreateContextMenuListener() {
                         @Override
                         public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+                             menu.setHeaderTitle("Menu");
 
                             menu.add(0,1,0, "add Person");
                             menu.add(0,2,0, "delete Person");
@@ -240,7 +246,7 @@ public class ClasssFragment extends Fragment {
              listView.setOnCreateContextMenuListener(new View.OnCreateContextMenuListener() {
                  @Override
                  public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
-
+                     menu.setHeaderTitle("Menu");
                      menu.add(0,1,0, "add Person");
                      menu.add(0,2,0, "delete Person");
                      menu.add(0,3,0, "edit Class");
@@ -256,6 +262,17 @@ public class ClasssFragment extends Fragment {
 
                     MobattendDatabase db = new MobattendDatabase(getActivity());
 
+                     int position = new Integer(0);
+                     //GET THE ID FROM THE CREATE_CLASS USING DIFERENT INTENT
+                     contextclass = adapter.getItem(position).getName();//GETTING CLASS ID
+                     Intent intent = new Intent(getActivity(), Myattendance.class);
+                     intent.putExtra("classidname", adapter.getItem(position).getType());
+                     gblbalmert = mert;
+                     Toast.makeText(getContext(), contextclass,Toast.LENGTH_SHORT).show();
+
+
+
+
 
                      AdapterView.AdapterContextMenuInfo menuInfo;
 
@@ -263,13 +280,18 @@ public class ClasssFragment extends Fragment {
 
                          case 1:
 
-                             Toast.makeText(getContext(),"add new person",Toast.LENGTH_LONG).show();
+                             Intent intent1 = new Intent(getActivity(), Adding_Student_From_Context.class);
+                             startActivity(intent1);
+
 
                              break;
 
                          case 2:
 
+                             Intent deleteIntent = new Intent(getActivity(),GetDeleteList.class);
+                             startActivity(deleteIntent);
                              Toast.makeText(getContext(),"delete person",Toast.LENGTH_LONG).show();
+
 
 
                              break;
@@ -299,6 +321,8 @@ public class ClasssFragment extends Fragment {
                             Cursor sky2 = db.getListContents();
                              if(sky2.getCount() == 0){
 
+                                 listView.setEmptyView(emptyView);
+                                 ClasssFragment.this.listView.start;
                              }
                              else{
                                  while (sky2.moveToNext()){
@@ -306,7 +330,6 @@ public class ClasssFragment extends Fragment {
                                      dataModels.add(new DataModelforScreenTwo(sky2.getString(0),sky2.getString(1),String.valueOf(count)));
                                      adapter = new CustomAdapterforScreenTwo(dataModels,getContext());
                                      listView.setAdapter(adapter);
-                                     listView.setEmptyView(emptyView);
                                  }
                              }
                              break;

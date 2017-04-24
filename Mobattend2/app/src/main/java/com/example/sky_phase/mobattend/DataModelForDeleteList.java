@@ -7,26 +7,20 @@ import java.util.Date;
  * Created by SKY-PHASE on 1/10/2017.
  */
 
-public class DataModel {String name;
+public class DataModelForDeleteList {String name;
     String type;
     String version_number;
     String feature;
     String date = new SimpleDateFormat("MMMM d,yyyy").format(new Date());
     String editText;
-    private boolean checked;
-    String status;
-    String yes = "Present";
-    String naa = "Absent";
-    int mychart;
-   //private boolean isnotChecked = false;
+    String mydate;
 
 
 
-    public DataModel( String name, String type/* String mystatus String feature, String date*/){
+    public DataModelForDeleteList(String name, String type/* String mydate String version_number, String feature, String date*/){
         this.name = name;
         this.type = type;
-       // this.status = mystatus;
-
+        this.mydate = mydate;
         this.version_number = version_number;
         this.feature = feature;
         this.date = date;
@@ -41,12 +35,8 @@ public class DataModel {String name;
     }
     public String getDate(){return date;}
     public String getEditText(){return editText;}
-    public  String getPresent(){return yes;}
-    public  String getAbsent(){return naa;}
-    public  String getStatus(){return  status;}
-   public void  setChecked(boolean checked){this.checked=checked;}
+    public String getMydate(){return mydate;}
 
-  //  private boolean isIsnotChecked(){return isnotChecked;}
 
 
     public String getVersion_number(){
@@ -55,6 +45,5 @@ public class DataModel {String name;
     public String getFeature(){
         return feature;
     }
-    public int getMychart(){return mychart;}
 
 }

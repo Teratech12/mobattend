@@ -32,6 +32,8 @@ public class CustomAdapterForDateSearch extends ArrayAdapter<DataModelForDateSea
     ClasssFragment you = new ClasssFragment();
     DataModel dataModel;
 
+
+
     public static class viewHolder{
         TextView txtName;
         TextView txtType;

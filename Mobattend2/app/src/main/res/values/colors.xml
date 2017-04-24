@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#1A2844</color>
+    <color name="colorPrimary">#1a2844</color>
     <color name="colorPrimaryDark">#1A2844</color>
     <color name="colorAccent">#ffff</color>
     <color name="radiobutton1">#da220f</color>

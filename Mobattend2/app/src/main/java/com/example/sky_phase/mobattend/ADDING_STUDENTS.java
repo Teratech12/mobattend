@@ -87,6 +87,7 @@ public class ADDING_STUDENTS extends AppCompatActivity {
 
                     Intent intent = new Intent(ADDING_STUDENTS.this,MainActivity.class);
                     startActivity(intent);
+                    finish();
                 }
 
 
