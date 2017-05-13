@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-         mytoolbar = (Toolbar) findViewById(R.id.toolbar);
+         mytoolbar = (Toolbar) findViewById(R.id.main_toolbar);
 
         setSupportActionBar(mytoolbar);
 

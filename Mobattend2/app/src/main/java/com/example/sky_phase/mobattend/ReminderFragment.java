@@ -62,7 +62,7 @@ public class ReminderFragment extends Fragment {
         reminder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getContext(),ReminderActivity.class);
+                Intent intent = new Intent(getContext(),HorizontalBarChatPage.class);
                 startActivity(intent);
             }
         });
