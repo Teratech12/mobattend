@@ -17,6 +17,7 @@ public class DataModelForStats {String name;
     String feature;
     String date = new SimpleDateFormat("MMMM d,yyyy").format(new Date());
     String editText;
+    String lastseen;
             String hpp;
     String hpa;
     float mychart;
@@ -52,6 +53,7 @@ public class DataModelForStats {String name;
         return type;
     }
     public String getHpp(){return  hpp;}
+    public String getLastseen(){return  lastseen;}
     public String getHpa(){return hpa;}
     public String getDate(){return date;}
     public String getEditText(){return editText;}

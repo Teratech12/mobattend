@@ -38,6 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Enter course code"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_ "
         android:layout_above="@+id/ClassIdEditBox"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />

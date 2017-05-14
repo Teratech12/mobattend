@@ -243,7 +243,7 @@ public class ClasssFragment extends Fragment {
 
 
 
-             listView.setOnCreateContextMenuListener(new View.OnCreateContextMenuListener() {
+      /*       listView.setOnCreateContextMenuListener(new View.OnCreateContextMenuListener() {
                  @Override
                  public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
                      menu.setHeaderTitle("Menu");
@@ -253,7 +253,7 @@ public class ClasssFragment extends Fragment {
                      menu.add(0,4,0, "delete Class");
 
                  }
-             });
+             });*/
         return rootView;
     }
 
@@ -316,15 +316,20 @@ public class ClasssFragment extends Fragment {
                              dataModels = new ArrayList<>();
 
 
-                             View emptyView = getActivity().getLayoutInflater().inflate(R.layout.emptyclasslist, null);
-                             ((ViewGroup)listView.getParent()).addView(emptyView);
-                            Cursor sky2 = db.getListContents();
-                             if(sky2.getCount() == 0){
 
+                            // View emptyView = getActivity().getLayoutInflater().inflate(R.layout.emptyclasslist, null);
+                            // ((ViewGroup)listView.getParent()).addView(emptyView);
+                            Cursor sky2 = db.getListContents();
+                           if(sky2.getCount() == 0){
+
+<<<<<<< HEAD
+                                // listView.setEmptyView(emptyView);
+=======
                                  listView.setEmptyView(emptyView);
 <<<<<<< HEAD
                                  ClasssFragment.this.listView.startViewTransition(emptyView);
 =======
+>>>>>>> 0ac07ede6fdef10235c82b03287525939c3c9897
                                  //ClasssFragment.this.listView.start;
 >>>>>>> 3d6145864341d1ce45401bb0d1fe7609fdd1cb14
                              }
