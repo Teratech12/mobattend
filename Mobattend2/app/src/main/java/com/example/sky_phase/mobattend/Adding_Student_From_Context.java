@@ -26,7 +26,7 @@ public class Adding_Student_From_Context extends AppCompatActivity {
         anotherStudent = (Button) findViewById(R.id.AddAnotherStudentText);
         finish = (Button) findViewById(R.id.FinishText);
         classNameStudent = (EditText)findViewById(R.id.classNameUnedit);
-        getclass = myclass.contextclass;
+        getclass = myclass.mert;
         classNameStudent.setText(getclass);
 
 

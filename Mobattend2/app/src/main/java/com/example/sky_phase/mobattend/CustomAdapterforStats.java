@@ -61,6 +61,7 @@ public class CustomAdapterforStats extends ArrayAdapter<DataModelForStats> imple
         TextView hpa;
         TextView hpp;
         ImageView displaycount;
+        TextView lastseen;
 
         private  String[] xValues = {"present","absent"};
         public static final int[] MY_COLORS = {
@@ -131,6 +132,7 @@ public class CustomAdapterforStats extends ArrayAdapter<DataModelForStats> imple
             viewHolder.hpp =(TextView)convertView.findViewById(R.id.holdpercentageP);
             viewHolder.hpa =(TextView)convertView.findViewById(R.id.holdpercentageA);
             viewHolder.displaycount = (ImageView) convertView.findViewById(R.id.displaycount);
+            viewHolder.lastseen = (TextView) convertView.findViewById(R.id.lastSeenhold);
 
 
             String CLID = you.gblbalmert1;

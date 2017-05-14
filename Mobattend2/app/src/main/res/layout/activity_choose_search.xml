@@ -12,13 +12,12 @@
     tools:context="com.example.sky_phase.mobattend.ChooseSearch">
 
     <ImageView
+        android:id="@+id/search_by_date"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:src="@drawable/ic_menu_share"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="94dp"
-        android:id="@+id/search_by_date" />
+        android:src="@drawable/ic_menu_share" />
 
     <TextView
         android:text="Select from a drop down list dates for all the attendance taken for the class chosen. Choose a date from the list and get names of all the students present"
@@ -30,13 +29,13 @@
         android:id="@+id/date_info" />
 
     <ImageView
+        android:id="@+id/student_name"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:src="@drawable/ic_menu_share"
         android:layout_below="@+id/date_info"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="104dp"
-        android:id="@+id/student_name" />
+        android:layout_marginTop="80dp"
+        android:src="@drawable/ic_menu_share" />
 
     <TextView
         android:text="Select from a drop down list the names of all the students in that class chosen.Select a student to find out all the dates the student was present in that particular class"
