@@ -635,7 +635,7 @@ public class MobattendDatabase extends SQLiteOpenHelper {
                 "JOIN attendance AS a ON a.attendance_id = v.fk_attendance_id " +
                 "JOIN class AS c ON c.class_id = s.fk_class_id " +
                 "WHERE c.class_id = '"+ClassId2+"' AND s.student_id='"+Studentid+"'" +
-                "ORDER BY a.attendance_name DESC LIMIT 1" ,null);
+                "ORDER BY a.attendance_time DESC LIMIT 1" ,null);
 
         return cursor;
 
