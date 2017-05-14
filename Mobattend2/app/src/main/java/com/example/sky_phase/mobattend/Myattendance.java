@@ -5,11 +5,8 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Parcelable;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
@@ -49,7 +46,9 @@ public class Myattendance extends AppCompatActivity {
         //Animation shake = AnimationUtils.loadAnimation(this, R.anim.shakewell);
         //shakebutton.startAnimation(shake);
 
+
         listView = (ListView) findViewById(R.id.list);
+
 
 
 
@@ -78,13 +77,15 @@ public class Myattendance extends AppCompatActivity {
                      myname = sky.getString(1);
                      getID = sky.getString(0);
                      getClass = sky.getString(3);
-                Parcelable state = listView.onSaveInstanceState();
 
-                listView.onRestoreInstanceState(state);
+                listView.setAdapter(adapter);
+
 
             }
 
+
         } listView.setAdapter(adapter);
+
        /* date = new SimpleDateFormat("MMMM d,yyyy").format(new Date());
         dataModels.add(new DataModel("Afred Annor", "22752514"));
         dataModels.add(new DataModel("Obeng Richard", "2275714"));
@@ -115,7 +116,7 @@ public class Myattendance extends AppCompatActivity {
         dataModels.add(new DataModel( "Jephter Danso", "2248714"));
         dataModels.add(new DataModel("Prince Awuah", "224714"));
         dataModels.add(new DataModel( "Michael Surname", "2275714"));
-        dataModels.add(new DataModel( "Andy Surname", "2275714"));
+
         dataModels.add(new DataModel( "Akua Kobi", "2274554"));
         dataModels.add(new DataModel("Gregory Aidoo", "22415714"));
         dataModels.add(new DataModel("Afred Annor", "22752514"));
@@ -131,6 +132,7 @@ public class Myattendance extends AppCompatActivity {
 
         listView.setAdapter(adapter); */
 
+
         }
 
 
@@ -142,9 +144,7 @@ public class Myattendance extends AppCompatActivity {
                 startActivity(intent);
                 finish();
 
-            }
-        });
-
+        }
 
     }*/
 
@@ -155,5 +155,6 @@ public class Myattendance extends AppCompatActivity {
 
         return true;
     }
+
 
 }

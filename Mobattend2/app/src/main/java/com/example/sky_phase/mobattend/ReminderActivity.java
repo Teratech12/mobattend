@@ -118,7 +118,7 @@ public class ReminderActivity extends AppCompatActivity implements DatePickerDia
                     boolean isInserted = db.insertReminder(remindername, String.valueOf(keeptime), String.valueOf(keepdate));
                     if (isInserted == true) {
                         Toast.makeText(ReminderActivity.this, "inserted", Toast.LENGTH_LONG).show();
-                        Intent intent = new Intent(ReminderActivity.this,MainActivity.class);
+                        Intent intent = new Intent(ReminderActivity.this,HorizontalBarChatPage.class);
                         startActivity(intent);
                         finish();
 

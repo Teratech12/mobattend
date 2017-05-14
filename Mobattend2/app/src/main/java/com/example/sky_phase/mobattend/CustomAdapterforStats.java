@@ -1,15 +1,17 @@
 package com.example.sky_phase.mobattend;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.amulyakhare.textdrawable.TextDrawable;
 import com.github.mikephil.charting.charts.HorizontalBarChart;
-import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.data.Entry;
@@ -28,7 +30,9 @@ public class CustomAdapterforStats extends ArrayAdapter<DataModelForStats> imple
     Context mContext;
     ModifiedSecondTab you = new ModifiedSecondTab();
     DataModelForStats dataModel;
-    MobattendDatabase db = new MobattendDatabase(mContext);
+    MobattendDatabase db = new MobattendDatabase(getContext());
+
+    float numb;
 
 
 
@@ -54,6 +58,9 @@ public class CustomAdapterforStats extends ArrayAdapter<DataModelForStats> imple
         TextView txtName;
         TextView txtType;
         HorizontalBarChart mychart;
+        TextView hpa;
+        TextView hpp;
+        ImageView displaycount;
 
         private  String[] xValues = {"present","absent"};
         public static final int[] MY_COLORS = {
@@ -100,12 +107,14 @@ public class CustomAdapterforStats extends ArrayAdapter<DataModelForStats> imple
         String theclass = you.gblbalmert;
         String event_id = you.eventid;
         String attendance_id = you.attendanceid;
-        MobattendDatabase db = new MobattendDatabase(getContext());
+    //    MobattendDatabase db = new MobattendDatabase(getContext());
 
     }
 
         private int lastPosition = -1;
     public View getView(int position, View convertView, ViewGroup parent) {
+        String keep;
+        System.out.println("getView " + position + " " + convertView);
         //get data item for this position
         DataModelForStats dataModel = getItem(position);
         //check if an existing view is being reused
@@ -119,12 +128,19 @@ public class CustomAdapterforStats extends ArrayAdapter<DataModelForStats> imple
             convertView = inflater.inflate(R.layout.row_item_for_stats, parent, false);
             viewHolder.txtName = (TextView) convertView.findViewById(R.id.name);
             viewHolder.txtType = (TextView) convertView.findViewById(R.id.type);
-            viewHolder.mychart= (HorizontalBarChart) convertView.findViewById(R.id.myhorizontalchart);
+            viewHolder.hpp =(TextView)convertView.findViewById(R.id.holdpercentageP);
+            viewHolder.hpa =(TextView)convertView.findViewById(R.id.holdpercentageA);
+            viewHolder.displaycount = (ImageView) convertView.findViewById(R.id.displaycount);
 
-            viewHolder.numbers = new int[]{25, 1, 2, 1, 15, 9, 9, 47, 23, 4, 0, 10, 14, 15, 19, 10, 25, 14, 19, 20};
-            for (int c =0; c < 20; c++){
-               // viewHolder.yValues = new int[]{viewHolder.numbers[c],25};
-            }
+
+            String CLID = you.gblbalmert1;
+            Cursor cursor = db.getAllStudentsofClass(CLID);
+            float getmycount = 0;
+
+
+
+
+
 
 
 
@@ -139,10 +155,26 @@ public class CustomAdapterforStats extends ArrayAdapter<DataModelForStats> imple
         }
 
           //viewHolder.yValues = new int[]{10, 25};
+
+
         viewHolder.txtName.setText(dataModel.getName());
-        viewHolder.txtType.setText(dataModel.getType());
+       viewHolder.txtType.setText(dataModel.getType());
+        viewHolder.hpp.setText(dataModel.getHpp());
+        viewHolder.hpa.setText(dataModel.getHpa());
+       // BarData data = new BarData(dataModel.getLabels(),dataModel.getDataSet());
+        //viewHolder.mychart.setData(data);
+
+
+
+      /*  BarData data = new BarData(getXAxisValues(),getDataSet());
+        viewHolder.mychart.setData(data);
+        viewHolder.mychart.animateXY(200,200);
+        viewHolder.mychart.invalidate();
+        viewHolder.mychart.getXAxis().setDrawGridLines(false);
+        viewHolder.mychart.getAxisLeft().setDrawGridLines(false);*/
+
         //viewHolder.mychart.setUsePercentValues(true);
-        viewHolder.mychart.setDescription("");
+
 
 
      //   viewHolder.mychart.setRotationEnabled(true);
@@ -199,27 +231,37 @@ public class CustomAdapterforStats extends ArrayAdapter<DataModelForStats> imple
         l.setYEntrySpace(5);*/
 
 
-        BarData data = new BarData(getXAxisValues(),getDataSet());
-
-        viewHolder.mychart.setData(data);
-        viewHolder.mychart.animateXY(200,200);
-        viewHolder.mychart.invalidate();
-        viewHolder.mychart.getXAxis().setDrawGridLines(false);
-
-        viewHolder.mychart.getAxisLeft().setDrawGridLines(false);
-
-        viewHolder.mychart.setTag(position);
 
 
+      //  viewHolder.mychart.setTag(getPosition(dataModel.mychart));
+
+
+     keep = viewHolder.txtType.getText().toString();
+        int getcolor = Color.DKGRAY;
+        TextDrawable mydrawable = TextDrawable.builder().buildRound(keep,getcolor);
+        viewHolder.displaycount.setImageDrawable(mydrawable);
+        viewHolder.displaycount.setTag(position);
         return convertView;
     }
 
+    private Object getPosition(HorizontalBarChart mychart) {
 
-          private BarDataSet getDataSet(){
+        return mychart;
+    }
+
+
+    private BarDataSet getDataSet(){
+        viewHolder viewHolder = new viewHolder();
+
 
              ArrayList<BarEntry> entries = new ArrayList<>();
-              entries.add(new BarEntry(2f,0));
-             // entries.add(new BarEntry(5f,0));
+
+
+
+
+
+
+;
 
 
               BarDataSet dataset = new BarDataSet(entries, "hi");

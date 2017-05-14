@@ -322,7 +322,11 @@ public class ClasssFragment extends Fragment {
                              if(sky2.getCount() == 0){
 
                                  listView.setEmptyView(emptyView);
+<<<<<<< HEAD
                                  ClasssFragment.this.listView.startViewTransition(emptyView);
+=======
+                                 //ClasssFragment.this.listView.start;
+>>>>>>> 3d6145864341d1ce45401bb0d1fe7609fdd1cb14
                              }
                              else{
                                  while (sky2.moveToNext()){
