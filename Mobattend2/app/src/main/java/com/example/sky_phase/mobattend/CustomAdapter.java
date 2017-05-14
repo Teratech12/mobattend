@@ -5,8 +5,6 @@ import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -156,14 +154,13 @@ public class CustomAdapter extends ArrayAdapter<DataModel>  {
                 }
 
         });*/
-            result = convertView;
+
             convertView.setTag(viewHolder);
 
 
 
         } else {
            viewHolder = (viewHolder) convertView.getTag();
-            result = convertView;
 
 
         }
@@ -221,8 +218,8 @@ public class CustomAdapter extends ArrayAdapter<DataModel>  {
 
 
 
-       Animation animation = AnimationUtils.loadAnimation(mContext, (position > lastPosition) ? R.anim.up_from_bottom : R.anim.down_from_top);
-        result.startAnimation(animation);
+       // Animation animation = AnimationUtils.loadAnimation(mContext, (position > lastPosition) ? R.anim.up_from_bottom : R.anim.down_from_top);
+      //  result.startAnimation(animation);
         lastPosition = position;
         viewHolder.txtName.setText(dataModel.getName());
         viewHolder.txtType.setText(dataModel.getType());
