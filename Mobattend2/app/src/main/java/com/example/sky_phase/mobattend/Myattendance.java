@@ -47,7 +47,7 @@ public class Myattendance extends AppCompatActivity {
         //shakebutton.startAnimation(shake);
 
 
-        listView = (ListView) findViewById(R.id.list);
+       // listView = (ListView) findViewById(R.id.list);
 
 
 
@@ -78,7 +78,7 @@ public class Myattendance extends AppCompatActivity {
                      getID = sky.getString(0);
                      getClass = sky.getString(3);
 
-                listView.setAdapter(adapter);
+               // listView.setAdapter(adapter);
 
 
             }

@@ -163,6 +163,7 @@ public class CustomAdapterforStats extends ArrayAdapter<DataModelForStats> imple
        viewHolder.txtType.setText(dataModel.getType());
         viewHolder.hpp.setText(dataModel.getHpp());
         viewHolder.hpa.setText(dataModel.getHpa());
+        viewHolder.lastseen.setText(dataModel.getLastseen());
        // BarData data = new BarData(dataModel.getLabels(),dataModel.getDataSet());
         //viewHolder.mychart.setData(data);
 

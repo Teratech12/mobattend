@@ -28,11 +28,12 @@ public class DataModelForStats {String name;
 
 
 
-    public DataModelForStats(String name , String type, String hpp, String hpa /*, boolean entries, BarDataSet dataSet, ArrayList<String> labels /*, String feature, String date*/){
+    public DataModelForStats(String name , String type, String hpp, String hpa, String lastseen /*, boolean entries, BarDataSet dataSet, ArrayList<String> labels /*, String feature, String date*/){
         this.name = name;
         this.type = type;
         this.hpp = hpp;
         this.hpa = hpa;
+        this.lastseen = lastseen;
         this.entries = entries;
         this.dataSet  = dataSet;
         this.labels= labels;

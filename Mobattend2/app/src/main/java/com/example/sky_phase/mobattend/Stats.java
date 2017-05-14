@@ -64,11 +64,17 @@ public class Stats extends AppCompatActivity {
         }else {
             while (cursor.moveToNext()){
                 int count1 = mydb.getNumbOfTimesOfStd(ClassId, cursor.getString(0));
+                String lastseen = String.valueOf(mydb.getLastDate(ClassId, cursor.getString(0)));
+                //Calendar date = (Calendar) mydb.getLastDate(ClassId,cursor.getString(0));
+                        //Cursor date = mydb.getLastDate(ClassId,cursor.getString(0));
+
+
+                        Log.e("SKYPHASE", String.valueOf(lastseen));
                 float count2 = count1;
                 float percentageP = (count2/getattendance2)*100;
                 float absent = getattendance2 - count2;
                 float percentageA = (absent/getattendance2)*100;
-                dataModels.add(new DataModelForStats(cursor.getString(1), String.valueOf(count1)+"/"+getattendance, String.valueOf(percentageP),String.valueOf(percentageA)));
+                dataModels.add(new DataModelForStats(cursor.getString(1), String.valueOf(count1)+"/"+getattendance, String.valueOf(percentageP),String.valueOf(percentageA),String.valueOf(lastseen)));
                 Log.e("tag", String.valueOf(dataSet));
                 adapter = new CustomAdapterforStats(dataModels, getApplicationContext());
                 mylist.setAdapter(adapter);
