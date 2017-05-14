@@ -322,8 +322,16 @@ public class ClasssFragment extends Fragment {
                             Cursor sky2 = db.getListContents();
                            if(sky2.getCount() == 0){
 
+<<<<<<< HEAD
                                 // listView.setEmptyView(emptyView);
+=======
+                                 listView.setEmptyView(emptyView);
+<<<<<<< HEAD
+                                 ClasssFragment.this.listView.startViewTransition(emptyView);
+=======
+>>>>>>> 0ac07ede6fdef10235c82b03287525939c3c9897
                                  //ClasssFragment.this.listView.start;
+>>>>>>> 3d6145864341d1ce45401bb0d1fe7609fdd1cb14
                              }
                              else{
                                  while (sky2.moveToNext()){

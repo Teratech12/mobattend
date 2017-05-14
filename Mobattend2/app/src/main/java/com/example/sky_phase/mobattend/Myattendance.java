@@ -47,6 +47,8 @@ public class Myattendance extends AppCompatActivity {
         //shakebutton.startAnimation(shake);
 
 
+        listView = (ListView) findViewById(R.id.list);
+
 
 
 
@@ -54,7 +56,7 @@ public class Myattendance extends AppCompatActivity {
 
 
         Intent intent2 = getIntent();
-     final String queryname = intent2.getStringExtra("classidname");
+        final String queryname = intent2.getStringExtra("classidname");
 
         String fine = you.gblbalmert;
 
@@ -81,7 +83,8 @@ public class Myattendance extends AppCompatActivity {
 
             }
 
-        }
+
+        } listView.setAdapter(adapter);
 
        /* date = new SimpleDateFormat("MMMM d,yyyy").format(new Date());
         dataModels.add(new DataModel("Afred Annor", "22752514"));
@@ -128,13 +131,22 @@ public class Myattendance extends AppCompatActivity {
         adapter = new CustomAdapter(dataModels,Myattendance.this);
 
         listView.setAdapter(adapter); */
+
+
         }
 
 
+       /* FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Myattendance.this,MainActivity.class);
+                startActivity(intent);
+                finish();
 
+        }
 
-
-
+    }*/
 
 
 
